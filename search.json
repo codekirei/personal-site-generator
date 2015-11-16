@@ -1,19 +1,13 @@
+---
+---
 [
-  
+  {% for post in site.posts %}
     {
-      "title"    : "Welcome to Jekyll",
-      "category" : "jekyll is awesome",
-      "tags"     : "jekyll and web",
-      "url"      : "/welcome-to-jekyll/",
-      "date"     : "03 Aug 2015"
-    } ,
-  
-    {
-      "title"    : "How to use",
-      "category" : "i love jekyll",
-      "tags"     : "jekyll and template",
-      "url"      : "/how-to-use/",
-      "date"     : "02 Aug 2015"
-    } 
-  
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.categories }}",
+      "tags"     : "{{ post.tags | array_to_sentence_string }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date | date_to_string}}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
 ]
