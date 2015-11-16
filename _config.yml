@@ -1,3 +1,7 @@
+# File locations
+source: source/markup
+destination: dist
+
 # Site settings
 description: A blog about lorem ipsum dolor sit amet
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -17,7 +21,6 @@ disqus_username: lorem_ipsum
 markdown: kramdown
 highlighter: pygments
 permalink: /:title/
-
 
 # html minify
 compress_html:
@@ -39,4 +42,4 @@ links:
     url: /about
 
 # exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
+# exclude: ['package.json', 'src', 'node_modules']

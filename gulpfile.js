@@ -46,13 +46,13 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
  * Stylus task
  */
 gulp.task('stylus', function(){
-    gulp.src('src/styl/main.styl')
+    gulp.src('source/styles/main.styl')
     .pipe(plumber())
     .pipe(stylus({
       use:[koutoSwiss(), prefixer(), jeet(),rupture()],
       compress: true
     }))
-    .pipe(gulp.dest('_site/assets/css/'))
+    .pipe(gulp.dest('dist/assets/css/'))
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('assets/css'))
 });
@@ -61,7 +61,7 @@ gulp.task('stylus', function(){
  * Javascript Task
  */
 gulp.task('js', function(){
-  return gulp.src('src/js/**/*.js')
+  return gulp.src('source/scripts/**/*.js')
     .pipe(plumber())
     .pipe(concat('main.js'))
     .pipe(uglify())
@@ -72,7 +72,7 @@ gulp.task('js', function(){
  * Imagemin Task
  */
 gulp.task('imagemin', function() {
-  return gulp.src('src/img/**/*.{jpg,png,gif}')
+  return gulp.src('source/images/**/*.{jpg,png,gif}')
     .pipe(plumber())
     .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
     .pipe(gulp.dest('assets/img/'));
