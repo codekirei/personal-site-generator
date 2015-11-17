@@ -15,10 +15,12 @@
     - [X] jekyll
     - [ ] rev
     - [ ] scripts
-    - [ ] static
+    - [X] dupe
     - [ ] styles
   - [ ] default
 - [ ] add raleway (league of movable type)
+- [ ] write readme for site (in static)
+- [ ] add CNAME
 
 * Later
 - [ ] discourse commenting system
