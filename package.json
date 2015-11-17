@@ -1,23 +1,14 @@
 {
-  "name": "willjekylltemplate",
-  "version": "1.0.0",
-  "description": "My jekyll blog template.",
+  "name": "codekirei website",
+  "version": "0.1.0",
+  "description": "Static site.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "test"
   },
-  "keywords": [
-    "frontend",
-    "blog",
-    "css",
-    "stylus",
-    "gulp",
-    "jekyll",
-    "js"
-  ],
-  "author": "Willian Justen de Vasconcellos",
-  "license": "ISC",
-  "devDependencies": {
+  "author": "Jacob Blakely (codekirei)",
+  "license": "MIT",
+  "dependencies": {
     "autoprefixer-stylus": "^0.4.0",
     "browser-sync": "^1.9.0",
     "grunt": "^0.4.5",
