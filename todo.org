@@ -25,6 +25,8 @@
 - [ ] source maps for scripts and styles?
 - [ ] write readme for site (in static)
 - [ ] add CNAME
+- [ ] rewrite scripts and scripts task
+- [ ] rewrite styles
 
 * Later
 - [ ] discourse commenting system
