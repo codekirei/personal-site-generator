@@ -13,7 +13,7 @@ const gulp = require('gulp')
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
-function dupe() {
+function dupes() {
   return gulp.src('source/static')
     .pipe(gulp.dest('dist'))
 }
@@ -21,5 +21,5 @@ function dupe() {
 //----------------------------------------------------------
 // exports
 //----------------------------------------------------------
-module.exports = dupe
-gulp.task(dupe)
+module.exports = dupes
+gulp.task(dupes)
