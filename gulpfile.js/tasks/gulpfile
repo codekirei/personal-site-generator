@@ -23,21 +23,6 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
 });
 
 /**
- * Stylus task
- */
-gulp.task('stylus', function(){
-    gulp.src('source/styles/main.styl')
-    .pipe(plumber())
-    .pipe(stylus({
-      use:[koutoSwiss(), prefixer(), jeet(),rupture()],
-      compress: true
-    }))
-    .pipe(gulp.dest('dist/assets/css/'))
-    .pipe(browserSync.reload({stream:true}))
-    .pipe(gulp.dest('assets/css'))
-});
-
-/**
  * Javascript Task
  */
 gulp.task('js', function(){

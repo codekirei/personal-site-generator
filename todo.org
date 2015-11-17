@@ -16,9 +16,12 @@
     - [ ] rev
     - [ ] scripts
     - [X] dupe
-    - [ ] styles
+    - [X] styles
   - [ ] default
 - [ ] add raleway (league of movable type)
+- [ ] edit html to reflect new asset locations (config?)
+- [ ] make config for all gulp src/dest locations
+- [ ] source maps for scripts and styles?
 - [ ] write readme for site (in static)
 - [ ] add CNAME
 
