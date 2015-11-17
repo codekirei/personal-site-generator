@@ -1,7 +1,7 @@
 'use strict'
 
 /*
- * completely deletes dist dir
+ * remove contents of /dist
  */
 
 //----------------------------------------------------------
@@ -10,12 +10,16 @@
 // npm
 const gulp = require('gulp')
 const del = require('del')
+const P = require('bluebird')
 
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
-function clean(cb) {
-  return del(['dist/**/*', '!.git']).then(() => cb())
+function clean() {
+  return new P((res, rej) => {
+    return del(['dist/**/*', '!.git'])
+      .then(() => res())
+  })
 }
 
 //----------------------------------------------------------

@@ -9,13 +9,20 @@
 //----------------------------------------------------------
 // npm
 const gulp = require('gulp')
+const P = require('bluebird')
 
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
 function dupes() {
-  return gulp.src('source/static')
-    .pipe(gulp.dest('dist'))
+  return new P((res, rej) => {
+    gulp.src('source/static/**/*')
+      .pipe(gulp.dest('dist'))
+    res()
+  })
+
+  // return gulp.src('source/static')
+  //   .pipe(gulp.dest('dist'))
 }
 
 //----------------------------------------------------------

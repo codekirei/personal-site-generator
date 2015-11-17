@@ -4,13 +4,13 @@
   - [ ] license
 - [-] gulp tasks
   - [-] actions
-    - [ ] build
+    - [X] build
     - [X] clean
     - [ ] rev
     - [ ] deploy
     - [ ] serve
     - [ ] watch
-  - [-] pipeline
+  - [X] pipeline
     - [X] images
     - [X] jekyll
     - [X] scripts
