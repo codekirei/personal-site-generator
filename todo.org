@@ -1,3 +1,20 @@
-- [ ] add CNAME to master
-- [ ] add readme to master
-- [ ] add license to master
+- [ ] static files to add
+  - [ ] CNAME
+  - [ ] readme
+  - [ ] license
+- [-] gulp tasks
+  - [ ] actions
+    - [ ] build
+    - [ ] clean
+    - [ ] deploy
+    - [ ] serve
+    - [ ] watch
+  - [-] pipeline
+    - [ ] favicon
+    - [ ] images
+    - [X] jekyll
+    - [ ] rev
+    - [ ] scripts
+    - [ ] static
+    - [ ] styles
+  - [ ] default

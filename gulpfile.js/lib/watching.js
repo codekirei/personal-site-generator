@@ -3,23 +3,19 @@
 //----------------------------------------------------------
 // modules
 //----------------------------------------------------------
-// node
-const spawn = require('child_process').spawn
-
 // npm
-const gulp = require('gulp')
+const minimist = require('minimist')
 
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
-function jekyll(cb) {
-  return spawn(
-    'jekyll', ['build', '--config', 'config/jekyll.yml']
-  ).on('close', cb)
+function watching() {
+  let watchFlag = false
+  if (minimist(process.argv)['w']) watchFlag = true
+  return watchFlag
 }
 
 //----------------------------------------------------------
 // exports
 //----------------------------------------------------------
-module.exports = jekyll
-gulp.task(jekyll)
+module.exports = watching
