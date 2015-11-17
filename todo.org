@@ -11,6 +11,7 @@
     - [ ] watch
   - [-] pipeline
     - [ ] favicon
+      - create favicon and filler text instead of task
     - [X] images
     - [X] jekyll
     - [ ] rev
