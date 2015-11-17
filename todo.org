@@ -18,3 +18,8 @@
     - [ ] static
     - [ ] styles
   - [ ] default
+- [ ] add raleway (league of movable type)
+
+* Later
+- [ ] discourse commenting system
+- [ ] advanced image handling
