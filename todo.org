@@ -28,3 +28,4 @@
 * Later
 - [ ] discourse commenting system
 - [ ] advanced image handling
+- [ ] add IE favicon tiles
