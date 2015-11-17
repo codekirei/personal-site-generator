@@ -3,15 +3,15 @@
   - [ ] readme
   - [ ] license
 - [-] gulp tasks
-  - [ ] actions
+  - [-] actions
     - [ ] build
-    - [ ] clean
+    - [X] clean
     - [ ] deploy
     - [ ] serve
     - [ ] watch
   - [-] pipeline
     - [ ] favicon
-    - [ ] images
+    - [X] images
     - [X] jekyll
     - [ ] rev
     - [ ] scripts
