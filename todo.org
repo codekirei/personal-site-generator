@@ -6,13 +6,13 @@
   - [-] actions
     - [ ] build
     - [X] clean
+    - [ ] rev
     - [ ] deploy
     - [ ] serve
     - [ ] watch
   - [-] pipeline
     - [X] images
     - [X] jekyll
-    - [ ] rev
     - [X] scripts
     - [X] dupe
     - [X] styles
