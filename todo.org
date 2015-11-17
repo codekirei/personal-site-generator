@@ -15,7 +15,7 @@
     - [X] images
     - [X] jekyll
     - [ ] rev
-    - [ ] scripts
+    - [X] scripts
     - [X] dupe
     - [X] styles
   - [ ] default
