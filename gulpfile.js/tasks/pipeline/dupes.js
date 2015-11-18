@@ -25,4 +25,4 @@ function duplicate() {
 // exports
 //----------------------------------------------------------
 module.exports = duplicate
-gulp.task('static', duplicate)
+gulp.task('dupes', duplicate)

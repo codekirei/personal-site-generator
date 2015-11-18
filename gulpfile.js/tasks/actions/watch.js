@@ -15,11 +15,42 @@ const loc = require('conf/locations')
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
+function reload(glob) {
+  return glob
+    ? bs.get('server').reload(glob)
+    : bs.get('server').reload()
+}
+
 function watch() {
-  // gulp.watch(loc.src.markup, ['jekyll'], () => bs.get('serverA').reload())
-  // gulp.watch(loc.src.markup, () => runseq('jekyll', 'reload'))
-  // gulp.watch(loc.dist.root + '**/*').on('change', bs.get('server').reload)
-  g.watch(loc.src.markup, () => runseq('build', 'reload'))
+  // jekyll
+  g.watch(loc.src.markup, () => runseq(
+    'build',
+    () => reload()
+  ))
+
+  // dupes
+  g.watch(loc.src.dupes, () => runseq(
+    'dupes',
+    () => reload()
+  ))
+
+  // img
+  g.watch(loc.src.img, () => runseq(
+    'images',
+    () => reload()
+  ))
+
+  // scripts
+  g.watch(loc.src.scripts, () => runseq(
+    'scripts',
+    () => reload('*.js')
+  ))
+
+  // styles
+  g.watch(loc.src.stylesAll, () => runseq(
+    'styles',
+    () => reload('style.css')
+  ))
 }
 
 //----------------------------------------------------------
