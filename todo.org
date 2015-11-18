@@ -1,12 +1,12 @@
-- [ ] rewrite scripts and scripts task
-  - [ ] break into blocking, page specific, main w/ asset-builder
-  - [ ] add typeset js and other frontend libs
-  - [ ] add sourcemaps
-
 - [ ] rewrite styles
   - [ ] add raleway (league of movable type)
   - [ ] integrate ionicons
   - [ ] add fonts gulp task
+
+- [ ] rewrite scripts and scripts task
+  - [ ] break into blocking, page specific, main w/ asset-builder
+  - [ ] add typeset js and other frontend libs
+  - [ ] add sourcemaps
 
 - [ ] write gulp rev task
 - [ ] write gulp deploy task
