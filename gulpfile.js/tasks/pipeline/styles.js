@@ -30,6 +30,7 @@ function styles() {
         cascade: false
       }))
       .pipe(g.rename('style.css'))
+      .pipe(g.minifyCss())
       .pipe(gulp.dest(loc.dist.code))
     res()
   })
