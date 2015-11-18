@@ -4,7 +4,7 @@
   - [ ] license
 - [-] gulp tasks
   - [-] actions
-    - [X] build
+    - [ ] build
       - [ ] confirm all watch tasks are working
     - [X] clean
     - [ ] rev
@@ -19,15 +19,22 @@
     - [X] dupe
     - [X] styles
   - [ ] default
-- [ ] add raleway (league of movable type)
 - [ ] better logger for tasks for watch mode
   - [ ] including error handling
-- [ ] edit html to reflect new asset locations (config?)
+- [X] edit html to reflect new asset locations (config?)
 - [X] make config for all gulp src/dest locations
+- [ ] add raleway (league of movable type)
+- [ ] add missing static files
+- [ ] add some other npm scripts (see generator repo)
+- [ ] add clean-css step to stylus
+- [ ] custom 404 page
+- [ ] integrate ionicons
+- [ ] add typeset js
 - [ ] source maps for scripts and styles?
 - [ ] write readme for site (in static)
 - [ ] add CNAME
 - [ ] rewrite scripts and scripts task
+  - [ ] break into blocking, page specific, main w/ asset-builder
 - [ ] rewrite styles
 - [ ] rewrite initpost.sh as a npm run script
 
