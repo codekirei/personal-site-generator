@@ -9,13 +9,18 @@ const minimist = require('minimist')
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
-function watching() {
-  let watchFlag = false
-  if (minimist(process.argv)['w']) watchFlag = true
-  return watchFlag
+function flags() {
+  const passedFlags = minimist(process.argv)
+  const setFlags = {
+    watching: false,
+    dev: false
+  }
+  if (passedFlags['w']) setFlags.watching = true
+  if (passedFlags['dev']) setFlags.dev = true
+  return setFlags
 }
 
 //----------------------------------------------------------
 // exports
 //----------------------------------------------------------
-module.exports = watching
+module.exports = flags

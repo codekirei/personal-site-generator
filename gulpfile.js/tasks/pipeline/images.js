@@ -9,7 +9,7 @@ const P = require('bluebird')
 const g = require('gulp-load-plugins')()
 
 // local
-const watching = require('../../lib/watching')
+const flags = require('../../lib/flags')()
 const loc = require('conf/locations')
 
 //----------------------------------------------------------
@@ -17,9 +17,8 @@ const loc = require('conf/locations')
 //----------------------------------------------------------
 function images() {
   return new P((res, rej) => {
-    const w = watching()
     gulp.src(loc.src.img)
-      .pipe(g.if(w, g.plumber()))
+      .pipe(g.if(flags.watching, g.plumber()))
       .pipe(g.newer(loc.dist.img))
       .pipe(g.imagemin())
       .pipe(gulp.dest(loc.dist.img))

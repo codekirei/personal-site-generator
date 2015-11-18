@@ -9,7 +9,7 @@ const P = require('bluebird')
 const g = require('gulp-load-plugins')()
 
 // local
-const w = require('../../lib/watching')()
+const flags = require('../../lib/flags')()
 const loc = require('conf/locations')
 
 //----------------------------------------------------------
@@ -18,7 +18,7 @@ const loc = require('conf/locations')
 function scripts() {
   return new P((res, rej) => {
     gulp.src(loc.src.scripts)
-      .pipe(g.if(w, g.plumber()))
+      .pipe(g.if(flags.watching, g.plumber()))
       .pipe(g.concat('main.js'))
       .pipe(g.uglify())
       .pipe(gulp.dest(loc.dist.code))

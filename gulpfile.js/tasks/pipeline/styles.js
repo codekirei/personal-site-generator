@@ -12,7 +12,7 @@ const jeet = require('jeet')
 const rupture = require('rupture')
 
 // local
-const watching = require('../../lib/watching')()
+const flags = require('../../lib/flags')()
 const loc = require('conf/locations')
 
 //----------------------------------------------------------
@@ -21,7 +21,7 @@ const loc = require('conf/locations')
 function styles() {
   return new P((res, rej) => {
     gulp.src(loc.src.styles)
-      .pipe(g.if(watching, g.plumber()))
+      .pipe(g.if(flags.watching, g.plumber()))
       .pipe(g.stylus({
         use: [koutoSwiss(), jeet(), rupture()]
       }))
@@ -29,8 +29,8 @@ function styles() {
         browsers: ['last 2 versions'],
         cascade: false
       }))
-      .pipe(g.rename('style.css'))
       .pipe(g.minifyCss())
+      .pipe(g.rename('style.css'))
       .pipe(gulp.dest(loc.dist.code))
     res()
   })

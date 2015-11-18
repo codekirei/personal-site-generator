@@ -17,16 +17,16 @@
 
 - [ ] rewrite scripts and scripts task
   - [ ] break into blocking, page specific, main w/ asset-builder
+  - [ ] add typeset js and other frontend libs
+  - [ ] add sourcemaps
 - [ ] rewrite styles
   - [ ] add raleway (league of movable type)
+  - [ ] integrate ionicons
   - [ ] add fonts gulp task
 - [ ] add missing static files
 - [ ] add some other npm scripts (see generator repo)
-- [X] add clean-css step to stylus
+
 - [ ] custom 404 page
-- [ ] integrate ionicons
-- [ ] add typeset js
-- [ ] source maps for scripts and styles?
 - [ ] write readme for site (in static)
 - [ ] add CNAME
 - [ ] rewrite initpost.sh as a npm run script
@@ -36,3 +36,4 @@
 - [ ] advanced image handling
 - [ ] add Win8/IE favicon tiles
 - [ ] look into WJT's 'series' page
+- [ ] gulp @import statements obfuscate source maps =/

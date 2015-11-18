@@ -10,7 +10,7 @@ const g = require('gulp-load-plugins')()
 
 // local
 const loc = require('conf/locations')
-const watching = require('../../lib/watching')()
+const flags = require('../../lib/flags')()
 const dupes = require('../pipeline/dupes')
 const images = require('../pipeline/images')
 const jekyll = require('../pipeline/jekyll')
@@ -29,7 +29,7 @@ function watch() {
 }
 
 function build() {
-  if (watching) watch()
+  if (flags.watching) watch()
   return P.all([
     dupes(),
     images(),
