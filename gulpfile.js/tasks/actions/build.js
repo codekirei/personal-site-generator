@@ -7,6 +7,7 @@
 const gulp = require('gulp')
 const P = require('bluebird')
 const g = require('gulp-load-plugins')()
+const bs = require('browser-sync')
 
 // local
 const loc = require('conf/locations')
@@ -21,6 +22,9 @@ const styles = require('../pipeline/styles')
 // logic
 //----------------------------------------------------------
 function watch() {
+  bs.create().init({
+    server: loc.dist.root
+  })
   g.watch(loc.src.dupes, dupes)
   g.watch(loc.src.img, images)
   g.watch(loc.src.markup, jekyll)
@@ -43,4 +47,4 @@ function build() {
 // exports
 //----------------------------------------------------------
 module.exports = build
-gulp.task(build)
+// gulp.task(build)

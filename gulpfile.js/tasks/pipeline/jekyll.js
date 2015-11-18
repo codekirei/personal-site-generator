@@ -25,4 +25,4 @@ function jekyll() {
 // exports
 //----------------------------------------------------------
 module.exports = jekyll
-gulp.task(jekyll)
+// gulp.task(jekyll)

@@ -1,35 +1,47 @@
-- [ ] static files to add
-  - [ ] CNAME
-  - [ ] readme
-  - [ ] license
-- [-] gulp tasks
-  - [-] actions
-    - [ ] build
-    - [X] clean
-    - [ ] rev
-    - [ ] deploy
+- [-] back to 3
+  - [ ] build
+  - [X] clean
+  - [ ] serve
+  - [ ] watch
+  - [ ] dev
+  - [ ] dupes
+  - [ ] images
+  - [ ] jekyll
+  - [ ] scripts
+  - [ ] styles
+- [ ] gulp tasks
+  - [ ] actions
     - [ ] serve
       - [ ] reload if watching
     - [ ] dev (default: build -> serve)
   - [ ] default
-- [ ] better logger for tasks for watch mode
+- [ ] better logger for tasks in watch mode
   - [ ] including error handling
 
 - [ ] rewrite scripts and scripts task
   - [ ] break into blocking, page specific, main w/ asset-builder
   - [ ] add typeset js and other frontend libs
   - [ ] add sourcemaps
+
 - [ ] rewrite styles
   - [ ] add raleway (league of movable type)
   - [ ] integrate ionicons
   - [ ] add fonts gulp task
-- [ ] add missing static files
-- [ ] add some other npm scripts (see generator repo)
 
+- [ ] write gulp rev task
+- [ ] write gulp deploy task
 - [ ] custom 404 page
 - [ ] write readme for site (in static)
 - [ ] add CNAME
 - [ ] rewrite initpost.sh as a npm run script
+
+- [ ] add/write missing static files
+  - [ ] CNAME
+  - [ ] readme.md
+  - [ ] robots.txt
+  - [ ] humans.txt
+  - [ ] crossdomain.xml
+  - [ ] browserconfig.xml
 
 * Later
 - [ ] discourse commenting system
@@ -37,3 +49,4 @@
 - [ ] add Win8/IE favicon tiles
 - [ ] look into WJT's 'series' page
 - [ ] gulp @import statements obfuscate source maps =/
+- [ ] add some other npm scripts (see generator repo)

@@ -30,4 +30,4 @@ function scripts() {
 // exports
 //----------------------------------------------------------
 module.exports = scripts
-gulp.task(scripts)
+// gulp.task(scripts)

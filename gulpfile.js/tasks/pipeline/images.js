@@ -30,4 +30,4 @@ function images() {
 // exports
 //----------------------------------------------------------
 module.exports = images
-gulp.task(images)
+// gulp.task(images)

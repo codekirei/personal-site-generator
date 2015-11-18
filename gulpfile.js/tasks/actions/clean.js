@@ -10,7 +10,6 @@
 // npm
 const gulp = require('gulp')
 const del = require('del')
-const P = require('bluebird')
 
 // local
 const loc = require('conf/locations')
@@ -19,14 +18,11 @@ const loc = require('conf/locations')
 // logic
 //----------------------------------------------------------
 function clean() {
-  return new P((res, rej) => {
-    return del([loc.dist.clean, '!.git'])
-      .then(() => res())
-  })
+  return del([loc.dist.clean, '!.git'])
 }
 
 //----------------------------------------------------------
 // exports
 //----------------------------------------------------------
 module.exports = clean
-gulp.task(clean)
+gulp.task('clean', clean)
