@@ -1,20 +1,8 @@
-- [-] back to 3
-  - [ ] build
-  - [X] clean
-  - [ ] serve
-  - [ ] watch
-  - [ ] dev
-  - [X] dupes
-  - [X] images
-  - [X] jekyll
-  - [X] scripts
-  - [X] styles
 - [ ] gulp tasks
   - [ ] actions
-    - [ ] serve
-      - [ ] reload if watching
-    - [ ] dev (default: build -> serve)
-  - [ ] default
+    - [ ] watch
+    - [ ] dev (default: build -> serve -> watch)
+  - [ ] default (dev)
 - [ ] better logger for tasks in watch mode
   - [ ] including error handling
 
