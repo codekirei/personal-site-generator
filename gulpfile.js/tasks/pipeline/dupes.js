@@ -9,7 +9,6 @@
 //----------------------------------------------------------
 // npm
 const gulp = require('gulp')
-const P = require('bluebird')
 
 // local
 const loc = require('conf/locations')
@@ -17,16 +16,13 @@ const loc = require('conf/locations')
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
-function dupes() {
-  return new P((res, rej) => {
-    gulp.src(loc.src.dupes)
-      .pipe(gulp.dest(loc.dist.root))
-    res()
-  })
+function duplicate() {
+  return gulp.src(loc.src.dupes)
+    .pipe(gulp.dest(loc.dist.root))
 }
 
 //----------------------------------------------------------
 // exports
 //----------------------------------------------------------
-module.exports = dupes
-// gulp.task(dupes)
+module.exports = duplicate
+gulp.task('static', duplicate)
