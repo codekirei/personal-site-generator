@@ -9,7 +9,7 @@ module.exports = {
     , get scripts() {return p.join(this.root, 'scripts/**/*.js')}
     , get styles() {return p.join(this.root, 'styles/main.styl')}
     , get stylesAll() {return p.join(this.root, 'styles/**/*.styl')}
-    , get markup(){return p.join(this.root, 'markup/**/*')}
+    , get markup() {return p.join(this.root, 'markup/**/*')}
   },
 
   // dist locations
@@ -18,6 +18,13 @@ module.exports = {
     , get clean() {return p.join(this.root, '**/*')}
     , get img() {return p.join(this.root, 'img')}
     , get code() {return p.join(this.root, 'code')}
+  },
+
+  // config locations (so meta)
+  cfg: {
+    root: 'config'
+    , get jekyll() {return p.join(this.root, 'jekyll.yml')}
+    , get locations() {return p.join(this.root, 'locations.js')}
   }
 }
 

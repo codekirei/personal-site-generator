@@ -23,7 +23,7 @@ function reload(glob) {
 
 function watch() {
   // jekyll
-  g.watch(loc.src.markup, () => runseq(
+  g.watch([loc.src.markup, loc.cfg.jekyll], () => runseq(
     'build',
     () => reload()
   ))
