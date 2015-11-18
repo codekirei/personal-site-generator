@@ -1,10 +1,7 @@
 - [ ] gulp tasks
   - [ ] actions
-    - [ ] watch --> -w flag on build
-    - [ ] dev (default: build -> serve -> watch)
-  - [ ] default (dev)
-- [ ] better logger for tasks in watch mode
-  - [ ] including error handling
+    - [ ] watch
+  - [ ] default (watch)
 
 - [ ] rewrite scripts and scripts task
   - [ ] break into blocking, page specific, main w/ asset-builder

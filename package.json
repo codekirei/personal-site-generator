@@ -30,6 +30,7 @@
     "kouto-swiss": "^0.11.6",
     "minimist": "^1.2.0",
     "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.4",
     "rupture": "^0.6.1"
   }
 }

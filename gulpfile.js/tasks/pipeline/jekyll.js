@@ -5,6 +5,7 @@
 //----------------------------------------------------------
 // node
 const spawn = require('child_process').spawn
+const bs = require('browser-sync')
 
 // npm
 const gulp = require('gulp')
@@ -23,3 +24,4 @@ function jekyll(cb) {
 //----------------------------------------------------------
 module.exports = jekyll
 gulp.task('jekyll', jekyll)
+gulp.task('jekyll-rebuild', ['jekyll'], () => bs.get('server').reload())

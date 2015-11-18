@@ -5,7 +5,7 @@ destination: dist
 # Site settings
 description: A blog about lorem ipsum dolor sit amet
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://willianjusten.com.br" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "" # the base hostname & protocol for your site (i.e. http://...)
 
 # User settings
 username: Lorem Ipsum
@@ -40,6 +40,3 @@ links:
     url: /tags
   - title: About Me
     url: /about
-
-# exclude my node related stuff
-# exclude: ['package.json', 'src', 'node_modules']
