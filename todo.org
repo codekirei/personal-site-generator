@@ -5,12 +5,13 @@
 - [-] gulp tasks
   - [-] actions
     - [X] build
+      - [ ] confirm all watch tasks are working
     - [X] clean
     - [ ] rev
     - [ ] deploy
     - [ ] serve
-    - [ ] watch
-    - [ ] dev (default: build -> serve -> watch)
+      - [ ] reload if watching
+    - [ ] dev (default: build -> serve)
   - [X] pipeline
     - [X] images
     - [X] jekyll
@@ -19,6 +20,8 @@
     - [X] styles
   - [ ] default
 - [ ] add raleway (league of movable type)
+- [ ] better logger for tasks for watch mode
+  - [ ] including error handling
 - [ ] edit html to reflect new asset locations (config?)
 - [X] make config for all gulp src/dest locations
 - [ ] source maps for scripts and styles?
@@ -26,6 +29,7 @@
 - [ ] add CNAME
 - [ ] rewrite scripts and scripts task
 - [ ] rewrite styles
+- [ ] rewrite initpost.sh as a npm run script
 
 * Later
 - [ ] discourse commenting system

@@ -8,6 +8,8 @@ module.exports = {
     , get img() {return p.join(this.root, 'images/**/*.{jpg,png}')}
     , get scripts() {return p.join(this.root, 'scripts/**/*.js')}
     , get styles() {return p.join(this.root, 'styles/main.styl')}
+    , get stylesAll() {return p.join(this.root, 'styles/**/*.styl')}
+    , get markup(){return p.join(this.root, 'markup/**/*')}
   },
 
   // dist locations

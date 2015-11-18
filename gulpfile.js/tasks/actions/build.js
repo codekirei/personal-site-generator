@@ -6,8 +6,11 @@
 // npm
 const gulp = require('gulp')
 const P = require('bluebird')
+const g = require('gulp-load-plugins')()
 
 // local
+const loc = require('conf/locations')
+const watching = require('../../lib/watching')()
 const dupes = require('../pipeline/dupes')
 const images = require('../pipeline/images')
 const jekyll = require('../pipeline/jekyll')
@@ -17,14 +20,23 @@ const styles = require('../pipeline/styles')
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
-function build(cb) {
+function watch() {
+  g.watch(loc.src.dupes, dupes)
+  g.watch(loc.src.img, images)
+  g.watch(loc.src.markup, jekyll)
+  g.watch(loc.src.scripts, scripts)
+  g.watch(loc.src.stylesAll, styles)
+}
+
+function build() {
+  if (watching) watch()
   return P.all([
     dupes(),
     images(),
     jekyll(),
     scripts(),
     styles()
-  ]).then(() => cb())
+  ])
 }
 
 //----------------------------------------------------------
