@@ -6,8 +6,8 @@
   - [ ] dev
   - [X] dupes
   - [X] images
-  - [ ] jekyll
-  - [ ] scripts
+  - [X] jekyll
+  - [X] scripts
   - [ ] styles
 - [ ] gulp tasks
   - [ ] actions
