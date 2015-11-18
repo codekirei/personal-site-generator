@@ -1,5 +1,6 @@
 - [ ] rewrite styles
   - [ ] add raleway (league of movable type)
+  - [ ] remove dotted outline after click on <a>
   - [ ] implement BEM
   - [ ] style <code> blocks like github
   - [ ] integrate ionicons
