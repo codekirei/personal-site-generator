@@ -5,7 +5,6 @@
 - [-] gulp tasks
   - [-] actions
     - [ ] build
-      - [ ] confirm all watch tasks are working
     - [X] clean
     - [ ] rev
     - [ ] deploy
