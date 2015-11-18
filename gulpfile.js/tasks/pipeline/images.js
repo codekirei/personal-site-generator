@@ -10,6 +10,7 @@ const g = require('gulp-load-plugins')()
 
 // local
 const watching = require('../../lib/watching')
+const loc = require('conf/locations')
 
 //----------------------------------------------------------
 // logic
@@ -17,13 +18,11 @@ const watching = require('../../lib/watching')
 function images() {
   return new P((res, rej) => {
     const w = watching()
-    const src = 'source/images/**/*.{jpg,png}'
-    const dest = 'dist/img'
-    gulp.src(src)
+    gulp.src(loc.src.img)
       .pipe(g.if(w, g.plumber()))
-      .pipe(g.newer(dest))
+      .pipe(g.newer(loc.dist.img))
       .pipe(g.imagemin())
-      .pipe(gulp.dest(dest))
+      .pipe(gulp.dest(loc.dist.img))
     res()
   })
 }

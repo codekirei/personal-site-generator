@@ -12,15 +12,16 @@ const jeet = require('jeet')
 const rupture = require('rupture')
 
 // local
-const w = require('../../lib/watching')()
+const watching = require('../../lib/watching')()
+const loc = require('conf/loc')
 
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
 function styles() {
   return new P((res, rej) => {
-    gulp.src('source/styles/main.styl')
-      .pipe(g.if(w, g.plumber()))
+    gulp.src(loc.src.styles)
+      .pipe(g.if(watching, g.plumber()))
       .pipe(g.stylus({
         use: [koutoSwiss(), jeet(), rupture()]
       }))
@@ -29,7 +30,7 @@ function styles() {
         cascade: false
       }))
       .pipe(g.rename('style.css'))
-      .pipe(gulp.dest('dist/code'))
+      .pipe(gulp.dest(loc.dist.code))
     res()
   })
 }

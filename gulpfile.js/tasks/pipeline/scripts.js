@@ -10,17 +10,18 @@ const g = require('gulp-load-plugins')()
 
 // local
 const w = require('../../lib/watching')()
+const loc = require('conf/locations')
 
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
 function scripts() {
   return new P((res, rej) => {
-    gulp.src('source/scripts/**/*.js')
+    gulp.src(loc.src.scripts)
       .pipe(g.if(w, g.plumber()))
       .pipe(g.concat('main.js'))
       .pipe(g.uglify())
-      .pipe(gulp.dest('dist/code'))
+      .pipe(gulp.dest(loc.dist.code))
     res()
   })
 }

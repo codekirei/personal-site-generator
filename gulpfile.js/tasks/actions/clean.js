@@ -12,12 +12,15 @@ const gulp = require('gulp')
 const del = require('del')
 const P = require('bluebird')
 
+// local
+const loc = require('conf/locations')
+
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
 function clean() {
   return new P((res, rej) => {
-    return del(['dist/**/*', '!.git'])
+    return del([loc.dist.clean, '!.git'])
       .then(() => res())
   })
 }

@@ -12,15 +12,15 @@ const gulp = require('gulp')
 const P = require('bluebird')
 
 // local
-const loc = require('../../../config/locations')
+const loc = require('conf/locations')
 
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
 function dupes() {
   return new P((res, rej) => {
-    gulp.src(loc.src + loc.dupes)
-      .pipe(gulp.dest(loc.dist))
+    gulp.src(loc.src.dupes)
+      .pipe(gulp.dest(loc.dist.root))
     res()
   })
 }

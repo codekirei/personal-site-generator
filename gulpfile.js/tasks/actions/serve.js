@@ -7,13 +7,16 @@
 const gulp = require('gulp')
 const browserSync = require('browser-sync')
 
+// local
+const loc = require('conf/locations')
+
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
 function serve() {
   browserSync({
     server: {
-      baseDir: 'dist'
+      baseDir: loc.dist.root
     }
   })
 }
