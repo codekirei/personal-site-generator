@@ -13,10 +13,10 @@ function flags() {
   const passedFlags = minimist(process.argv)
   const setFlags = {
     watching: false,
-    dev: false
+    dist: false
   }
   if (passedFlags['w']) setFlags.watching = true
-  if (passedFlags['dev']) setFlags.dev = true
+  if (passedFlags['dist']) setFlags.dist = true
   return setFlags
 }
 

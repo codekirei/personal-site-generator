@@ -8,7 +8,7 @@
   - [X] images
   - [X] jekyll
   - [X] scripts
-  - [ ] styles
+  - [X] styles
 - [ ] gulp tasks
   - [ ] actions
     - [ ] serve
