@@ -31,3 +31,4 @@
 - [ ] discourse commenting system
 - [ ] advanced image handling
 - [ ] add Win8/IE favicon tiles
+- [ ] look into WJT's 'series' page
