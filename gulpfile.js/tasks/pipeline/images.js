@@ -16,7 +16,7 @@ const loc = require('conf/locations')
 //----------------------------------------------------------
 function images() {
   return gulp.src(loc.src.img)
-    .pipe(g.if(flags.watching, g.plumber()))
+    .pipe(g.if(!flags.dist, g.plumber()))
     .pipe(g.newer(loc.dist.img))
     .pipe(g.imagemin())
     .pipe(gulp.dest(loc.dist.img))

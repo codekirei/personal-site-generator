@@ -16,7 +16,7 @@ const loc = require('conf/locations')
 //----------------------------------------------------------
 function scripts() {
   return gulp.src(loc.src.scripts)
-    .pipe(g.if(flags.watching, g.plumber()))
+    .pipe(g.if(!flags.dist, g.plumber()))
     .pipe(g.concat('main.js'))
     .pipe(g.uglify())
     .pipe(gulp.dest(loc.dist.code))

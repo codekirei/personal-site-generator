@@ -19,7 +19,7 @@ const loc = require('conf/locations')
 //----------------------------------------------------------
 function styles() {
   return gulp.src(loc.src.styles)
-    .pipe(g.if(flags.watching, g.plumber()))
+    .pipe(g.if(!flags.dist, g.plumber()))
     .pipe(g.stylus({
       use: [koutoSwiss(), jeet(), rupture()]
     }))

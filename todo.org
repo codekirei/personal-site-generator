@@ -1,6 +1,6 @@
 - [ ] gulp tasks
   - [ ] actions
-    - [ ] watch
+    - [ ] watch --> -w flag on build
     - [ ] dev (default: build -> serve -> watch)
   - [ ] default (dev)
 - [ ] better logger for tasks in watch mode
@@ -30,6 +30,8 @@
   - [ ] humans.txt
   - [ ] crossdomain.xml
   - [ ] browserconfig.xml
+
+- [ ] write site content
 
 * Later
 - [ ] discourse commenting system

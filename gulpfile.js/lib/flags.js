@@ -12,10 +12,8 @@ const minimist = require('minimist')
 function flags() {
   const passedFlags = minimist(process.argv)
   const setFlags = {
-    watching: false,
     dist: false
   }
-  if (passedFlags['w']) setFlags.watching = true
   if (passedFlags['dist']) setFlags.dist = true
   return setFlags
 }
