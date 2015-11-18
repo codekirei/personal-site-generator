@@ -4,8 +4,8 @@
   - [ ] serve
   - [ ] watch
   - [ ] dev
-  - [ ] dupes
-  - [ ] images
+  - [X] dupes
+  - [X] images
   - [ ] jekyll
   - [ ] scripts
   - [ ] styles
