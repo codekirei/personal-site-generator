@@ -13,7 +13,7 @@ const rupture = require('rupture')
 
 // local
 const watching = require('../../lib/watching')()
-const loc = require('conf/location')
+const loc = require('conf/locations')
 
 //----------------------------------------------------------
 // logic
