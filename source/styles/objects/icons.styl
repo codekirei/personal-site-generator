@@ -9,18 +9,18 @@ size(width = 30, height = 30)
         padding rem(15px)
         margin rem(2px)
         border-radius 50%
-        border rem(2px) solid sec
+        border rem(2px) solid $accent
         line-height 0
         transition all .7s
         .icon
-            fill sec
+            fill $accent
             size(18,18)
-            +above(cut)
+            +above($bp)
                 size()
         &:hover
-            background sec
+            background $accent
             .icon
-                fill main
+                fill $primary
 
 .down
     position absolute
@@ -31,5 +31,5 @@ size(width = 30, height = 30)
     .icon
         align(both)
         size(100,100)
-        fill sec
+        fill $accent
         animation pulse 1.3s infinite

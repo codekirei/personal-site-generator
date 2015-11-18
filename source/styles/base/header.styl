@@ -2,9 +2,8 @@ html,
 body
   height 100%
 
-
 $bg
-  background main
+  background $primary
   height 100%
   .content
     width 95%
@@ -15,37 +14,37 @@ $bg
 .header-site
   @extends $bg
   h1,h2
-    color: sec
+    color: $accent
     text-align center
   .site-title
     font-size rem(60px)
     line-height 1
     margin-top -80px
     display block
-    +above(cut)
+    +above($bp)
       margin-bottom 0
       font-size rem(100px)
   .site-description
     font-size rem(20px)
     display block
     margin rem(30px) 0
-    +above(cut)
+    +above($bp)
       font-size rem(40px)
 
 // Header Post
 .header-post
   @extends $bg
   .content
-    +above(cut)
+    +above($bp)
       center(1000px)
   .subheader
     display table
     padding 20px
     a
-      border 2px solid sec
+      border 2px solid $accent
       border-radius 20px
       padding 0 10px
-      +above(cut)
+      +above($bp)
         padding 0 10px
 
   .date
@@ -55,16 +54,16 @@ $bg
     text-transform uppercase
     font-size rem(30px)
     margin 0 0 30px
-    +above(cut)
+    +above($bp)
       font-size rem(60px)
   .subtitle
     mainFont(300)
     font-size rem(20px)
   h1,.subtitle, .date
-    color sec
+    color $accent
     text-align center
   p
-    color sec
+    color $accent
     text-decoration none
     mainFont(300)
     font-size rem(18px)

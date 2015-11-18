@@ -1,22 +1,22 @@
 .author
-    background lightGray
+    background $gray
     display table
     width 100%
     padding rem(40px) 0
     margin rem(40px) 0
-    +above(cut)
+    +above($bp)
         padding rem(50px) 0
     .details
         margin auto
         max-width rem(800px)
         padding 0 rem(20px)
-        +below(cut)
+        +below($bp)
             text-align center
     img
         border-radius 50%
         display block
         margin auto
-        +above(cut)
+        +above($bp)
             float left
             margin-right 3.125rem
     .def
@@ -24,7 +24,7 @@
         font-size 1.125rem
         mainFont(300)
         margin rem(10px)
-        +above(cut)
+        +above($bp)
             margin 0
             padding-top rem(25px)
     .name
@@ -35,15 +35,15 @@
             color black
             font-size rem(30px)
             &:hover
-                color main
-            +above(cut)
+                color $primary
+            +above($bp)
                 font-size rem(45px)
     .desc
         mainFont(300)
         margin rem(10px)
         font-size rem(16px)
-        +above(cut)
+        +above($bp)
             font-size rem(20px)
     .email
         text-decoration none
-        color main
+        color $primary

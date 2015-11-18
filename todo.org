@@ -1,5 +1,7 @@
 - [ ] rewrite styles
   - [ ] add raleway (league of movable type)
+  - [ ] implement BEM
+  - [ ] style <code> blocks like github
   - [ ] integrate ionicons
   - [ ] add fonts gulp task
 

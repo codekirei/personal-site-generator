@@ -21,17 +21,17 @@ a.slideButton, .dosearch
     left 10px
 .dosearch
     right 10px
-    background darken(main,10%)
+    background darken($primary, 10%)
     border-radius rem(3px)
     padding rem(2px) rem(3px)
 .icon-menu
     cursor pointer
     padding rem(5px)
     border-radius rem(3px)
-    background darken(main,10%)
+    background darken($primary, 10%)
     width rem(40px)
     height rem(40px)
-    fill sec
+    fill $accent
 .icon-search
     width rem(35px)
     height rem(35px)
@@ -57,7 +57,7 @@ aside
         margin 0 0 rem(10px)
         mainFont(800)
         font-size rem(20px)
-        color sec
+        color $accent
     nav
         ul
             padding 0
@@ -71,12 +71,12 @@ aside
                 text-decoration none
                 mainFont(300)
                 color #b3b3b1
-                border-top 1px solid darken(lightGray,50%)
+                border-top 1px solid darken($gray,50%)
                 &:hover
                     color #191918
-                    background sec
+                    background $accent
         .feed
-            border-bottom 1px solid darken(lightGray,50%)
+            border-bottom 1px solid darken($gray,50%)
     &.slide
         left 0
 
