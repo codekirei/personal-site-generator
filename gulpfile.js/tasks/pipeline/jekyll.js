@@ -14,9 +14,11 @@ const gulp = require('gulp')
 // logic
 //----------------------------------------------------------
 function jekyll(cb) {
-  return spawn(
+  const process = spawn(
     'jekyll', ['build', '--config', 'config/jekyll.yml']
-  ).on('close', cb)
+  )
+  process.stderr.on('data', data => console.log(data.toString()))
+  process.on('close', cb)
 }
 
 //----------------------------------------------------------

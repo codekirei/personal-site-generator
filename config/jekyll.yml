@@ -14,8 +14,6 @@ user_title: Anon Developer
 email: anon@anon.com
 twitter_username: lorem_ipsum
 github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-disqus_username: lorem_ipsum
 
 # Build settings
 markdown: kramdown
@@ -34,7 +32,5 @@ compress_html:
 links:
   - title: Home
     url: /
-  - title: Tags
-    url: /tags
   - title: About Me
     url: /about

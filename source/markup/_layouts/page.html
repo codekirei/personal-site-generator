@@ -1,19 +1,8 @@
 ---
-layout: compress
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en-US">
-  {% include head.html %}
-  <body>
-    {% include svg-icons.html %}
-    {% if page.url == '/index.html' %}
-      {% include header-index.html %}
-    {% else %}
-      {% include header-post.html %}
-    {% endif %}
-    <section class="content">
-      {{ content }}
-    </section>
-    {% include footer.html %}
-  </body>
-</html>
+{% include page__banner.html %}
+
+<main id="scroll" role="main">
+  {{ content }}
+</main>

@@ -1,0 +1,10 @@
+<header class="banner-home" role="banner">
+  <h1 class="banner-home__title">{{site.username}}</h1>
+  <h2 class="banner-home__description">{{site.user_title}}</h2>
+  <div class="banner-home__icons">
+    <a class="banner-home__icon" aria-label="My Github" href="https://github.com/{{site.github_username}}"></a>
+    <a class="banner-home__icon" aria-label="Email me" href="mailto:{{site.email}}"></a>
+    <a class="banner-home__icon" aria-label="Subscribe via RSS" href="/feed.xml"></a>
+  </div>
+  {% include scroll-down.html %}
+</header>

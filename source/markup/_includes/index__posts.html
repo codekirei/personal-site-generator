@@ -1,0 +1,17 @@
+{% for post in site.posts %}
+<article class="post" role="article">
+  <time class="post__date" datetime="{{ post.date | date_to_xmlschema }}">
+    {{ post.date | date: "%m/%d/%Y" }}
+  </time>
+  <a class="post__title" href="{{post.url}}">{{post.title}}</a>
+  <p class="post__preview">
+    {{ post.content | strip_html | truncatewords:40 }}
+    <a class="post__link" href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+  </p>
+  <div class="post__tags">
+  {% for tag in post.tags %}
+    <a class="post__tag" href="{{ baseurl }}/tags/#{{tag}}">{{ tag }}</a>
+  {% endfor %}
+  </div>
+</article>
+{% endfor %}

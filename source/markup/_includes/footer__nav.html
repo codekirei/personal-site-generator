@@ -1,0 +1,12 @@
+<nav class="footer-nav" role="navigation">
+  <ul class="footer-nav__list">
+  {% for link in site.links %}
+    <li class="footer-nav__item">
+      <a class="footer-nav__link" href="{{link.url}}">
+        {{link.title}}
+      </a>
+      {% unless forloop.last %} | {% endunless %}
+    </li>
+  {% endfor %}
+  </ul>
+</nav>

@@ -30,10 +30,15 @@
 - [ ] scroll to top button on start of scrolling up
 - [ ] write site content
   - [ ] footer
+  - [ ] tags page -> archive (see WJT tags/search)
+  - [ ] project page
 - [ ] fix sitemap.xml
 
 * Later
+- [ ] schema.org props: Blog, BlogPosting, WebPage...
+  - [ ] test: https://developers.google.com/structured-data/testing-tool/
 - [ ] discourse commenting system
+- [ ] on hover/click date of post, shows actual date instead of time ago
 - [ ] confirm rss feed is working (including link rel alternate in <head>)
 - [ ] clean up social code in <head>
 - [ ] advanced image handling

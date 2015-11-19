@@ -1,15 +1,4 @@
 <footer class="site-footer">
-  <nav class="footer-nav">
-    <ul class="footer-nav__list">
-    {% for link in site.links %}
-      <li class="footer-nav__item">
-        <a class="footer-nav__link" href="{{link.url}}">
-          {{link.title}}
-        </a>
-        {% unless forloop.last %} | {% endunless %}
-      </li>
-    {% endfor %}
-    </ul>
-  </nav>
+  {% include footer__nav.html %}
 </footer>
-<script src="{{ "/code/main.js" | prepend: site.baseurl }}"></script>
+<script src="/code/main.js"></script>
