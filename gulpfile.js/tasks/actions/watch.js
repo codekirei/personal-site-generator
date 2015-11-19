@@ -51,6 +51,12 @@ function watch() {
     'styles',
     () => reload('style.css')
   ))
+
+  // fonts
+  g.watch(loc.src.fonts, () => runseq(
+    'fonts',
+    () => reload()
+  ))
 }
 
 //----------------------------------------------------------
