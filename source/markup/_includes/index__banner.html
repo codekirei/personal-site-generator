@@ -1,10 +1,18 @@
-<header class="banner-home" role="banner">
-  <h1 class="banner-home__title">{{site.username}}</h1>
-  <h2 class="banner-home__description">{{site.user_title}}</h2>
-  <div class="banner-home__icons">
-    <a class="banner-home__icon" aria-label="My Github" href="https://github.com/{{site.github_username}}"></a>
-    <a class="banner-home__icon" aria-label="Email me" href="mailto:{{site.email}}"></a>
-    <a class="banner-home__icon" aria-label="Subscribe via RSS" href="/feed.xml"></a>
+<header class="index-banner" role="banner">
+  <div class="index-banner__content">
+    <h1 class="index-banner__title">{{site.username}}</h1>
+    <h2 class="index-banner__description">{{site.user_title}}</h2>
+    <div class="index-banner__icons">
+      <a class="index-banner__icon-link" aria-label="My Github" href="https://github.com/{{site.github_username}}">
+        <svg class="index-banner__icon-svg"><use xlink:href="#icon-github"></use></svg>
+      </a>
+      <a class="index-banner__icon-link" aria-label="Email me" href="mailto:{{site.email}}">
+        <svg class="index-banner__icon-svg"><use xlink:href="#icon-email"></use></svg>
+      </a>
+      <a class="index-banner__icon-link" aria-label="Subscribe via RSS" href="/feed.xml">
+        <svg class="index-banner__icon-svg"><use xlink:href="#icon-rss"></use></svg>
+      </a>
+    </div>
   </div>
   {% include scroll-down.html %}
 </header>
