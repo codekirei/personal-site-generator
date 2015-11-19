@@ -8,6 +8,7 @@
 
 - [ ] rewrite scripts and scripts task
   - [ ] break into blocking, page specific, main w/ asset-builder
+  - [ ] write nav markup, styles, scripts
   - [ ] add typeset js and other frontend libs
   - [ ] add sourcemaps
 
