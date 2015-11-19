@@ -3,7 +3,6 @@
   - [ ] remove dotted outline after click on <a>
   - [ ] implement BEM
   - [ ] style <code> blocks like github
-  - [ ] integrate ionicons
   - [ ] add fonts gulp task
 
 - [ ] rewrite scripts and scripts task
@@ -12,6 +11,8 @@
   - [ ] write nav markup, styles, scripts
   - [ ] add typeset js and other frontend libs
   - [ ] add sourcemaps
+  - [ ] fade in above the fold stuff
+  - [ ] parallax background image effect
 
 - [ ] write gulp rev task
 - [ ] write gulp deploy task

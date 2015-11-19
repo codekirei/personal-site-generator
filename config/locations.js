@@ -10,6 +10,7 @@ module.exports = {
     , get styles() {return p.join(this.root, 'styles/main.styl')}
     , get stylesAll() {return p.join(this.root, 'styles/**/*.styl')}
     , get markup() {return p.join(this.root, 'markup/**/*')}
+    , get fonts() {return p.join(this.root, 'fonts/**/*')}
   },
 
   // dist locations
@@ -18,6 +19,7 @@ module.exports = {
     , get clean() {return p.join(this.root, '**/*')}
     , get img() {return p.join(this.root, 'img')}
     , get code() {return p.join(this.root, 'code')}
+    , get fonts() {return p.join(this.root, 'fonts')}
   },
 
   // config locations (so meta)
