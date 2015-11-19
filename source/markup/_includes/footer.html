@@ -1,4 +1,15 @@
-<footer>
-  <p>Made with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and <span class="love">❤</span> by <a href="http://willianjusten.com">Willian Justen</a></p>
+<footer class="site-footer">
+  <nav class="footer-nav">
+    <ul class="footer-nav__list">
+    {% for link in site.links %}
+      <li class="footer-nav__item">
+        <a class="footer-nav__link" href="{{link.url}}">
+          {{link.title}}
+        </a>
+        {% unless forloop.last %} | {% endunless %}
+      </li>
+    {% endfor %}
+    </ul>
+  </nav>
 </footer>
 <script src="{{ "/code/main.js" | prepend: site.baseurl }}"></script>

@@ -29,6 +29,7 @@
 
 - [ ] scroll to top button on start of scrolling up
 - [ ] write site content
+  - [ ] footer
 - [ ] fix sitemap.xml
 
 * Later
