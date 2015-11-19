@@ -32,9 +32,12 @@
 
 * Later
 - [ ] discourse commenting system
+- [ ] confirm rss feed is working (including link rel alternate in <head>)
+- [ ] clean up social code in <head>
 - [ ] advanced image handling
 - [ ] add Win8/IE favicon tiles
 - [ ] look into WJT's 'series' page
+- [ ] add <meta name="theme-color"> to <head>
 - [ ] stylus @import statements obfuscate source maps =/
 - [ ] add some other npm scripts (see generator repo)
 - [ ] switch out gulp for nomu
