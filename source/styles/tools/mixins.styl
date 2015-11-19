@@ -1,0 +1,14 @@
+// margin and padding shorthand
+mp($mg, $pd)
+  for $val, i in $mg
+    if i == 0
+      $mgPx = unit($val, px)
+    else
+      push($mgPx, unit($val, px))
+  for $val, i in $pd
+    if i == 0
+      $pdPx = unit($val, px)
+    else
+      push($pdPx, unit($val, px))
+  margin: $mgPx
+  padding: $pdPx
