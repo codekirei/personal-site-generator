@@ -7,6 +7,7 @@
   - [ ] add all hover styles
   - [ ] write nav markup, styles, scripts
   - [ ] add typeset js and other frontend libs
+  - [ ] fix jumpiness on mobile from url bar hiding by setting height manually with JS
   - [ ] add sourcemaps
   - [ ] fade in above the fold stuff
   - [ ] parallax background image effect
