@@ -28,8 +28,7 @@ print_hi('Tom')
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 
-<span class="key">CTRL</span>+<span class="key">s</span> is typically the keyboard shortcut to "save".
-Pretty handy, don't you think? Keyboard shortcuts are great.
+<span class="key">CTRL</span>+<span class="key">s</span> is typically the keyboard shortcut to "save". Pretty handy, don't you think? Keyboard shortcuts are great.
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
 [jekyll]:    http://jekyllrb.com

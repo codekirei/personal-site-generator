@@ -8,6 +8,14 @@ changes made:
     - jeet -> flexbox
   - rewrite all JS, move to browserify
 
+first post:
+  - <code>
+  - <pre>
+  - fleuron
+  - image
+  - iframe
+  - key
+
 jekyll dislikes:
   - build clobbering (prevents incremental rebuilds)
   - liquid (prefer jade)
