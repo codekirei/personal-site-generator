@@ -1,13 +1,15 @@
 .post
   padding $gap 0
-  display: flex
-  align-items: center
-  flex-direction: column
-  justify-content: center
+  fxbx(y)
 
-  p,ul,ol,{$h},iframe
-    padding 0 $gap
-    min-width: $pwrap
+  p,ul,ol,{$h},iframe,span
+    padding: 0 ($gap / 2)
+
+    +above($bp)
+      padding: 0 $gap
+
+    +above($pwrap)
+      min-width: $pwrap
 
   pre
     width: 100%

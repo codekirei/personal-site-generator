@@ -12,3 +12,24 @@ mp($mg, $pd)
       push($pdPx, unit($val, px))
   margin: $mgPx
   padding: $pdPx
+
+// flexbox shorthand
+fxbx(dir = x, align = center, justify = center)
+  // base
+  display: flex
+
+  // direction
+  if dir == x
+    flex-direction: row
+  else if dir == y
+    flex-direction: column
+  else
+    flex-direction: dir
+
+  // align
+  if align
+    align-items: align
+
+  //justify
+  if justify
+    justify-content: justify

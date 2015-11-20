@@ -1,6 +1,4 @@
 - [ ] rewrite styles
-  - [ ] remove dotted outline after click on <a>
-  - [ ] implement BEM
   - [ ] style <code> blocks like github
 
 - [ ] rewrite scripts and scripts task
