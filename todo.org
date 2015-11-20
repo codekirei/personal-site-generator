@@ -1,9 +1,7 @@
 - [ ] rewrite styles
-  - [ ] add raleway (league of movable type)
   - [ ] remove dotted outline after click on <a>
   - [ ] implement BEM
   - [ ] style <code> blocks like github
-  - [ ] add fonts gulp task
 
 - [ ] rewrite scripts and scripts task
   - [ ] break into blocking, page specific, main w/ asset-builder
@@ -37,6 +35,7 @@
 - [ ] fix sitemap.xml
 
 * Later
+- [ ] archive page searchable by date, tag, title
 - [ ] schema.org props: Blog, BlogPosting, WebPage...
   - [ ] test: https://developers.google.com/structured-data/testing-tool/
 - [ ] discourse commenting system

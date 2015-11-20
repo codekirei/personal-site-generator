@@ -15,7 +15,8 @@ const loc = require('conf/locations')
 //----------------------------------------------------------
 function serve() {
   bs.create('server').init({
-    server: loc.dist.root
+    server: loc.dist.root,
+    open: false
   })
 }
 
