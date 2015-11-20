@@ -2,9 +2,19 @@
   fxbx(y)
   background: $lightgray
   padding: $gap 0
+  text-align: center
 
   +above($bp)
     flex-direction: row
+    text-align: left
 
   &__img
     size: 200px
+
+  &__title
+    color: $darkgray
+    font-size: 26px
+
+  &__name
+    opensans(bold)
+    font-size: 40px
