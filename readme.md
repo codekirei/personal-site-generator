@@ -5,6 +5,7 @@ changes made:
   - restructure source
   - change jekyll structure and rewrite lots of liquid
   - restructure all styles with BEM + ITCSS
+    - jeet -> flexbox
   - rewrite all JS, move to browserify
 
 jekyll dislikes:
