@@ -3,16 +3,20 @@
   src: url('/fonts/OpenSans-Light-webfont.woff') format('woff')
 }
 
-verdana($weight = normal)
-  font-family: verdana
-  font-weight: $weight
+@font-face {
+  font-family: 'open_sansextrabold'
+  src: url('/fonts/OpenSans-ExtraBold-webfont.woff') format('woff')
+}
 
-opensans()
-  font-family: 'open_sanslight', sans-serif
-  font-weight: normal
+opensans($fam = light)
+  if $fam == light
+    font-family: 'open_sanslight', sans-serif
+  if $fam == bold
+    font-family: 'open_sansextrabold', sans-serif
+  font-weight: regular
 
 {$h}
-  verdana(bold)
+  opensans(bold)
 
 a,p,type,div,span
   opensans()
