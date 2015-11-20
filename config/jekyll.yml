@@ -17,6 +17,8 @@ github_username:  lorem_ipsum
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 highlighter: pygments
 permalink: /:title/
 
