@@ -2,7 +2,7 @@
 // text
 //------------------------------------------------------------------------------
 p, li, span
-  color $text
+  color: $c.text
 
 //------------------------------------------------------------------------------
 // header
@@ -18,26 +18,36 @@ header
   fill: white
 
 .index-banner
-  background: $primary
+  background: $c.prime
   &__title
   &__description
     color: white
 
 .post-banner
-  background: $primary
+  background: $c.prime
   &__title
     color: white
+
+//------------------------------------------------------------------------------
+// index
+//------------------------------------------------------------------------------
+.index-post
+  border-color: $c.lg
+  &__date-link
+    color: black
+  &__title
+    color: black
 
 //------------------------------------------------------------------------------
 // post
 //------------------------------------------------------------------------------
 .author
-  background: $lightgray
+  background: $c.lg
   &__title
-    color: $darkgray
+    color: $c.dg
 
 //------------------------------------------------------------------------------
 // footer
 //------------------------------------------------------------------------------
 footer
-  background $primary
+  background: $c.prime

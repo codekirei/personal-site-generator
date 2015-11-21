@@ -1,20 +1,16 @@
 .icons
-
-  &__icon
-    display: inline-block
+  fxbx()
 
   &__link
     display: block
     mp: 8px
-    border: 3px solid
+    b: 3px
+    +above($bp)
+      mp: 10px
+      b: 4px
 
   &__svg
     display: block
     size: 25px
-
-  +above($bp)
-    &__link
-      mp: 10px
-      border-width: 4px
-    &__svg
+    +above($bp)
       size: 50px

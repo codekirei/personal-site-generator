@@ -1,16 +1,15 @@
 //------------------------------------------------------------------------------
 // colors
 //------------------------------------------------------------------------------
-$primary   = #B11111
-$accent    = #fff
-$lightgray = #eee
-$gray      = #aaa
-$darkgray  = #555
-$text      = #222
-$code      = #3085F4
-
-// derivatives
-$primary--hover = darken($primary, 50%)
+$c = {
+  prime: #B11111, // primary
+  acc: #fff,      // accent
+  lg: #eee,       // light gray
+  gray: #aaa,     // gray
+  dg: #555,       // dark gray
+  text: #222
+}
+$c[primeHover] = darken($c.prime, 50%)
 
 //------------------------------------------------------------------------------
 // layout

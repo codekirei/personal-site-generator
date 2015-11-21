@@ -1,34 +1,42 @@
 {$h}
   opensans(bold)
+  font-weight: normal
   line-height: 1
 
-a,p,type,div,span
+{$text}
   opensans()
-  font-size: 16px
   line-height: 1.8
-  +above($bp)
-    font-size: 20px
 
 p
   max-width: $linewrap
 
+//------------------------------------------------------------------------------
+// font sizes
+//------------------------------------------------------------------------------
+{$text}
+  fs: 16px
+  +above($bp)
+    fs: 20px
+
+// index
 .index-banner
   &__title
-    font-size: 50px
+    fs: 50px
+    +above($bp)
+      fs: 100px
   &__description
-    font-size: 30px
-  +above($bp)
-    &__title
-      font-size: 100px
-    &__description
-      font-size: 60px
+    fs: 30px
+    +above($bp)
+      fs: 60px
+.index-post__title
+  fs: 30px
 
+// post
 .post-banner__title
-  font-size: 80px
-
+  fs: 80px
 .author
   &__title
-    font-size: 26px
+    fs: 26px
   &__name
     opensans(bold)
-    font-size: 40px
+    fs: 40px

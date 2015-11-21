@@ -22,6 +22,33 @@ mp(args...)
   padding: args
 
 //------------------------------------------------------------------------------
+// border
+//------------------------------------------------------------------------------
+b-l($w)
+  border-style: solid
+  border-left-width: $w
+b-r($w)
+  border-style: solid
+  border-right-width: $w
+b-top($w)
+  border-style: solid
+  border-top-width: $w
+b-bot($w)
+  border-style: solid
+  border-bottom-width: $w
+b-x($w)
+  border-style: solid
+  border-left-width: $w
+  border-right-width: $w
+b-y($w)
+  border-style: solid
+  border-top-width: $w
+  border-bottom-width: $w
+b($w)
+  border-style: solid
+  border-width: $w
+
+//------------------------------------------------------------------------------
 // flexbox
 //------------------------------------------------------------------------------
 fxbx(dir = x, align = center, justify = center)
@@ -40,3 +67,9 @@ fxbx(dir = x, align = center, justify = center)
   //justify
   if justify
     justify-content: justify
+
+//------------------------------------------------------------------------------
+// other abbreviations
+//------------------------------------------------------------------------------
+fs($s)
+  font-size: $s
