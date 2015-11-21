@@ -3,13 +3,10 @@
   fxbx(y)
 
   p,ul,ol,{$h},iframe
-    margin-bottom: ($gap / 2)
-    padding: 0 8%
-    width: 92%
-    max-width: $linewrap
-    +above($bp)
-      padding: 0 10%
-      width: 90%
-
-  pre
+    m-s: ($gap / 2)
     width: 100%
+    text-align: left
+    max-width: $linewrap
+    p-x: 5%
+    +above($linewrap + 200) // magic
+      p-x: 0
