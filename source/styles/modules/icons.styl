@@ -1,12 +1,17 @@
 .icons
   fxbx()
 
+  &__icon:not(:last-child)
+    margin-right: 10px
+    +above($bp)
+      margin-right: 16px
+
   &__link
     display: block
-    mp: 8px
+    p: 8px
     b: 3px
     +above($bp)
-      mp: 10px
+      p: 10px
       b: 4px
 
   &__svg

@@ -1,6 +1,6 @@
 .author
   fxbx(y)
-  padding: $gap 0
+  p-y: $gap
   text-align: center
   +above($bp)
     flex-direction: row
@@ -8,3 +8,13 @@
 
   &__img
     size: 200px
+    +below($bp)
+      margin-bottom: ($gap / 2 )
+
+  &__title
+  &__name
+    display: block
+    line-height: 1
+
+  &__name
+    padding-bottom: ($gap / 2)
