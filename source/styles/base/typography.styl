@@ -10,6 +10,11 @@ p
   max-width: $linewrap
   line-height: 1.8
 
+.index-post
+  &__read-button
+  &__tag
+    opensans(bold)
+
 //------------------------------------------------------------------------------
 // font sizes
 //------------------------------------------------------------------------------
@@ -28,8 +33,12 @@ p
     fs: 30px
     +above($bp)
       fs: 60px
-.index-post__title
-  fs: 30px
+.index-post
+  &__title
+    fs: 30px
+  &__read-button
+  &__tag
+    fs: 16px
 
 // post
 .post-banner__title
@@ -40,10 +49,3 @@ p
   &__name
     opensans(bold)
     fs: 40px
-
-//------------------------------------------------------------------------------
-// font weights
-//------------------------------------------------------------------------------
-.index-post__tag
-  opensans(bold)
-  fs: 16px

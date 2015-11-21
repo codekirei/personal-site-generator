@@ -1,34 +1,33 @@
+.index-posts
+  fxbx(y)
+  m-n: $gap
+
 .index-post
-  width: 100%
-  b-bot(3px)
-
-  &__content
+  p-x: 5%
+  &:not(:last-child)
+    b-s: 3px
+  m-s: $gap
+  +above($bp)
     p: $gap
-    fxbx(column-reverse, flex-start)
-    +above($bp)
-      flex-direction: row-reverse
-      align-items: center
 
-  &__date-link
-    text-decoration: none
-
-  &__text
   &__title
+  &__date
   &__preview
-    margin-bottom: ($gap / 2)
-
-  &__text
-    max-width: 700px // magic
-    +above($bp)
-      margin-bottom: 0
-      margin-right: $gap
+  &__read-button
+  &__tags
+    m-s: ($gap / 2)
 
   &__title
     display: inline-block
     text-decoration: none
 
+  &__read-button
+    display: inline-block
+    text-decoration: none
+    b: 2px 5px
+    p-x: 8px
+
   &__tag
     b: 3px 5px
     p: 3px 8px
-    &:not(:last-child)
-      m-e: 4px
+    m-w: 8px
