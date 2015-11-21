@@ -2,11 +2,9 @@
 <article class="index-post" role="article">
   <div class="index-post__content">
     <div class="index-post__date">
-      <a class="index-post__date-link" href="{{post.url}}">
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%m/%d/%Y" }}
-        </time>
-      </a>
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%m/%d/%Y" }}
+      </time>
     </div>
     <div class="index-post__text">
       <a class="index-post__title" href="{{post.url}}">
