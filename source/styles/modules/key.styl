@@ -1,10 +1,14 @@
+// dark->light [0]  [1]  [2]  [3]  [4]  [5]
+$keySpectrum = #222 #555 #999 #bbb #ccc #f2f2f2
 .key
   border: 1px solid
   letter-spacing: 1px
-  box-shadow: 0 1px 0 1px #ccc, 0 2px 0 2px #999, 0 2px 0 3px #555
+  box-shadow: 0 1px 0 1px $keySpectrum[4],
+              0 2px 0 2px $keySpectrum[2],
+              0 2px 0 3px $keySpectrum[1]
   border-radius: 3px
   margin: 3px 10px
   padding: 0 8px
-  color: #222
-  background: #f2f2f2
-  border-color: #bbb
+  color: $keySpectrum[0]
+  background: $keySpectrum[5]
+  border-color: $keySpectrum[3]
