@@ -3,8 +3,11 @@
   bottom: 0
   left: 50%
   transform: translateX(-50%)
-  size: 100px
+  size: 60px
   animation: pulse 1.5s infinite
+
+  +above($bp)
+    size: 100px
 
   &__svg
     fill: white

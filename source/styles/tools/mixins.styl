@@ -1,23 +1,43 @@
-// margin and padding shorthand
-mp($mg, $pd)
+//------------------------------------------------------------------------------
+// margin and padding
+//------------------------------------------------------------------------------
+mp($mg, $pd = false)
+  // margin
   for $val, i in $mg
     if i == 0
       $mgPx = unit($val, px)
     else
       push($mgPx, unit($val, px))
-  for $val, i in $pd
-    if i == 0
-      $pdPx = unit($val, px)
-    else
-      push($pdPx, unit($val, px))
   margin: $mgPx
-  padding: $pdPx
+  // padding
+  if $pd
+    for $val, i in $pd
+      if i == 0
+        $pdPx = unit($val, px)
+      else
+        push($pdPx, unit($val, px))
+    padding: $pdPx
+  else
+    padding: $mgPx
+m-x($mg)
+  margin-left: $mg
+  margin-right: $mg
+m-y($mg)
+  margin-top: $mg
+  margin-bottom: $mg
+p-x($mg)
+  padding-left: $mg
+  padding-right: $mg
+p-y($mg)
+  padding-top: $mg
+  padding-bottom: $mg
 
-// flexbox shorthand
+//------------------------------------------------------------------------------
+// flexbox
+//------------------------------------------------------------------------------
 fxbx(dir = x, align = center, justify = center)
   // base
   display: flex
-
   // direction
   if dir == x
     flex-direction: row
@@ -25,11 +45,9 @@ fxbx(dir = x, align = center, justify = center)
     flex-direction: column
   else
     flex-direction: dir
-
   // align
   if align
     align-items: align
-
   //justify
   if justify
     justify-content: justify

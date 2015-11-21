@@ -1,33 +1,20 @@
 .index-banner
   background: $primary
-
-  &__content
-    width: 100%
-    align(vertical)
+  fxbx(y)
 
   &__title
-    font-size: 100px
+  &__description
     color: white
+
+  &__title
+    font-size: 50px
 
   &__description
-    font-size: 60px
-    color: white
-    padding: 30px 0
-
-  &__icon-link
-    display: inline-block
-    border-radius: 50%
-    mp: 4, 10
-    border: 3px solid white
-
-  &__icon-svg
-    fill: white
-    size(30px, 30px)
-    size: inherit
+    padding: $gap 0
+    font-size: 30px
 
   +above($bp)
-    &__icon-link
-      mp: 5, 12
-      border-width: 4px
-    &__icon-svg
-      size(40px,40px)
+    &__title
+      font-size: 100px
+    &__description
+      font-size: 60px

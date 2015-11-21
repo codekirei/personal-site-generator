@@ -2,23 +2,7 @@
   <div class="index-banner__content">
     <h1 class="index-banner__title">Code Kirei</h1>
     <h2 class="index-banner__description">- Beautiful Code -</h2>
-    <div class="index-banner__icons">
-      <a class="index-banner__icon-link" aria-label="My Github" href="https://github.com/{{site.github_username}}">
-        <svg class="index-banner__icon-svg">
-          <use xlink:href="#icon-github"></use>
-        </svg>
-      </a>
-      <a class="index-banner__icon-link" aria-label="Email me" href="mailto:{{site.email}}">
-        <svg class="index-banner__icon-svg">
-          <use xlink:href="#icon-email"></use>
-        </svg>
-      </a>
-      <a class="index-banner__icon-link" aria-label="Subscribe via RSS" href="/feed.xml">
-        <svg class="index-banner__icon-svg">
-          <use xlink:href="#icon-rss"></use>
-        </svg>
-      </a>
-    </div>
+    {% include icons.html %}
   </div>
   {% include scroll-down.html %}
 </header>
