@@ -5,7 +5,7 @@
   - [ ] use triangles for post-banner (mu/styl/js)
   - [ ] break into blocking, page specific, main w/ asset-builder
   - [ ] ensure code highlighting w/ highlight js
-  - [ ] add time-ago to post-banner
+  - [ ] add time-ago + tags to post-banner
   - [ ] add all hover styles
   - [ ] write nav markup, styles, scripts
   - [ ] add typeset js and other frontend libs

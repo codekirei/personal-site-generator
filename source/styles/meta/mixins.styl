@@ -1,22 +1,43 @@
 //------------------------------------------------------------------------------
 // margin and padding
 //------------------------------------------------------------------------------
+// margin
 m(args...)
   margin: args
-m-x($mg)
-  margin-left: $mg
-  margin-right: $mg
-m-y($mg)
-  margin-top: $mg
-  margin-bottom: $mg
+m-n($val) // north
+  margin-top: $val
+m-e($val) // east
+  margin-right: $val
+m-s($val) // south
+  margin-bottom: $val
+m-w($val) // west
+  margin-left: $val
+m-x($val) // x plane
+  margin-left: $val
+  margin-right: $val
+m-y($val) // y plane
+  margin-top: $val
+  margin-bottom: $val
+
+// padding
 p(args...)
   padding: args
-p-x($mg)
-  padding-left: $mg
-  padding-right: $mg
-p-y($mg)
-  padding-top: $mg
-  padding-bottom: $mg
+p-n($val) // north
+  padding-top: $val
+p-e($val) // east
+  padding-right: $val
+p-s($val) // south
+  padding-bottom: $val
+p-w($val) // west
+  padding-left: $val
+p-x($val) // x plane
+  padding-left: $val
+  padding-right: $val
+p-y($val) // y plane
+  padding-top: $val
+  padding-bottom: $val
+
+// both
 mp(args...)
   margin: args
   padding: args
@@ -24,29 +45,36 @@ mp(args...)
 //------------------------------------------------------------------------------
 // border
 //------------------------------------------------------------------------------
-b-l($w)
+b(args...)
   border-style: solid
-  border-left-width: $w
-b-r($w)
+  border-width: args[0]
+  border-radius: args[1]
+b-n(args...) // north
   border-style: solid
-  border-right-width: $w
-b-top($w)
+  border-top-width: args[0]
+  border-radius: args[1]
+b-e(args...) // east
   border-style: solid
-  border-top-width: $w
-b-bot($w)
+  border-right-width: args[0]
+  border-radius: args[1]
+b-s(args...) // south
   border-style: solid
-  border-bottom-width: $w
-b-x($w)
+  border-bottom-width: args[0]
+  border-radius: args[1]
+b-w(args...) // west
   border-style: solid
-  border-left-width: $w
-  border-right-width: $w
-b-y($w)
+  border-left-width: args[0]
+  border-radius: args[1]
+b-x(args...) // x plane
   border-style: solid
-  border-top-width: $w
-  border-bottom-width: $w
-b($w)
+  border-left-width: args[0]
+  border-right-width: args[0]
+  border-radius: args[1]
+b-y(args...) // y plane
   border-style: solid
-  border-width: $w
+  border-top-width: args[0]
+  border-bottom-width: args[0]
+  border-radius: args[1]
 
 //------------------------------------------------------------------------------
 // flexbox
