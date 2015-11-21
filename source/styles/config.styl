@@ -1,18 +1,23 @@
+//------------------------------------------------------------------------------
 // colors
-$primary        = #B11111
+//------------------------------------------------------------------------------
+$primary   = #B11111
+$accent    = #fff
+$lightgray = #eee
+$gray      = #aaa
+$darkgray  = #555
+$text      = #222
+$code      = #3085F4
+
+// derivatives
 $primary--hover = darken($primary, 50%)
-$accent         = #fff
-$lightgray      = #eee
-$gray           = #aaa
-$darkgray       = #555
-$text           = #222
-$code           = #3085F4
 
+//------------------------------------------------------------------------------
 // layout
+//------------------------------------------------------------------------------
 $bp = 760px
-$pwrap = 900px
+$linewrap = 900px
 $gap = 40px
-$gap--sm = 30px
 
-// selectors
-$h = 'h1,h2,h3,h4,h5,h6'
+// derivatives
+$gap--sm = round((3/4 * $gap))

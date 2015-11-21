@@ -1,5 +1,6 @@
 - [ ] rewrite styles
   - [ ] style <code> blocks like github
+  - [ ] consolidate banner code?
 
 - [ ] rewrite scripts and scripts task
   - [ ] break into blocking, page specific, main w/ asset-builder

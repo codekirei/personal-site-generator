@@ -7,7 +7,7 @@ module.exports = {
     , get dupes() {return p.join(this.root, 'static/**/*')}
     , get img() {return p.join(this.root, 'images/**/*.{jpg,png}')}
     , get scripts() {return p.join(this.root, 'scripts/**/*.js')}
-    , get styles() {return p.join(this.root, 'styles/main.styl')}
+    , get styles() {return p.join(this.root, 'styles/index.styl')}
     , get stylesAll() {return p.join(this.root, 'styles/**/*.styl')}
     , get markup() {return p.join(this.root, 'markup/**/*')}
     , get fonts() {return p.join(this.root, 'fonts/**/*')}

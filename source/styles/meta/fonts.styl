@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'open_sanslight'
+  src: url('/fonts/OpenSans-Light-webfont.woff') format('woff')
+}
+@font-face {
+  font-family: 'open_sansextrabold'
+  src: url('/fonts/OpenSans-ExtraBold-webfont.woff') format('woff')
+}
+
+opensans($fam = light)
+  if $fam == light
+    font-family: 'open_sanslight', sans-serif
+  if $fam == bold
+    font-family: 'open_sansextrabold', sans-serif
+  font-weight: regular

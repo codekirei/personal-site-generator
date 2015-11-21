@@ -1,29 +1,33 @@
-@font-face {
-  font-family: 'open_sanslight'
-  src: url('/fonts/OpenSans-Light-webfont.woff') format('woff')
-}
-
-@font-face {
-  font-family: 'open_sansextrabold'
-  src: url('/fonts/OpenSans-ExtraBold-webfont.woff') format('woff')
-}
-
-opensans($fam = light)
-  if $fam == light
-    font-family: 'open_sanslight', sans-serif
-  if $fam == bold
-    font-family: 'open_sansextrabold', sans-serif
-  font-weight: regular
-
 {$h}
   opensans(bold)
 
 a,p,type,div,span
   opensans()
   font-size: 16px
-
+  line-height: 1.8
   +above($bp)
     font-size: 20px
 
 p
-  line-height: 1.8
+  max-width: $linewrap
+
+.index-banner
+  &__title
+    font-size: 50px
+  &__description
+    font-size: 30px
+  +above($bp)
+    &__title
+      font-size: 100px
+    &__description
+      font-size: 60px
+
+.post-banner__title
+  font-size: 80px
+
+.author
+  &__title
+    font-size: 26px
+  &__name
+    opensans(bold)
+    font-size: 40px

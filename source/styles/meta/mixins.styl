@@ -1,36 +1,25 @@
 //------------------------------------------------------------------------------
 // margin and padding
 //------------------------------------------------------------------------------
-mp($mg, $pd = false)
-  // margin
-  for $val, i in $mg
-    if i == 0
-      $mgPx = unit($val, px)
-    else
-      push($mgPx, unit($val, px))
-  margin: $mgPx
-  // padding
-  if $pd
-    for $val, i in $pd
-      if i == 0
-        $pdPx = unit($val, px)
-      else
-        push($pdPx, unit($val, px))
-    padding: $pdPx
-  else
-    padding: $mgPx
+m(args...)
+  margin: args
 m-x($mg)
   margin-left: $mg
   margin-right: $mg
 m-y($mg)
   margin-top: $mg
   margin-bottom: $mg
+p(args...)
+  padding: args
 p-x($mg)
   padding-left: $mg
   padding-right: $mg
 p-y($mg)
   padding-top: $mg
   padding-bottom: $mg
+mp(args...)
+  margin: args
+  padding: args
 
 //------------------------------------------------------------------------------
 // flexbox
