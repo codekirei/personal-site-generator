@@ -1,21 +1,35 @@
 {$h}
-  opensans(bold)
   font-weight: normal
-  line-height: 1
 
 {$text}
   opensans()
 
 p
   max-width: $linewrap
+
+//------------------------------------------------------------------------------
+// line-height
+//------------------------------------------------------------------------------
+{$h}
+  line-height: 1
+
+p
   line-height: 1.8
 
-.index-post
-  &__read-button
-  &__tag
-    opensans(bold)
+.index-post__tag
+  line-height: 2.5
 
+
+//------------------------------------------------------------------------------
+// opensans bold
+//------------------------------------------------------------------------------
+{$h}
+  opensans(bold)
+
+.index-post__read-button
+.index-post__tag
 .hello-button
+.footer-nav__link
   opensans(bold)
 
 //------------------------------------------------------------------------------
@@ -54,3 +68,7 @@ p
     fs: 40px
 .hello-button
   fs: 16px
+
+// footer
+.footer-nav__link
+  fs: 26px
