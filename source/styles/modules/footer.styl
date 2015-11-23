@@ -1,9 +1,24 @@
 .site-footer
   fxbx(y)
-
-.footer-nav
   p: ($gap / 2) 5%
 
+  &__divider
+    width: 60%
+    b-n: 3px
+    m-y: ($gap / 2)
+    +above($bp)
+      width: 40%
+
+  &__info-link
+    display: block
+
+  &__info-svg
+    display: block
+    size: 30px
+    +above($bp)
+      size: 40px
+
+.footer-nav
   &__list
     text-align: center
 

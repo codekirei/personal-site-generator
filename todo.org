@@ -1,5 +1,8 @@
-- [ ] rewrite styles
+- [ ] styles
   - [ ] consolidate banner code?
+
+- [ ] markup
+  - [ ] use blog previews instead of grabbing first 'n' chars
 
 - [ ] rewrite scripts and scripts task
   - [ ] use triangles for post-banner (mu/styl/js)
@@ -10,7 +13,7 @@
   - [ ] write nav markup, styles, scripts
   - [ ] add typeset js and other frontend libs
   - [ ] fix jumpiness on mobile from url bar hiding by setting height manually with JS
-  - [ ] add sourcemaps
+  - [ ] add sourcemaps?
   - [ ] fade in above the fold stuff
 
 - [ ] write gulp rev task
