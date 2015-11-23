@@ -1,5 +1,8 @@
 - [ ] styles
-  - [ ] consolidate banner code?
+  - [ ] consolidate
+    - [ ] banner code?
+    - [ ] button code?
+  - [ ] focus/active state for links (esp. mobile)
 
 - [ ] markup
   - [ ] use blog previews instead of grabbing first 'n' chars

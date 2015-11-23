@@ -2,14 +2,21 @@
   font-family: 'open_sanslight'
   src: url('/fonts/OpenSans-Light-webfont.woff') format('woff')
 }
+
 @font-face {
   font-family: 'open_sansextrabold'
   src: url('/fonts/OpenSans-ExtraBold-webfont.woff') format('woff')
 }
 
-opensans($fam = light)
-  if $fam == light
+@font-face {
+  font-family: 'source_code_prolight'
+  src: url('/fonts/sourcecodepro-light-webfont.woff') format('woff')
+}
+
+font($fam = regular)
+  if $fam == regular
     font-family: 'open_sanslight', sans-serif
   if $fam == bold
     font-family: 'open_sansextrabold', sans-serif
-  font-weight: regular
+  if $fam == fixed
+    font-family: 'source_code_prolight', monospaced
