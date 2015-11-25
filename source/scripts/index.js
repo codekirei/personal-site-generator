@@ -1,7 +1,8 @@
 import domready from 'domready'
-import logger from './logger'
+import highlighting from './syntax-highlighting'
 
 domready(() => {
   console.log('hello world')
-  logger()
 })
+
+highlighting()
