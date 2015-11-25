@@ -7,7 +7,13 @@
 - [ ] markup
   - [ ] use blog previews instead of grabbing first 'n' chars
 
-- [ ] rewrite scripts and scripts task
+- [ ] scripts task
+  - [ ] fix scripts locations in loc
+  - [ ] confirm webpack is working
+  - [ ] watch
+  - [ ] <script async/defer>
+
+- [ ] rewrite scripts
   - [ ] use triangles for post-banner (mu/styl/js)
   - [ ] break into blocking, page specific, main w/ asset-builder
   - [ ] ensure code highlighting w/ highlight js
@@ -42,6 +48,7 @@
 
 * Later
 - [ ] archive page searchable by date, tag, title
+  - [ ] look into WJT's 'series' page
 - [ ] estimated reading times
 - [ ] add share links? maybe? fb/twitter/reddit/ycomb/g+
 - [ ] schema.org props: Blog, BlogPosting, WebPage...
@@ -52,7 +59,6 @@
 - [ ] clean up social code in <head>
 - [ ] advanced image handling
 - [ ] add Win8/IE favicon tiles
-- [ ] look into WJT's 'series' page
 - [ ] add <meta name="theme-color"> to <head>
 - [ ] stylus @import statements obfuscate source maps =/
 - [ ] add some other npm scripts (see generator repo)

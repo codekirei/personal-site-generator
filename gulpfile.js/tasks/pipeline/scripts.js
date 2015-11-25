@@ -6,20 +6,23 @@
 // npm
 const gulp = require('gulp')
 const g = require('gulp-load-plugins')()
+const webpack = require('webpack')
+const merge = require('lodash.merge')
 
 // local
 const flags = require('../../lib/flags')()
-const loc = require('conf/locations')
+let conf = require('conf/webpack')
 
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
-function scripts() {
-  return gulp.src(loc.src.scripts)
-    .pipe(g.if(!flags.dist, g.plumber()))
-    .pipe(g.concat('main.js'))
-    .pipe(g.uglify())
-    .pipe(gulp.dest(loc.dist.code))
+function scripts(cb) {
+  if (flags.dist) conf = merge(conf, conf.dist)
+  webpack(conf, (err, res) => {
+    if (err) throw new g.util.PluginError('webpack', err)
+    g.util.log('[webpack]', res.toString())
+    cb()
+  })
 }
 
 //----------------------------------------------------------

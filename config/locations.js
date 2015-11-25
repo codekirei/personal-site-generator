@@ -1,12 +1,19 @@
+'use strict'
+
 const p = require('path')
 
-module.exports = {
+const locations = module.exports = {
   // source locations
   src: {
     root: 'source'
+    , scripts: {
+      get blocking() {
+        return p.join(locations.src.root, 'scripts/blocking/**/*.js')
+      }
+      , get main() {return p.join(locations.src.root, 'scripts/main/**/*.js')}
+    }
     , get dupes() {return p.join(this.root, 'static/**/*')}
     , get img() {return p.join(this.root, 'images/**/*.{jpg,png}')}
-    , get scripts() {return p.join(this.root, 'scripts/**/*.js')}
     , get styles() {return p.join(this.root, 'styles/index.styl')}
     , get stylesAll() {return p.join(this.root, 'styles/**/*.styl')}
     , get markup() {return p.join(this.root, 'markup/**/*')}
