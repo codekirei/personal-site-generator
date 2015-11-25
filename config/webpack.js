@@ -8,7 +8,7 @@ module.exports = {
     bundle: loc.src.scripts
   },
   output: {
-    path: loc.dist.scripts
+    path: loc.dist.scripts,
     filename: '[name].js'
   },
   module: {
