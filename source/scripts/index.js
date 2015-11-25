@@ -1,8 +1,12 @@
 import domready from 'domready'
-import highlighting from './syntax-highlighting'
 
 domready(() => {
   console.log('hello world')
 })
 
-highlighting()
+//----------------------------------------------------------
+// syntax highlighting
+//----------------------------------------------------------
+import hljs from './vendor/highlight.js'
+
+hljs.initHighlightingOnLoad()

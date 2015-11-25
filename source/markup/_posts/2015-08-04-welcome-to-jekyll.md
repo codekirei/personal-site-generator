@@ -19,11 +19,11 @@ You'll find this post in your `_posts` directory - edit this post and re-build (
 Jekyll also offers powerful support for code snippets:
 
 ```
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+const a = 'this is a constant'
+let b = 'this is a variable'
+function logger(text) {
+  console.log(text)
+}
 ```
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
