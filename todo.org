@@ -10,7 +10,7 @@
 - [-] scripts task
   - [X] fix scripts locations in loc
   - [X] confirm webpack is working
-  - [ ] watch
+  - [X] watch
   - [ ] <script async/defer>
 
 - [ ] rewrite scripts

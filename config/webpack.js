@@ -11,6 +11,7 @@ module.exports = {
     path: loc.dist.scripts,
     filename: '[name].js'
   },
+  debug: true,
   module: {
     loaders: [
       {
@@ -26,6 +27,7 @@ module.exports = {
   }
 }
 module.exports.dist = {
+  debug: false,
   plugins: [
     new webpack.optimize.DedupePlugin(),
     new webpack.NoErrorsPlugin(),

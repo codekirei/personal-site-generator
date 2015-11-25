@@ -8,9 +8,11 @@ const gulp = require('gulp')
 const bs = require('browser-sync')
 const g = require('gulp-load-plugins')()
 const runseq = require('run-sequence').use(gulp)
+const webpack = require('webpack')
 
 // local
 const loc = require('conf/locations')
+const webpackConf = require('conf/webpack')
 
 //----------------------------------------------------------
 // logic
@@ -41,10 +43,11 @@ function watch() {
   ))
 
   // scripts
-  g.watch(loc.src.scripts, () => runseq(
-    'scripts',
-    () => reload('*.js')
-  ))
+  webpack(webpackConf).watch(200, (err, res) => {
+    if (err) throw new g.util.PluginError('webpack', err)
+    g.util.log('[webpack]', res.toString())
+    reload('*.js')
+  })
 
   // styles
   g.watch(loc.src.stylesAll, () => runseq(
