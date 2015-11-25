@@ -13,9 +13,9 @@
   - [X] watch
   - [X] <script async/defer>
 
-- [ ] rewrite scripts
+- [-] rewrite scripts
+  - [X] ensure code highlighting w/ highlight js
   - [ ] use triangles for post-banner (mu/styl/js)
-  - [ ] ensure code highlighting w/ highlight js
   - [ ] add time-ago + tags to post-banner
   - [ ] add all hover styles
   - [ ] write nav markup, styles, scripts
