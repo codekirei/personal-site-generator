@@ -5,10 +5,10 @@ const loc = require('conf/locations')
 
 module.exports = {
   entry: {
-    bundle: loc.src.scripts.main
+    bundle: loc.src.scripts
   },
   output: {
-    path: loc.dist.code,
+    path: loc.dist.scripts
     filename: '[name].js'
   },
   module: {

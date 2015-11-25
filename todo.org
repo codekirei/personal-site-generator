@@ -7,8 +7,8 @@
 - [ ] markup
   - [ ] use blog previews instead of grabbing first 'n' chars
 
-- [ ] scripts task
-  - [ ] fix scripts locations in loc
+- [-] scripts task
+  - [X] fix scripts locations in loc
   - [ ] confirm webpack is working
   - [ ] watch
   - [ ] <script async/defer>

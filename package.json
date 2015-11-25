@@ -1,5 +1,6 @@
 {
   "name": "codekirei website",
+  "private": true,
   "version": "0.1.0",
   "description": "Static site.",
   "main": "gulpfile.js",
