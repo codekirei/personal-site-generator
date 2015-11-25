@@ -5,7 +5,7 @@ const proc = require('process')
 
 const locations = module.exports = {
   // absolute path to project root
-  get abs() {return p.dirname(proc.mainModule.filename)}
+  get abs() {return proc.cwd()}
 
   // source locations
   , src: {
