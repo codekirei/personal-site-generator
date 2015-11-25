@@ -7,22 +7,20 @@
 - [ ] markup
   - [ ] use blog previews instead of grabbing first 'n' chars
 
-- [-] scripts task
+- [X] scripts task
   - [X] fix scripts locations in loc
   - [X] confirm webpack is working
   - [X] watch
-  - [ ] <script async/defer>
+  - [X] <script async/defer>
 
 - [ ] rewrite scripts
   - [ ] use triangles for post-banner (mu/styl/js)
-  - [ ] break into blocking, page specific, main w/ asset-builder
   - [ ] ensure code highlighting w/ highlight js
   - [ ] add time-ago + tags to post-banner
   - [ ] add all hover styles
   - [ ] write nav markup, styles, scripts
   - [ ] add typeset js and other frontend libs
   - [ ] fix jumpiness on mobile from url bar hiding by setting height manually with JS
-  - [ ] add sourcemaps?
   - [ ] fade in above the fold stuff
 
 - [ ] write gulp rev task

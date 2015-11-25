@@ -2,11 +2,32 @@
   p-y $gap
   fxbx(y)
 
-  p,ul,ol,{$h},iframe
-    m-s: ($gap / 2)
+  {$h}
+    m-s: $gap2
     width: 100%
-    text-align: left
     max-width: $linewrap
+    text-align: left
     p-x: 5%
     +above($linewrap + 200) // magic
       p-x: 0
+
+  p,ul,ol,iframe
+    m-s: $gap2
+    width: 100%
+    max-width: $linewrap
+    text-align: left
+    p-x: 5%
+    +above($linewrap + 200) // magic
+      p-x: 0
+
+  pre
+    m-s: $gap2
+    width: 100%
+    text-align: left
+    p: $gap2 5%
+    fxbx(y)
+    +above($linewrap + 200) // magic
+      p-x: 0
+    code
+      width: 100%
+      max-width: $linewrap
