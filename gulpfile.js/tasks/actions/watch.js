@@ -43,11 +43,10 @@ function watch() {
   ))
 
   // scripts
-  webpack(webpackConf).watch(200, (err, res) => {
-    if (err) throw new g.util.PluginError('webpack', err)
-    g.util.log('[webpack]', res.toString())
-    reload('*.js')
-  })
+  g.watch(loc.src.scriptsAll, () => runseq(
+    'scripts',
+    () => reload('*.js')
+  ))
 
   // styles
   g.watch(loc.src.stylesAll, () => runseq(

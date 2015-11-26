@@ -15,12 +15,13 @@
 
 - [-] rewrite scripts
   - [X] ensure code highlighting w/ highlight js
-  - [ ] use triangles for post-banner (mu/styl/js)
-  - [ ] add time-ago + tags to post-banner
-  - [ ] add all hover styles
-  - [ ] write nav markup, styles, scripts
-  - [ ] add typeset js and other frontend libs
   - [ ] fix jumpiness on mobile from url bar hiding by setting height manually with JS
+  - [ ] write nav markup, styles, scripts
+  - [ ] banners
+    - [ ] use triangles for post-banner (mu/styl/js)
+    - [ ] add time-ago + tags to post-banner
+  - [ ] add all hover styles
+  - [ ] add typeset js and other frontend libs
   - [ ] fade in above the fold stuff
 
 - [ ] write gulp rev task
