@@ -13,6 +13,7 @@ module.exports = {
     filename: '[name].js'
   },
   debug: true,
+  cache: {},
   module: {
     loaders: [
       {
@@ -29,6 +30,7 @@ module.exports = {
 }
 module.exports.dist = {
   debug: false,
+  cache: false,
   plugins: [
     new webpack.optimize.DedupePlugin(),
     new webpack.NoErrorsPlugin(),
