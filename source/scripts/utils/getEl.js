@@ -1,9 +1,9 @@
 function getTag(tagName) {
-  return [].slice.call(document.getElementsByTagName(tagName))
+  return Array.prototype.slice.call(document.getElementsByTagName(tagName))
 }
 
 function getClass(className) {
-  return [].slice.call(document.getElementsByClassName(className))
+  return Array.prototype.slice.call(document.getElementsByClassName(className))
 }
 
 export {getTag, getClass}

@@ -15,15 +15,24 @@
 
 - [-] rewrite scripts
   - [X] ensure code highlighting w/ highlight js
-  - [X] fix jumpiness on mobile from url bar hiding by setting height manually with JS
+  - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
+    - [X] index banner
+    - [ ] for non-index banners
   - [ ] move scroll down target up; write scrolldown
+    - [ ] smooth-scroll
   - [ ] write nav markup, styles, scripts
   - [ ] banners
     - [ ] use triangles for post-banner (mu/styl/js)
     - [ ] add time-ago + tags to post-banner
+        - [ ] s-ago
   - [ ] add all hover styles
-  - [ ] add typeset js and other frontend libs
+  - [ ] add other frontend libs
+    - [ ] typeset js
+    - [ ] fastclick
+    - [ ] tether?
   - [ ] fade in above the fold stuff
+    - [ ] scrollmonitor
+    - [ ] scrollreveal
 
 - [ ] write gulp rev task
 - [ ] write gulp deploy task
