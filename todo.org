@@ -15,7 +15,8 @@
 
 - [-] rewrite scripts
   - [X] ensure code highlighting w/ highlight js
-  - [ ] fix jumpiness on mobile from url bar hiding by setting height manually with JS
+  - [X] fix jumpiness on mobile from url bar hiding by setting height manually with JS
+  - [ ] move scroll down target up; write scrolldown
   - [ ] write nav markup, styles, scripts
   - [ ] banners
     - [ ] use triangles for post-banner (mu/styl/js)
