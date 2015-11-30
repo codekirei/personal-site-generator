@@ -36,6 +36,7 @@
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.4",
     "rupture": "^0.6.1",
+    "smooth-scroll": "github:cferdinandi/smooth-scroll",
     "webpack": "^1.12.9"
   }
 }

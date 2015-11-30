@@ -18,7 +18,7 @@
   - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
     - [X] index banner
     - [ ] for non-index banners
-  - [ ] move scroll down target up; write scrolldown
+  - [ ] write scrolldown
     - [ ] smooth-scroll
   - [ ] write nav markup, styles, scripts
   - [ ] banners
