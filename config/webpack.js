@@ -4,9 +4,8 @@ const webpack = require('webpack')
 const loc = require('conf/locations')
 
 module.exports = {
-  context: loc.src.scripts,
   entry: {
-    bundle: './index.js'
+    bundle: loc.src.scripts
   },
   output: {
     path: loc.dist.scripts,

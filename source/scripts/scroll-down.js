@@ -1,6 +1,6 @@
 import smoothScroll from 'smooth-scroll'
 
-export default smoothScroll.init(
+smoothScroll.init(
   { selector: '[data-scroll]'
   // , selectorHeader:
   , speed: 500

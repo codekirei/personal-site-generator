@@ -1,4 +1,5 @@
 import el from 'get-element'
+import domready from 'domready'
 
 function fixHeight() {
   // hack to target mobile
@@ -20,4 +21,5 @@ function fixHeight() {
   }
 }
 
-export default fixHeight
+// domready(() => fixHeight())
+domready(fixHeight)

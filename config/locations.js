@@ -1,16 +1,19 @@
 'use strict'
 
 const p = require('path')
+const globby = require('globby')
 const proc = require('process')
 
 const locations = module.exports = {
-  // absolute path to project root
+  // absolute path to project root (assuming gulp calls webpack)
   get abs() {return proc.cwd()}
 
   // source locations
   , src: {
     root: 'source'
-    , get scripts() {return p.join(locations.abs, this.root, 'scripts')}
+    , get scripts() {
+        return globby.sync(p.join(locations.abs, this.root, 'scripts', '*.js'))
+      }
     , get scriptsAll() {return p.join(this.root, 'scripts/**/*.js')}
     , get dupes() {return p.join(this.root, 'static/**/*')}
     , get img() {return p.join(this.root, 'images/**/*.{jpg,png}')}
