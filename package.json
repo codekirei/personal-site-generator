@@ -15,6 +15,7 @@
     "browser-sync": "^2.10.0",
     "del": "^2.1.0",
     "domready": "^1.0.8",
+    "get-element": "^0.1.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-if": "^2.0.0",
