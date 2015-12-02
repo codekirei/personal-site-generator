@@ -13,18 +13,15 @@ function navEvents() {
     if (window.innerHeight > navList.clientHeight) {
       e.preventDefault()
       closeButton.style.display = 'block'
-      body.style.height = '100%'
-      body.style.overflow = 'hidden'
+      body.setAttribute('style', 'height: 100%; overflow: hidden;')
     } else {
       nav.removeAttribute('style')
     }
   }
 
   function closeNav(e) {
+    [nav, closeButton, body].map(_ => _.removeAttribute('style'))
     e.preventDefault()
-    nav.removeAttribute('style')
-    closeButton.removeAttribute('style')
-    body.removeAttribute('style')
   }
 
   openButton.addEventListener('click', openNav)
