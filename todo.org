@@ -8,22 +8,25 @@
 - [ ] markup
   - [ ] use blog previews instead of grabbing first 'n' chars
 
-- [-] scripts task
+- [X] scripts task
   - [X] fix scripts locations in loc
   - [X] confirm webpack is working
   - [X] watch
   - [X] <script async/defer>
-  - [ ] integrate auto-import
+  - [X] integrate auto-import
 
 - [-] rewrite scripts
   - [X] ensure code highlighting w/ highlight js
   - [X] write scrolldown
-  - [ ] banners
+  - [-] banners
     - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
       - [X] index banner
       - [ ] for non-index banners
+      - [ ] for nav
     - [ ] add s-ago + tags to post-banner
-  - [ ] write nav markup, styles, scripts
+  - [-] nav
+    - [X] write nav markup, styles, scripts
+    - [ ] add nav transition
   - [ ] add all hover styles
   - [ ] add other frontend libs
     - [ ] typeset js

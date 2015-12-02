@@ -1,12 +1,49 @@
+//------------------------------------------------------------------------------
+// buttons
+//------------------------------------------------------------------------------
 .menu-open
   position: absolute
-  left: $gap4
-  top: $gap4
-  size: 30px
-  +above($bp)
-    left: $gap2
-    top: $gap2
-    size: 45px
 
+.menu-close
+  position: fixed
+
+.menu-open
+.menu-close
+  size: 35px
+  left: round(@width / 2)
+  top: round(@height / 2)
+  +above($bp)
+    size: 50px
+    left: round(@width / 2)
+    top: round(@height / 2)
   &__svg
     size: inherit
+
+//------------------------------------------------------------------------------
+// links
+//------------------------------------------------------------------------------
+.top-nav
+  min-height: 100%
+  width: 100%
+  position: fixed
+  fxbx(y)
+  text-align: center
+
+  &__list
+    p-y: $gap
+
+  &__item
+    &:not(:last-child)
+      m-s: $gap
+      +above($bp)
+        m-s: $gap
+
+  &__link
+    text-decoration: none
+
+//------------------------------------------------------------------------------
+// hide elements (reveal with JS)
+//------------------------------------------------------------------------------
+.menu-close
+.top-nav
+  display: none

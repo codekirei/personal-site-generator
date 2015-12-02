@@ -1,6 +1,9 @@
 .index-banner
+  height: 100vh
   fxbx(y)
   text-align: center
 
   &__description
-    p-y: $gap
+    p-y: $gap2
+    +above($bp)
+      p-y: $gap
