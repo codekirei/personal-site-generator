@@ -3,27 +3,20 @@
     - [ ] banner code?
     - [ ] button code?
   - [ ] focus/active state for links (esp. mobile)
-  - [ ] test highlight colors
+  - [ ] bugged <pre><code> width =/
+  - [ ] text highlight colors
 
 - [ ] markup
   - [ ] use blog previews instead of grabbing first 'n' chars
 
-- [X] scripts task
-  - [X] fix scripts locations in loc
-  - [X] confirm webpack is working
-  - [X] watch
-  - [X] <script async/defer>
-  - [X] integrate auto-import
-
 - [-] rewrite scripts
-  - [X] ensure code highlighting w/ highlight js
-  - [X] write scrolldown
   - [-] banners
     - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
       - [X] index banner
       - [ ] for non-index banners
       - [ ] for nav
     - [ ] add s-ago + tags to post-banner
+    - [ ] add logo to index banner
   - [-] nav
     - [X] write nav markup, styles, scripts
     - [ ] add nav transition
@@ -34,13 +27,12 @@
   - [ ] fade in above the fold stuff
     - [ ] scrollmonitor
     - [ ] scrollreveal
-    - [ ] tether?
+  - [ ] scroll to top button on start of scrolling up
 
 - [ ] write gulp rev task
 - [ ] write gulp deploy task
 - [ ] custom 404 page
 - [ ] write readme for site (in static)
-- [ ] add CNAME
 - [ ] rewrite initpost.sh as a npm run script
 
 - [ ] add/write missing static files
@@ -52,14 +44,15 @@
   - [ ] browserconfig.xml
 
 - [ ] write site content
-  - [ ] footer
-  - [ ] tags page -> archive (see WJT tags/search)
-  - [ ] project page
-- [ ] fix sitemap.xml
+  - [ ] first two blog posts
+  - [ ] projects page
+  - [ ] about page
+  - [ ] colophon
+- [ ] fix sitemap.xml?
 
 * Later
 - [ ] generate post + page banner background images with trianglify (png)
-- [ ] archive page searchable by date, tag, title
+- [ ] archive (tags) page searchable by date, tag, title
   - [ ] look into WJT's 'series' page
 - [ ] estimated reading times
 - [ ] add share links? maybe? fb/twitter/reddit/ycomb/g+
@@ -76,4 +69,3 @@
 - [ ] add some other npm scripts (see generator repo)
 - [ ] switch out gulp for nomu
 - [ ] switch out jekyll for metalsmith
-- [ ] scroll to top button on start of scrolling up
