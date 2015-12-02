@@ -3,36 +3,35 @@
     - [ ] banner code?
     - [ ] button code?
   - [ ] focus/active state for links (esp. mobile)
+  - [ ] test highlight colors
 
 - [ ] markup
   - [ ] use blog previews instead of grabbing first 'n' chars
 
-- [X] scripts task
+- [-] scripts task
   - [X] fix scripts locations in loc
   - [X] confirm webpack is working
   - [X] watch
   - [X] <script async/defer>
+  - [ ] integrate auto-import
 
 - [-] rewrite scripts
   - [X] ensure code highlighting w/ highlight js
-  - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
-    - [X] index banner
-    - [ ] for non-index banners
-  - [ ] write scrolldown
-    - [ ] smooth-scroll
-  - [ ] write nav markup, styles, scripts
+  - [X] write scrolldown
   - [ ] banners
-    - [ ] use triangles for post-banner (mu/styl/js)
-    - [ ] add time-ago + tags to post-banner
-        - [ ] s-ago
+    - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
+      - [X] index banner
+      - [ ] for non-index banners
+    - [ ] add s-ago + tags to post-banner
+  - [ ] write nav markup, styles, scripts
   - [ ] add all hover styles
   - [ ] add other frontend libs
     - [ ] typeset js
     - [ ] fastclick
-    - [ ] tether?
   - [ ] fade in above the fold stuff
     - [ ] scrollmonitor
     - [ ] scrollreveal
+    - [ ] tether?
 
 - [ ] write gulp rev task
 - [ ] write gulp deploy task
@@ -56,6 +55,7 @@
 - [ ] fix sitemap.xml
 
 * Later
+- [ ] generate post + page banner background images with trianglify (png)
 - [ ] archive page searchable by date, tag, title
   - [ ] look into WJT's 'series' page
 - [ ] estimated reading times

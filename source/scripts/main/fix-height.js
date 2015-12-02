@@ -22,4 +22,4 @@ function fixHeight() {
 }
 
 // domready(() => fixHeight())
-domready(fixHeight)
+export default domready(fixHeight)

@@ -11,9 +11,7 @@ const locations = module.exports = {
   // source locations
   , src: {
     root: 'source'
-    , get scripts() {
-        return globby.sync(p.join(locations.abs, this.root, 'scripts', '*.js'))
-      }
+    , get scripts() {return p.join(locations.abs, this.root, 'scripts')}
     , get scriptsAll() {return p.join(this.root, 'scripts/**/*.js')}
     , get dupes() {return p.join(this.root, 'static/**/*')}
     , get img() {return p.join(this.root, 'images/**/*.{jpg,png}')}

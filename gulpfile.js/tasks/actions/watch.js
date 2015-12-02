@@ -8,11 +8,9 @@ const gulp = require('gulp')
 const bs = require('browser-sync')
 const g = require('gulp-load-plugins')()
 const runseq = require('run-sequence').use(gulp)
-const webpack = require('webpack')
 
 // local
 const loc = require('conf/locations')
-const webpackConf = require('conf/webpack')
 
 //----------------------------------------------------------
 // logic
