@@ -41,7 +41,8 @@ function watch() {
   ))
 
   // scripts
-  g.watch(loc.src.scriptsAll, () => runseq(
+  gulp.watch(loc.src.scriptModules, ['scriptImports'])
+  g.watch(loc.src.scriptEntries, () => runseq(
     'scripts',
     () => reload('*.js')
   ))

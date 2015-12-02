@@ -12,7 +12,8 @@ const locations = module.exports = {
   , src: {
     root: 'source'
     , get scripts() {return p.join(locations.abs, this.root, 'scripts')}
-    , get scriptsAll() {return p.join(this.root, 'scripts/**/*.js')}
+    , get scriptModules() {return p.join(this.root, 'scripts/*/**/*.js')}
+    , get scriptEntries() {return p.join(this.root, 'scripts/*.js')}
     , get dupes() {return p.join(this.root, 'static/**/*')}
     , get img() {return p.join(this.root, 'images/**/*.{jpg,png}')}
     , get styles() {return p.join(this.root, 'styles/index.styl')}

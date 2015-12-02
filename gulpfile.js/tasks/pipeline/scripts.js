@@ -8,12 +8,9 @@ const gulp = require('gulp')
 const g = require('gulp-load-plugins')()
 const webpack = require('webpack')
 const merge = require('lodash.merge')
-const fs = require('fs')
-const globby = require('globby')
 
 // local
 const flags = require('../../lib/flags')()
-const loc = require('conf/locations')
 let conf = require('conf/webpack')
 
 //----------------------------------------------------------

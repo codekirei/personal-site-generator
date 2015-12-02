@@ -13,7 +13,8 @@ const runseq = require('run-sequence').use(gulp)
 gulp.task('build', cb => {
   runseq(
     'jekyll',
-    ['images', 'dupes', 'scripts', 'styles', 'fonts'],
+    ['images', 'dupes', 'scriptImports', 'styles', 'fonts'],
+    'scripts',
     () => cb()
   )
 })
