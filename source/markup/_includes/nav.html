@@ -1,18 +1,13 @@
-<a role="button" class="menu-open" href="#footer-nav" aria-label="Open navigation menu">
-  <svg class="menu-open__svg" viewBox="0 0 877.7142857142858 1024">
+<a role="button" class="menu-toggle" href="#footer-nav" aria-label="Open navigation menu">
+  <svg class="menu-toggle__svg" viewBox="0 0 877.7142857142858 1024">
     <path d="M877.714 768v73.143q0 14.857-10.857 25.714t-25.714 10.857h-804.571q-14.857 0-25.714-10.857t-10.857-25.714v-73.143q0-14.857 10.857-25.714t25.714-10.857h804.571q14.857 0 25.714 10.857t10.857 25.714zM877.714 475.429v73.143q0 14.857-10.857 25.714t-25.714 10.857h-804.571q-14.857 0-25.714-10.857t-10.857-25.714v-73.143q0-14.857 10.857-25.714t25.714-10.857h804.571q14.857 0 25.714 10.857t10.857 25.714zM877.714 182.857v73.143q0 14.857-10.857 25.714t-25.714 10.857h-804.571q-14.857 0-25.714-10.857t-10.857-25.714v-73.143q0-14.857 10.857-25.714t25.714-10.857h804.571q14.857 0 25.714 10.857t10.857 25.714z"></path>
   </svg>
 </a>
-<a role="button" class="menu-close" href="#" aria-label="Close navigation menu">
-  <svg class="menu-close__svg" viewBox="0 0 805 1024">
-    <path class="path1" d="M741.714 755.429q0 22.857-16 38.857l-77.714 77.714q-16 16-38.857 16t-38.857-16l-168-168-168 168q-16 16-38.857 16t-38.857-16l-77.714-77.714q-16-16-16-38.857t16-38.857l168-168-168-168q-16-16-16-38.857t16-38.857l77.714-77.714q16-16 38.857-16t38.857 16l168 168 168-168q16-16 38.857-16t38.857 16l77.714 77.714q16 16 16 38.857t-16 38.857l-168 168 168 168q16 16 16 38.857z"/>
-  </svg>
-</a>
-<nav class="top-nav" role="navigation">
-  <ul class="top-nav__list">
+<nav class="menu" role="navigation">
+  <ul class="menu__list">
   {% for link in site.links %}
-    <li class="top-nav__item">
-      <a class="top-nav__link" href="{{link.url}}">
+    <li class="menu__item">
+      <a class="menu__link" href="{{link.url}}">
         {{link.title}}
       </a>
     </li>

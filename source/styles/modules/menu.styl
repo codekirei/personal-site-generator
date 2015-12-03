@@ -1,0 +1,36 @@
+.menu-toggle
+  position: absolute
+  size: 35px
+  left: round(@width / 2)
+  top: round(@height / 2)
+  +above($bp)
+    size: 50px
+    left: round(@width / 2)
+    top: round(@height / 2)
+  &__svg
+    size: inherit
+
+.menu
+  min-height: 100%
+  width: 100%
+  position: fixed
+  fxbx(y)
+  text-align: center
+
+  &__list
+    p-y: $gap
+
+  &__item:not(:last-child)
+    m-s: $gap
+    +above($bp)
+      m-s: $gap
+
+  &__link
+    text-decoration: none
+
+// state (applied by JS)
+//------------------------------------------------------------------------------
+.menu
+  display: none
+  &--open
+    display: flex

@@ -1,3 +1,5 @@
+- [ ] fix bug with script bundles being overwritten during gulp-watch if editing markup
+
 - [ ] styles
   - [ ] consolidate
     - [ ] banner code?
