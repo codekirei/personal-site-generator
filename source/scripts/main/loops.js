@@ -46,37 +46,3 @@ export default class Loops {
     }, this.delay)
   }
 }
-
-// const running = {}
-
-// const ms = 50
-
-// function fadeIn(el, opacity, interval) {
-//   const name = el.getAttribute('class').split(/\s/)[0]
-//   running[name] = setTimeout(() => {
-//     const easing = interval + mod
-//     opacity = Math.min(opacity + interval, 1)
-//     el.style.opacity = opacity
-//     if (opacity < 1) fadeIn(el, opacity, easing)
-//   }, ms)
-// }
-
-// function fadeOut(el, opacity, interval) {
-//   const name = el.getAttribute('class').split(/\s/)[0]
-//   running[name] = setTimeout(() => {
-//     const easing = interval + mod
-//     opacity = Math.max(opacity - interval, 0).toFixed(2)
-//     el.style.opacity = opacity
-//     opacity > 0
-//       ? fadeOut(el, opacity, easing)
-//       : delete running[name]
-//   }, ms)
-// }
-
-// function done(cb) {
-//   return setTimeout(() => {
-//     return Object.keys(running).length
-//       ? done(cb)
-//       : cb()
-//   }, ms)
-// }
