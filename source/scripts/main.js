@@ -1,5 +1,6 @@
 import './main/animate'
 import './main/element-class'
+import './main/element-style'
 import './main/fix-height'
 import './main/highlight'
 import './main/menu'

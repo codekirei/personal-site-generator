@@ -8,6 +8,7 @@ import ease from 'bezier-easing'
 
 // local
 import elcl from './element-class'
+import elst from './element-style'
 import {animate} from './animate'
 
 //----------------------------------------------------------
@@ -65,29 +66,26 @@ function menuEvents() {
   // declare fns for listener cb
   //----------------------------------------------------------
   // shorthand for animate
-  const a = (fn, cb) => animate(menu, fn, 644, ease.easeInOut, cb)
+  const a = (fn, cb) => animate(menu, fn, 644, ease.easeIn, cb)
 
   function preOpen() {
     elcl.ensure(menu, 'visible')
     elcl.ensure(body, 'no-scroll')
-    body.style.paddingRight = `${scrollW}px`
-    banner.style.width = `${windowW}px`
-    banner.style.paddingRight = `${scrollW}px`
+    elst.add([body, banner], {paddingRight: `${scrollW}px`})
+    elst.add(banner, {width: `${windowW}px`})
+    opening = true
   }
 
   function postClose() {
     elcl.toggle(menu, 'visible')
     elcl.toggle(body, 'no-scroll')
-    body.style.removeProperty('padding-right')
-    body.removeAttribute('style')
-    banner.style.removeProperty('width')
-    banner.style.removeProperty('padding-right')
+    elst.del(body, 'padding-right')
+    elst.del(banner, ['width', 'padding-right'])
     opening = false
   }
 
   function open() {
     if (!opening) preOpen()
-    opening = true
     animations.in = a(fadeIn)
   }
 
