@@ -7,159 +7,56 @@ import domready from 'domready'
 import ease from 'bezier-easing'
 
 // local
-import toggleCss from './toggleCssState'
-import {animate, mAnimate} from './animate'
+import elcl from './element-class'
+import {animate} from './animate'
 
 //----------------------------------------------------------
 // main loop
 //----------------------------------------------------------
 function menuEvents() {
-  // settings
-  //----------------------------------------------------------
-  const cfg = {
-    easing: ease.easeOut,
-    t: 1000
-  }
-
   // top-level vars
   //----------------------------------------------------------
-  let menuIsOpen = false
-  let interrupt = false
-  let activeAnimations = {}
-  let step = 0
+  let menuIsOpen = true // a convenient lie
+  let running = {}
+  let opacity
 
-  // get elements
+  // relevant elements
   //----------------------------------------------------------
   const menuButton = getEl.withClass('menu-toggle')[0]
-  const banner = getEl.withClass('index-banner__content')[0]
-  const arrow = getEl.withClass('scroll-down')[0]
-  const arrowSvg = getEl.withClass('scroll-down__svg')[0]
   const menu = getEl.withClass('menu')[0]
-  const menuList = getEl.withClass('menu__list')[0]
+
+  // set opacity on menu to manipulate
+  //----------------------------------------------------------
+  menu.style.opacity = 0
 
   // animation deltaFns
   //----------------------------------------------------------
-  function fadeOut(el, p, styles) {
-    const start = parseFloat(styles.opacity)
-    el.style.opacity = (1 - p) * start
-  }
-
-  function fadeIn(el, p, styles) {
-    const start = parseFloat(styles.opacity)
-    el.style.opacity = start + p * (1 - start)
-  }
+  const fadeIn = (el, p) => el.style.opacity = opacity + p * (1 - opacity)
+  const fadeOut = (el, p) => el.style.opacity = (1 - p) * opacity
 
   // declare fns for listener cb
   //----------------------------------------------------------
-  function openMenu() {
-    // prep
-    menuIsOpen = true
-    interrupt = false
+  // shorthand for animate
+  const a = (fn, cb) => animate(menu, fn, 644, ease.easeInOut, cb)
 
-    // step-through fn
-    function next() {
-      if (!interrupt) {
-        step += 1
-        return iterator()
-      }
-    }
-
-    // steps
-    function iterator() {
-      switch (step) {
-        case 1:
-          toggleCss([arrow, arrowSvg], 'paused')
-          return next()
-
-        case 2:
-          activeAnimations.fadeOut2 = mAnimate(
-            [banner, arrow], fadeOut, cfg.t, cfg.easing, () => {
-              delete activeAnimations.fadeOut2
-              return next()
-            }
-          )
-          break
-
-        case 3:
-          toggleCss(menu, 'open')
-          return next()
-
-        case 4:
-          activeAnimations.fadeIn4 = animate(
-            menuList, fadeIn, cfg.t, cfg.easing,
-            () => delete activeAnimations.fadeIn4
-          )
-          break
-      }
-    }
-
-    // kick off
-    return step === 0
-      ? next()
-      : iterator()
+  function open() {
+    elcl(menu, 'visible').ensure()
+    running.in = a(fadeIn)
   }
 
-  function closeMenu() {
-    // prep
-    menuIsOpen = false
-    interrupt = false
-
-    // step-through fn
-    function prev() {
-      if (!interrupt) {
-        step -= 1
-        return iterator()
-      }
-    }
-
-    // steps
-    function iterator() {
-      switch (step) {
-        case 1:
-          toggleCss([arrow, arrowSvg], 'paused')
-          return prev()
-
-        case 2:
-          activeAnimations.fadeIn2 = mAnimate(
-            [banner, arrow], fadeIn, cfg.t, cfg.easing, () => {
-              delete activeAnimations.fadeIn2
-              return prev()
-            }
-          )
-          break
-
-        case 3:
-          toggleCss(menu, 'open')
-          return prev()
-
-        case 4:
-          activeAnimations.fadeOut4 = animate(
-            menuList, fadeOut, cfg.t, cfg.easing, () => {
-              delete activeAnimations.fadeOut4
-              return prev()
-            }
-          )
-          break
-      }
-    }
-
-    // kick off
-    return iterator()
+  function close() {
+    running.out = a(fadeOut, () => elcl(menu, 'visible').toggle())
   }
 
   function toggleMenu(e) {
-    // ignore href
     e.preventDefault()
-
-    // scroll to top of page
-    if (window.pageYOffset !== 0) window.scroll(0, 0)
-
-    // kill any previous activity
-    interrupt = true
-    Object.keys(activeAnimations).map(anim => activeAnimations[anim].stop())
-
-    // pick and run menu toggle fn
-    return menuIsOpen ? closeMenu() : openMenu()
+    menuIsOpen = !menuIsOpen
+    // if (window.pageYOffset !== 0) window.scroll(0, 0)
+    // toggle noscroll on body?
+    // change location of burger?
+    Object.keys(running).map(anim => running[anim].stop())
+    opacity = parseFloat(menu.style.opacity)
+    return menuIsOpen ? close() : open()
   }
 
   // attach listener

@@ -1,7 +1,6 @@
 import './main/animate'
+import './main/element-class'
 import './main/fix-height'
 import './main/highlight'
-import './main/loops'
 import './main/menu'
 import './main/scroll-down'
-import './main/toggleCssState'

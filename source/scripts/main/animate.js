@@ -11,11 +11,10 @@
 export function animate(el, deltaFn, ms, easing, cb) {
   // initial vars
   const start = Date.now()
-  const styles = window.getComputedStyle(el)
   let keepRunning = true
 
   // convenience fn
-  const apply = p => deltaFn(el, p, styles)
+  const apply = p => deltaFn(el, p)
 
   // main loop
   function loop() {

@@ -22,6 +22,7 @@
   - [-] nav
     - [X] write nav markup, styles, scripts
     - [ ] add nav transition
+      - [ ] burger
   - [ ] add all hover styles
   - [ ] add other frontend libs
     - [ ] typeset js
