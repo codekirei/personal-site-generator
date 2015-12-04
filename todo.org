@@ -58,12 +58,15 @@
   - [ ] look into WJT's 'series' page
 - [ ] estimated reading times
 - [ ] add share links? maybe? fb/twitter/reddit/ycomb/g+
+- [ ] colorize nav transition like tobiasahlin
 - [ ] schema.org props: Blog, BlogPosting, WebPage...
   - [ ] test: https://developers.google.com/structured-data/testing-tool/
 - [ ] discourse commenting system
 - [ ] on hover/click date of post, shows actual date instead of time ago
 - [ ] confirm rss feed is working (including link rel alternate in <head>)
 - [ ] clean up social code in <head>
+- [ ] clean up animation and split into own module
+      maybe change up syntax of switch statement as well?
 - [ ] advanced image handling
 - [ ] add Win8/IE favicon tiles
 - [ ] add <meta name="theme-color"> to <head>

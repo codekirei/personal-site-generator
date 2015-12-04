@@ -14,6 +14,13 @@ import {animate, mAnimate} from './animate'
 // main loop
 //----------------------------------------------------------
 function menuEvents() {
+  // settings
+  //----------------------------------------------------------
+  const cfg = {
+    easing: ease.easeOut,
+    t: 1000
+  }
+
   // top-level vars
   //----------------------------------------------------------
   let menuIsOpen = false
@@ -30,12 +37,6 @@ function menuEvents() {
   const menu = getEl.withClass('menu')[0]
   const menuList = getEl.withClass('menu__list')[0]
 
-  // attach opacity to manipulate with js
-  //----------------------------------------------------------
-  banner.style.opacity = 1
-  arrow.style.opacity = 1
-  menuList.style.opacity = 0
-
   // animation deltaFns
   //----------------------------------------------------------
   function fadeOut(el, p, styles) {
@@ -51,14 +52,19 @@ function menuEvents() {
   // declare fns for listener cb
   //----------------------------------------------------------
   function openMenu() {
+    // prep
     menuIsOpen = true
     interrupt = false
+
+    // step-through fn
     function next() {
       if (!interrupt) {
         step += 1
         return iterator()
       }
     }
+
+    // steps
     function iterator() {
       switch (step) {
         case 1:
@@ -66,16 +72,11 @@ function menuEvents() {
           return next()
 
         case 2:
-          function done() {
-            delete activeAnimations.fadeOut2
-            return next()
-          }
           activeAnimations.fadeOut2 = mAnimate(
-            [banner, arrow],
-            fadeOut,
-            1500,
-            ease.easeInOut,
-            done
+            [banner, arrow], fadeOut, cfg.t, cfg.easing, () => {
+              delete activeAnimations.fadeOut2
+              return next()
+            }
           )
           break
 
@@ -85,30 +86,65 @@ function menuEvents() {
 
         case 4:
           activeAnimations.fadeIn4 = animate(
-            menuList,
-            fadeIn,
-            1500,
-            ease.easeInOut,
+            menuList, fadeIn, cfg.t, cfg.easing,
             () => delete activeAnimations.fadeIn4
           )
+          break
       }
     }
-    // maybe?
-    next()
+
+    // kick off
+    return step === 0
+      ? next()
+      : iterator()
   }
 
   function closeMenu() {
-    // menuIsOpen = false
-    // interrupt = false
-    // // fade out menuList
-    // fadeOut([menuList])
-    // // toggle menu css
-    // toggleCss(menu, 'open')
-    // // fade in banner and arrow
-    // fadeIn([banner, arrow])
-    // // start css animation
-    // toggleCss([arrow, arrowSvg], 'paused')
-    console.log('closeMenu clicked')
+    // prep
+    menuIsOpen = false
+    interrupt = false
+
+    // step-through fn
+    function prev() {
+      if (!interrupt) {
+        step -= 1
+        return iterator()
+      }
+    }
+
+    // steps
+    function iterator() {
+      switch (step) {
+        case 1:
+          toggleCss([arrow, arrowSvg], 'paused')
+          return prev()
+
+        case 2:
+          activeAnimations.fadeIn2 = mAnimate(
+            [banner, arrow], fadeIn, cfg.t, cfg.easing, () => {
+              delete activeAnimations.fadeIn2
+              return prev()
+            }
+          )
+          break
+
+        case 3:
+          toggleCss(menu, 'open')
+          return prev()
+
+        case 4:
+          activeAnimations.fadeOut4 = animate(
+            menuList, fadeOut, cfg.t, cfg.easing, () => {
+              delete activeAnimations.fadeOut4
+              return prev()
+            }
+          )
+          break
+      }
+    }
+
+    // kick off
+    return iterator()
   }
 
   function toggleMenu(e) {
