@@ -4,30 +4,22 @@
 // npm
 import getEl from 'get-element'
 import domready from 'domready'
+import ease from 'bezier-easing'
 
 // local
 import toggleCss from './toggleCssState'
-import Loops from './loops'
-
-//----------------------------------------------------------
-// instantiate classes
-//----------------------------------------------------------
-const loops = new Loops()
-
-//----------------------------------------------------------
-// convenience funcs
-//----------------------------------------------------------
-const scrollTop = () => {if (window.pageYOffset !== 0) window.scroll(0, 0)}
-const fadeOut = els => els.map(el => loops.fadeOut(el, el.style.opacity))
-const fadeIn = els => els.map(el => loops.fadeIn(el, el.style.opacity))
+import {animate, mAnimate} from './animate'
 
 //----------------------------------------------------------
 // main loop
 //----------------------------------------------------------
 function menuEvents() {
-  // store state
+  // top-level vars
   //----------------------------------------------------------
-  let menuState = 'closed'
+  let menuIsOpen = false
+  let interrupt = false
+  let activeAnimations = {}
+  let step = 0
 
   // get elements
   //----------------------------------------------------------
@@ -44,51 +36,94 @@ function menuEvents() {
   arrow.style.opacity = 1
   menuList.style.opacity = 0
 
+  // animation deltaFns
+  //----------------------------------------------------------
+  function fadeOut(el, p, styles) {
+    const start = parseFloat(styles.opacity)
+    el.style.opacity = (1 - p) * start
+  }
+
+  function fadeIn(el, p, styles) {
+    const start = parseFloat(styles.opacity)
+    el.style.opacity = start + p * (1 - start)
+  }
+
   // declare fns for listener cb
   //----------------------------------------------------------
   function openMenu() {
-    menuState = 'transition'
-    // pause css animation
-    toggleCss([arrow, arrowSvg], 'paused')
-    // fade out banner and arrow
-    fadeOut([banner, arrow])
-    // when that's done
-    loops.done(() => {
-      // toggle menu css
-      toggleCss(menu, 'open')
-      // fade in menuList
-      fadeIn([menuList])
-      // toggle state
-      menuState = 'open'
-    })
+    menuIsOpen = true
+    interrupt = false
+    function next() {
+      if (!interrupt) {
+        step += 1
+        return iterator()
+      }
+    }
+    function iterator() {
+      switch (step) {
+        case 1:
+          toggleCss([arrow, arrowSvg], 'paused')
+          return next()
+
+        case 2:
+          function done() {
+            delete activeAnimations.fadeOut2
+            return next()
+          }
+          activeAnimations.fadeOut2 = mAnimate(
+            [banner, arrow],
+            fadeOut,
+            1500,
+            ease.easeInOut,
+            done
+          )
+          break
+
+        case 3:
+          toggleCss(menu, 'open')
+          return next()
+
+        case 4:
+          activeAnimations.fadeIn4 = animate(
+            menuList,
+            fadeIn,
+            1500,
+            ease.easeInOut,
+            () => delete activeAnimations.fadeIn4
+          )
+      }
+    }
+    // maybe?
+    next()
   }
 
   function closeMenu() {
-    menuState = 'transition'
-    // fade out menuList
-    fadeOut([menuList])
-    // when that's done
-    loops.done(() => {
-      // toggle menu css
-      toggleCss(menu, 'open')
-      // fade in banner and arrow
-      fadeIn([banner, arrow])
-    })
-    // when that's done
-    loops.done(() => {
-      // start css animation
-      toggleCss([arrow, arrowSvg], 'paused')
-      // toggle state
-      menuState = 'closed'
-    })
+    // menuIsOpen = false
+    // interrupt = false
+    // // fade out menuList
+    // fadeOut([menuList])
+    // // toggle menu css
+    // toggleCss(menu, 'open')
+    // // fade in banner and arrow
+    // fadeIn([banner, arrow])
+    // // start css animation
+    // toggleCss([arrow, arrowSvg], 'paused')
+    console.log('closeMenu clicked')
   }
 
   function toggleMenu(e) {
+    // ignore href
     e.preventDefault()
-    scrollTop()
-    // Object.keys(loops.running).map(loop => clearTimeout(loops.running[loop]))
-    if (menuState === 'open') closeMenu()
-    if (menuState === 'closed') openMenu()
+
+    // scroll to top of page
+    if (window.pageYOffset !== 0) window.scroll(0, 0)
+
+    // kill any previous activity
+    interrupt = true
+    Object.keys(activeAnimations).map(anim => activeAnimations[anim].stop())
+
+    // pick and run menu toggle fn
+    return menuIsOpen ? closeMenu() : openMenu()
   }
 
   // attach listener

@@ -1,4 +1,4 @@
-import './main/animation'
+import './main/animate'
 import './main/fix-height'
 import './main/highlight'
 import './main/loops'
