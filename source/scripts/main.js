@@ -1,3 +1,4 @@
+import './main/animation'
 import './main/fix-height'
 import './main/highlight'
 import './main/loops'
