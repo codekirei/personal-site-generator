@@ -14,18 +14,46 @@ import {animate} from './animate'
 // main loop
 //----------------------------------------------------------
 function menuEvents() {
-  // top-level vars
+  // state vars
   //----------------------------------------------------------
-  let menuIsOpen = true // a convenient lie
-  let running = {}
+  let directionToggle = true
+  let opening = false
+  let animations = {}
   let opacity
 
   // relevant elements
   //----------------------------------------------------------
   const menuButton = getEl.withClass('menu-toggle')[0]
   const menu = getEl.withClass('menu')[0]
+  const body = getEl.withTag('body')[0]
+  const scrollDown = getEl.withClass('scroll-down')[0]
+  const banner = getEl.withClass('index-banner')[0]
 
-  // set opacity on menu to manipulate
+  // width fns and vars
+  //----------------------------------------------------------
+  let windowW
+  let bodyW
+  let scrollW
+
+  function getWidths() {
+    windowW = window.innerWidth
+    bodyW = document.body.clientWidth
+    scrollW = windowW - bodyW
+  }
+
+  function fixPositions() {
+    scrollDown.style.left = `${Math.round(bodyW / 2)}px`
+  }
+
+  function resizeEvents() {
+    getWidths()
+    fixPositions()
+  }
+
+  resizeEvents()
+  window.addEventListener('resize', resizeEvents)
+
+  // set initial opacity on menu to manipulate
   //----------------------------------------------------------
   menu.style.opacity = 0
 
@@ -39,24 +67,38 @@ function menuEvents() {
   // shorthand for animate
   const a = (fn, cb) => animate(menu, fn, 644, ease.easeInOut, cb)
 
-  function open() {
-    elcl(menu, 'visible').ensure()
-    running.in = a(fadeIn)
+  function preOpen() {
+    elcl.ensure(menu, 'visible')
+    elcl.ensure(body, 'no-scroll')
+    body.style.paddingRight = `${scrollW}px`
+    banner.style.width = `${windowW}px`
+    banner.style.paddingRight = `${scrollW}px`
   }
 
-  function close() {
-    running.out = a(fadeOut, () => elcl(menu, 'visible').toggle())
+  function postClose() {
+    elcl.toggle(menu, 'visible')
+    elcl.toggle(body, 'no-scroll')
+    body.style.removeProperty('padding-right')
+    body.removeAttribute('style')
+    banner.style.removeProperty('width')
+    banner.style.removeProperty('padding-right')
+    opening = false
   }
+
+  function open() {
+    if (!opening) preOpen()
+    opening = true
+    animations.in = a(fadeIn)
+  }
+
+  const close = () => animations.out = a(fadeOut, postClose)
 
   function toggleMenu(e) {
     e.preventDefault()
-    menuIsOpen = !menuIsOpen
-    // if (window.pageYOffset !== 0) window.scroll(0, 0)
-    // toggle noscroll on body?
-    // change location of burger?
-    Object.keys(running).map(anim => running[anim].stop())
+    directionToggle = !directionToggle
+    Object.keys(animations).map(anim => animations[anim].stop())
     opacity = parseFloat(menu.style.opacity)
-    return menuIsOpen ? close() : open()
+    return directionToggle ? close() : open()
   }
 
   // attach listener
