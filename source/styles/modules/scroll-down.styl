@@ -3,18 +3,10 @@
   bottom: 0
   left: 50%
   transform: translateX(-50%)
-  animation: bounce-bot 1.5s infinite
+  animation: bounce-bot 1.3s infinite
   size: 60px
   +above($bp)
     size: 100px
 
   &__svg
-    animation: throb 1.5s infinite
     size: inherit
-
-// state (applied by JS)
-//------------------------------------------------------------------------------
-.scroll-down
-.scroll-down__svg
-  &--paused
-    animation-play-state: paused
