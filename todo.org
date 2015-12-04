@@ -19,24 +19,21 @@
       - [ ] for nav
     - [ ] add s-ago + tags to post-banner
     - [ ] add logo to index banner
+    - [ ] fade in
+      - [ ] add blocking js detection script
+      - [ ] fade in elements one by one
   - [-] nav
     - [X] write nav markup, styles, scripts
-    - [ ] add nav transition
-      - [ ] burger
+    - [X] add nav transition
+    - [ ] http://w3bits.com/animated-hamburger-icons/
+    - [ ] block scrolling
   - [ ] add all hover styles
   - [ ] add other frontend libs
     - [ ] typeset js
     - [ ] fastclick
-  - [ ] fade in above the fold stuff
-    - [ ] scrollmonitor
-    - [ ] scrollreveal
-  - [ ] scroll to top button on start of scrolling up
 
-- [ ] write gulp rev task
 - [ ] write gulp deploy task
 - [ ] custom 404 page
-- [ ] write readme for site (in static)
-- [ ] rewrite initpost.sh as a npm run script
 
 - [ ] add/write missing static files
   - [ ] CNAME
@@ -51,27 +48,31 @@
   - [ ] projects page
   - [ ] about page
   - [ ] colophon
-- [ ] fix sitemap.xml?
 
 * Later
-- [ ] generate post + page banner background images with trianglify (png)
-- [ ] archive (tags) page searchable by date, tag, title
-  - [ ] look into WJT's 'series' page
-- [ ] estimated reading times
-- [ ] add share links? maybe? fb/twitter/reddit/ycomb/g+
-- [ ] colorize nav transition like tobiasahlin
-- [ ] schema.org props: Blog, BlogPosting, WebPage...
-  - [ ] test: https://developers.google.com/structured-data/testing-tool/
-- [ ] discourse commenting system
+- [ ] static asset revisioning
+- [ ] fade in all the things!!! with scrollmonitor/scrollreveal?
+- [ ] add share links on posts: fb/twitter/reddit/ycomb/g+
+- [ ] discourse for comments (requires server)
 - [ ] on hover/click date of post, shows actual date instead of time ago
-- [ ] confirm rss feed is working (including link rel alternate in <head>)
-- [ ] clean up social code in <head>
-- [ ] clean up animation and split into own module
-      maybe change up syntax of switch statement as well?
 - [ ] advanced image handling
 - [ ] add Win8/IE favicon tiles
 - [ ] add <meta name="theme-color"> to <head>
-- [ ] stylus @import statements obfuscate source maps =/
 - [ ] add some other npm scripts (see generator repo)
-- [ ] switch out gulp for nomu
-- [ ] switch out jekyll for metalsmith
+- [ ] split out js modules
+  - [ ] animate
+  - [ ] element-class
+- [ ] gulp -> nomu
+- [ ] stylus -> postcss
+- [ ] jekyll -> metalsmith
+  - [ ] implement metalsmith
+  - [ ] schema.org props: Blog, BlogPosting, WebPage...
+    - [ ] test: https://developers.google.com/structured-data/testing-tool/
+  - [ ] write an init post script that auto-fills metadata and filename
+  - [ ] generate post + page banner background images with trianglify (png)
+  - [ ] archive (tags) page searchable by date, tag, title
+    - [ ] look into WJT's 'series' page
+  - [ ] confirm rss feed is working (including link rel alternate in <head>)
+  - [ ] clean up social code in <head>
+  - [ ] fix sitemap.xml
+  - [ ] estimated reading times
