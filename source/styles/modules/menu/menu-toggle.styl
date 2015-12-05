@@ -1,12 +1,56 @@
+$menuToggleW = 48px
+$menuToggleH = round($menuToggleW / 6)
+$menuToggleWSm = 32px
+$menuToggleHSm = round($menuToggleWSm / 6)
+$menuToggleTransition = transform .322s ease-in-out
+
 .menu-toggle
   position: absolute
-  size: 35px
-  right: 12px
+  fxbx: y
+  transition: $menuToggleTransition
+  width: $menuToggleWSm
+  left: 12px
   top: 12px
   +above($bp)
-    size: 50px
-    right: 25px
+    width: $menuToggleW
+    left: 25px
     top: 25px
-  &__svg
-    fill: white
-    size: inherit
+
+  &__icon
+  &:before
+  &:after
+    display: block
+    transition: $menuToggleTransition
+    width: 100%
+    height: $menuToggleHSm
+    border-radius: 2px
+    background: white
+    +above($bp)
+      height: $menuToggleH
+
+  &:before
+  &:after
+    content: ''
+
+  &__icon
+    m-y: $menuToggleHSm
+    +above($bp)
+      m-y: $menuToggleH
+
+// state
+//------------------------------------------------------------------------------
+.menu-toggle--toggled
+  transform: rotate(180deg)
+
+  &:before
+    transform: translateY($menuToggleHSm * 2)
+    +above($bp)
+      transform: translateY($menuToggleH * 2)
+
+  &:after
+    transform: translateY($menuToggleHSm * -2)
+    +above($bp)
+      transform: translateY($menuToggleH * -2)
+
+  &__icon
+    transform: scale(0)
