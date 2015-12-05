@@ -12,7 +12,7 @@ import elst from './element-style'
 import {animate} from './animate'
 
 //----------------------------------------------------------
-// main loop
+// logic
 //----------------------------------------------------------
 function menuEvents() {
   // state vars

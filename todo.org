@@ -11,6 +11,7 @@
   - [ ] use blog previews instead of grabbing first 'n' chars
 
 - [-] rewrite scripts
+  - [X] replace date with time-ago
   - [-] banners
     - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
       - [X] index banner
