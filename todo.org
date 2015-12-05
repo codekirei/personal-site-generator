@@ -1,34 +1,23 @@
-- [ ] fix bug with script bundles being overwritten during gulp-watch if editing markup
+- [ ] banners
+  - [ ] consolidate styles/markup/scripts
+    - [ ] index: add logo
+    - [ ] post: add time-ago and tags
+    - [ ] page: decorate somehow?
+  - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
+    - [X] index banner
+    - [ ] for non-index banners
+    - [ ] for nav
+  - [ ] fade in
+    - [ ] add blocking js detection script
+    - [ ] fade in elements one by one
 
-- [ ] styles
-  - [ ] consolidate
-    - [ ] banner code?
-  - [ ] focus/active state for links (esp. mobile)
-  - [ ] bugged <pre><code> width =/
-  - [ ] text highlight colors
-
-- [ ] markup
-  - [ ] use blog previews instead of grabbing first 'n' chars
-
-- [-] rewrite scripts
-  - [X] replace date with time-ago
-  - [-] banners
-    - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
-      - [X] index banner
-      - [ ] for non-index banners
-      - [ ] for nav
-    - [ ] add s-ago + tags to post-banner
-    - [ ] add logo to index banner
-    - [ ] fade in
-      - [ ] add blocking js detection script
-      - [ ] fade in elements one by one
-  - [ ] add all hover styles
-  - [ ] add other frontend libs
-    - [ ] typeset js
-    - [ ] fastclick
-
-- [ ] write gulp deploy task
-- [ ] custom 404 page
+- [ ] CSS: fix bugged <pre><code> width =/
+- [ ] CSS: ::selection colors (code, p, etc)
+- [ ] JEKYLL: use blog previews instead of grabbing first 'n' chars
+- [ ] JS: add hover styles with js
+- [ ] CSS: add focus/active state for links
+- [ ] JS: add fastclick
+- [ ] GULP: write gulp deploy task
 
 - [ ] add/write missing static files
   - [ ] CNAME
@@ -39,6 +28,7 @@
   - [ ] browserconfig.xml
 
 - [ ] write site content
+  - [ ] custom 404 page
   - [ ] first two blog posts
   - [ ] projects page
   - [ ] about page
@@ -57,9 +47,11 @@
 - [ ] add some other npm scripts (see generator repo)
 - [ ] split out js modules
   - [ ] animate
+  - [ ] replace-time
   - [ ] element-class
   - [ ] element-style
 - [ ] gulp -> nomu
+  - [ ] fix bug with script bundles being overwritten during gulp-watch if editing markup
 - [ ] stylus -> postcss
 - [ ] jekyll -> metalsmith
   - [ ] implement metalsmith
@@ -73,3 +65,4 @@
   - [ ] clean up social code in <head>
   - [ ] fix sitemap.xml
   - [ ] estimated reading times
+  - [ ] typesetJS
