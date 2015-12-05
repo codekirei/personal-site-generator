@@ -16,8 +16,6 @@
 - [ ] JEKYLL: use blog previews instead of grabbing first 'n' chars
 - [ ] JS: add hover styles with js
 - [ ] CSS: add focus/active state for links
-- [ ] JS: add fastclick
-- [ ] GULP: write gulp deploy task
 
 - [ ] add/write missing static files
   - [ ] CNAME
@@ -33,6 +31,8 @@
   - [ ] projects page
   - [ ] about page
   - [ ] colophon
+
+- [ ] GULP: write gulp deploy task
 
 * Later
 - [ ] static asset revisioning
