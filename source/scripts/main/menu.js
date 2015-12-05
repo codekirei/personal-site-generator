@@ -18,8 +18,9 @@ function menuEvents() {
   // state vars
   //----------------------------------------------------------
   let directionToggle = true
-  let opening = false
+  let shouldPreOpen = true
   let animations = {}
+  let opacity = 0
 
   // relevant elements
   //----------------------------------------------------------
@@ -34,8 +35,6 @@ function menuEvents() {
   let windowW
   let bodyW
   let scrollW
-  let opacity
-  // let top
 
   function getWidths() {
     windowW = window.innerWidth
@@ -47,17 +46,9 @@ function menuEvents() {
     scrollDown.style.left = `${Math.round(bodyW / 2)}px`
   }
 
-  // function readStyles() {
-    // opacity = parseFloat(window.getComputedStyle(menu).opacity)
-    // menu.style.opacity = opacity
-    // top = parseInt(window.getComputedStyle(menuButton).top)
-    // menuButton.style.top = `${top}px`
-  // }
-
   function resizeEvents() {
     getWidths()
     fixPositions()
-    // readStyles()
   }
 
   resizeEvents()
@@ -65,7 +56,7 @@ function menuEvents() {
 
   // set menu opacity to manipulate with js
   //----------------------------------------------------------
-  menu.style.opacity = 0
+  menu.style.opacity = opacity
 
   // hacky test for mobile
   //----------------------------------------------------------
@@ -75,14 +66,11 @@ function menuEvents() {
   //----------------------------------------------------------
   const fadeIn = (el, p) => el.style.opacity = opacity + p * (1 - opacity)
   const fadeOut = (el, p) => el.style.opacity = (1 - p) * opacity
-  // const moveUp = (el , p) => el.style.top = `${top - p * window.pageYOffset}px`
-  // const moveDown = (el, p) => el.style.top = `${top + p * window.pageYOffset}px`
 
   // declare fns for listener cb
   //----------------------------------------------------------
   // shorthand for animations
-  const aM = (fn, cb) => animate(menu, fn, 322, ease.easeIn, cb)
-  // const aB = (fn, cb) => animate(menuButton, fn, 322, ease.easeIn, cb)
+  const a = (fn, cb) => animate(menu, fn, 322, ease.easeIn, cb)
 
   function preOpen() {
     elcl.ensure(menu, 'visible')
@@ -91,7 +79,7 @@ function menuEvents() {
       elst.add([body, banner], {paddingRight: `${scrollW}px`})
       elst.add(banner, {width: `${windowW}px`})
     }
-    opening = true
+    shouldPreOpen = false
   }
 
   function postClose() {
@@ -101,26 +89,22 @@ function menuEvents() {
       elst.del(body, 'padding-right')
       elst.del(banner, ['width', 'padding-right'])
     }
-    opening = false
+    shouldPreOpen = true
   }
 
   function open() {
-    if (!opening) preOpen()
-    // if (window.pageYOffset !== 0) animations.down = aB(moveDown)
-    animations.in = aM(fadeIn)
+    if (shouldPreOpen) preOpen()
+    animations.in = a(fadeIn)
   }
 
-  function close() {
-    // if (window.pageYOffset !== 0) animations.up = aB(moveUp)
-    animations.out = aM(fadeOut, postClose)
-  }
+  const close = () => animations.out = a(fadeOut, postClose)
 
   function toggleMenu(e) {
     e.preventDefault()
+    if (window.pageYOffset !== 0) window.scroll(0,0)
     directionToggle = !directionToggle
     Object.keys(animations).map(anim => animations[anim].stop())
     opacity = parseFloat(menu.style.opacity)
-    // top = parseInt(menuButton.style.top)
     elcl.toggle(menuButton, 'toggled')
     return directionToggle ? close() : open()
   }
