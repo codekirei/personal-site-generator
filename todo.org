@@ -3,7 +3,6 @@
 - [ ] styles
   - [ ] consolidate
     - [ ] banner code?
-    - [ ] button code?
   - [ ] focus/active state for links (esp. mobile)
   - [ ] bugged <pre><code> width =/
   - [ ] text highlight colors
@@ -46,6 +45,7 @@
 
 * Later
 - [ ] static asset revisioning
+- [ ] consolidate button styles
 - [ ] fade in all the things!!! with scrollmonitor/scrollreveal?
 - [ ] add share links on posts: fb/twitter/reddit/ycomb/g+
 - [ ] discourse for comments (requires server)
@@ -68,7 +68,7 @@
   - [ ] generate post + page banner background images with trianglify (png)
   - [ ] archive (tags) page searchable by date, tag, title
     - [ ] look into WJT's 'series' page
-  - [ ] confirm rss feed is working (including link rel alternate in <head>)
+  - [ ] rss feed (including link rel alternate in <head>)
   - [ ] clean up social code in <head>
   - [ ] fix sitemap.xml
   - [ ] estimated reading times

@@ -6,7 +6,7 @@
     </a>
     <div class="index-post__date">
       <span>posted:</span>
-      <time datetime="{{ post.date | date_to_xmlschema }}">
+      <time class="index-post__time" datetime="{{ post.date | date_to_xmlschema }}">
         {{ post.date | date: "%m/%d/%Y" }}
       </time>
     </div>
