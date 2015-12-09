@@ -1,3 +1,5 @@
+- [ ] jekyll -> jamb
+
 - [ ] banners
   - [ ] consolidate styles/markup/scripts
     - [ ] index: add logo
@@ -15,6 +17,7 @@
 - [ ] CSS: ::selection colors (code, p, etc)
 - [ ] JEKYLL: use blog previews instead of grabbing first 'n' chars
 - [ ] JS: add hover styles with js
+  - [ ] on hover/click date of post, shows actual date instead of time ago
 - [ ] CSS: add focus/active state for links
 
 - [ ] add/write missing static files
@@ -35,34 +38,28 @@
 - [ ] GULP: write gulp deploy task
 
 * Later
+- [ ] add some other npm scripts (see generator repo)
+  - [ ] init post script that auto-fills metadata and filename
+- [ ] <head>
+  - [ ] rss feed link rel alternate
+  - [ ] add <meta name="theme-color">
+  - [ ] add Win8/IE favicon tiles
+  - [ ] social media code (fb/twitter/g+)
 - [ ] static asset revisioning
 - [ ] consolidate button styles
 - [ ] fade in all the things!!! with scrollmonitor/scrollreveal?
 - [ ] add share links on posts: fb/twitter/reddit/ycomb/g+
-- [ ] discourse for comments (requires server)
-- [ ] on hover/click date of post, shows actual date instead of time ago
 - [ ] advanced image handling
-- [ ] add Win8/IE favicon tiles
-- [ ] add <meta name="theme-color"> to <head>
-- [ ] add some other npm scripts (see generator repo)
+  - [ ] generate post + page banner background images with trianglify (png)
+  - [ ] or use stock image (e.g. gohugo.io)?
 - [ ] split out js modules
   - [ ] animate
   - [ ] replace-time
   - [ ] element-class
   - [ ] element-style
+- [ ] stylus -> postcss
+- [ ] schema.org props: Blog, BlogPosting, WebPage...
+  - [ ] test: https://developers.google.com/structured-data/testing-tool/
 - [ ] gulp -> nomu
   - [ ] fix bug with script bundles being overwritten during gulp-watch if editing markup
-- [ ] stylus -> postcss
-- [ ] jekyll -> metalsmith
-  - [ ] implement metalsmith
-  - [ ] schema.org props: Blog, BlogPosting, WebPage...
-    - [ ] test: https://developers.google.com/structured-data/testing-tool/
-  - [ ] write an init post script that auto-fills metadata and filename
-  - [ ] generate post + page banner background images with trianglify (png)
-  - [ ] archive (tags) page searchable by date, tag, title
-    - [ ] look into WJT's 'series' page
-  - [ ] rss feed (including link rel alternate in <head>)
-  - [ ] clean up social code in <head>
-  - [ ] fix sitemap.xml
-  - [ ] estimated reading times
-  - [ ] typesetJS
+- [ ] discourse for comments (requires server)
