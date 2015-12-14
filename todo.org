@@ -9,13 +9,9 @@
     - [X] index banner
     - [ ] for non-index banners
     - [ ] for nav
-  - [ ] fade in
-    - [ ] add blocking js detection script
-    - [ ] fade in elements one by one
 
 - [ ] CSS: fix bugged <pre><code> width =/
 - [ ] CSS: ::selection colors (code, p, etc)
-- [ ] JEKYLL: use blog previews instead of grabbing first 'n' chars
 - [ ] JS: add hover styles with js
   - [ ] on hover/click date of post, shows actual date instead of time ago
 - [ ] CSS: add focus/active state for links
@@ -38,6 +34,10 @@
 - [ ] GULP: write gulp deploy task
 
 * Later
+- [ ] tests with ava / jest
+- [ ] fade in above the fold content
+  - [ ] add blocking js detection script
+  - [ ] fade in elements one by one
 - [ ] add some other npm scripts (see generator repo)
   - [ ] init post script that auto-fills metadata and filename
 - [ ] <head>
