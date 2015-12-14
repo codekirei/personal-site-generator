@@ -1,0 +1,12 @@
+doctype html
+html(lang='en-us')
+  head
+    include /partials/head/head.jade
+    block head
+      title Hello world
+      description Hello world
+  body
+    include /partials/nav.jade
+    block content
+    include /partials/footer/footer.jade
+    script(src='/code/bundle.js', async)

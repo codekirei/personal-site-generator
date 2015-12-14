@@ -1,4 +1,6 @@
 - [ ] jekyll -> jamb
+  - [ ] figure out all data fields required
+  - [ ] make sure markup is building correctly
 
 - [ ] banners
   - [ ] consolidate styles/markup/scripts

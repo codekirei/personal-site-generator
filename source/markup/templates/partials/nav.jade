@@ -1,0 +1,7 @@
+a.menu-toggle(role='button', href='#footer-nav', aria-label='Open navigation menu')
+  .menu-toggle__icon
+nav.menu(role='navigation')
+  ul.menu__list
+    each link in data.navLinks
+      li.menu__item
+        a.menu__link(href= link.url)!= link.text
