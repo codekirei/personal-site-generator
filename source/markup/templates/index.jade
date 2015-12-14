@@ -1,0 +1,10 @@
+extends /base.jade
+
+block head
+  title!= data.title
+  description!= data.description
+
+block content
+  include /partials/index-banner.jade
+  main#scroll-down-target(role='main')
+    include /partials/index-posts.jade

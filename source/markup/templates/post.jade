@@ -5,8 +5,8 @@ block head
   description!= data.description
 
 block content
-  include /partials/post/banner.jade
+  include /partials/post-banner.jade
   section#scroll-down-target(role='main')
     article.post(role='article')!= data.content
       img.fleuron(src='/img/kunai-fleuron.png', alt='fleuron')
-    include /partials/post/author.jade
+    include /partials/post-author.jade

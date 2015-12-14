@@ -1,8 +1,8 @@
 ---
-layout: page
+template: page
 title: "About me"
-permalink: /about/index.html
-description: "Some description about Lorem Ipsum..."
+url: about
+description: "Some description"
 ---
 ## About Me
 
