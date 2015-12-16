@@ -6,8 +6,8 @@ section.index-posts
       .index-post__date
         span posted:
         time.index-post__time.replace-time(datetime!= post.posted)!= post.date
-      p.index-post__preview!= post.preview
-        a.index-post__read-button(href= post.slug) read post
+      .index-post__preview!= post.preview
+      a.index-post__read-button(href= post.slug) read post
       .index-post__tags
         span tags:
           each tag in post.tags

@@ -12,14 +12,25 @@
     - [ ] for non-index banners
     - [ ] for nav
 
-- [ ] CSS: fix bugged <pre><code> width =/
-- [ ] CSS: ::selection colors (code, p, etc)
-- [ ] CSS: add focus/active state for links
+# ##########################################################
+# CSS
+# ##########################################################
+- [ ] better "read post" button
+- [ ] better post tags
+- [ ] fix bugged <pre><code> width =/
+- [ ] ::selection colors (code, p, etc)
+- [ ] add focus/active state for links
 
-- [ ] JS: add hover styles with js
+# ##########################################################
+# JS
+# ##########################################################
+- [ ] add hover styles with js
   - [ ] on hover/click date of post, shows actual date instead of time ago
-- [ ] JS: switch to jamb syntax highlighting
+- [ ] switch to jamb syntax highlighting
 
+# ##########################################################
+# Content
+# ##########################################################
 - [ ] add/write missing static files
   - [ ] CNAME
   - [ ] readme.md

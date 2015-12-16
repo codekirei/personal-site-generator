@@ -1,14 +1,14 @@
 ---
-title: Welcome to Jekyll
+title: Welcome to Jamb
 description: Put your description here.
-slug: /posts/welcome-to-jekyll
-posted: 2015-12-11T12:00-08:00
+slug: /posts/welcome-to-jamb
+posted: 2015-12-08T12:00-08:00
 tags:
 - jekyll
 - web
 ---
 
-Welcome to Jekyll! This post talks about all the features of this blog.
+Welcome to Jamb! Jamb is a static-markup-generator I wrote when building this site. It is different from most other static-site-generators out there because it is only concerned with markup. I prefer using build tools like Gulp or Fly to manage my assets, and Jamb fits very nicely with that workflow.
 
 --MORE--
 
