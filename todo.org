@@ -1,7 +1,10 @@
-- [ ] jekyll -> jamb
-  - [ ] fix broken markup/styles/scripts
+- [-] jekyll -> jamb
+  - [X] fix broken markup/styles/scripts
   - [ ] remove all traces of jekyll
 
+# ##########################################################
+# Banners
+# ##########################################################
 - [-] banners
   - [ ] consolidate styles/markup/scripts
     - [ ] index: add logo
@@ -27,6 +30,7 @@
 - [ ] add hover styles with js
   - [ ] on hover/click date of post, shows actual date instead of time ago
 - [ ] switch to jamb syntax highlighting
+- [ ] make sure all scripts work on all pages
 
 # ##########################################################
 # Content
@@ -46,7 +50,11 @@
   - [ ] about page
   - [ ] colophon
 
-- [ ] GULP: write gulp deploy task
+# ##########################################################
+# Gulp
+# ##########################################################
+- [ ] write gulp deploy task
+- [ ] fix jamb crashing watch if it errs
 
 * Later
 - [ ] tests with ava / jest

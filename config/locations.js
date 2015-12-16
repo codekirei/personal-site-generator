@@ -45,7 +45,7 @@ const locations = module.exports = {
   // config locations (so meta)
   , cfg: {
     root: 'config'
-    , get jekyll() {return p.join(this.root, 'jekyll.yml')}
+    , get jamb() {return p.join(this.root, 'jamb.js')}
     , get locations() {return p.join(this.root, 'locations.js')}
   }
 }
