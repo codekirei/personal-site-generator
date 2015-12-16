@@ -1,8 +1,8 @@
 ---
 template: page
-title: "Colophon"
-permalink: colophon
-description: "This is the colophon"
+title: Colophon
+description: This is the colophon
+slug: /colophon
 ----
 ## Colophon
 

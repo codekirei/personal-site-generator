@@ -1,8 +1,8 @@
 ---
 template: page
-title: "About me"
-url: about
-description: "Some description"
+title: About me
+description: Some description
+slug: /about
 ---
 ## About Me
 

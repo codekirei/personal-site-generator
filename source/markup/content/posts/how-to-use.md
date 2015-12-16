@@ -1,16 +1,17 @@
 ---
-layout: post
-title: "How to use"
-date: 2015-08-03 03:32:44
-image: '/assets/img/'
-description: 'First steps to use this template'
+template: post
+title: How to use
+description: First steps to use this template
+slug: /posts/how-to-use
+posted: 2015-12-10T12:00-08:00
 tags:
 - jekyll
 - template
-categories:
-- I love Jekyll
-twitter_text: 'How to install and use this template'
 ---
+
+This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
+
+--MORE--
 
 This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
 

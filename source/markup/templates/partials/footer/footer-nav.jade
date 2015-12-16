@@ -1,5 +1,5 @@
 nav.footer-nav#footer-nav(role='navigation')
   ul.footer-nav__list
-    each link in data.navLinks
+    each link in data.nav
       li.footer-nav__item
-        a.footer-nav__link(href= link.url)!= link.text
+        a.footer-nav__link(href!= link.url)!= link.text

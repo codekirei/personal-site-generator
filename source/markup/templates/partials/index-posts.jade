@@ -1,13 +1,13 @@
 section.index-posts
   each post in data.posts
     article.index-post(role='article')
-      a.index-post__title(href= post.url)
+      a.index-post__title(href= post.slug)
         h3!= post.title
       .index-post__date
         span posted:
-        time.index-post__time.replace-time(datetime= post.time)!= post.date
+        time.index-post__time.replace-time(datetime!= post.posted)!= post.date
       p.index-post__preview!= post.preview
-        a.index-post__read-button(href= post.url) read post
+        a.index-post__read-button(href= post.slug) read post
       .index-post__tags
         span tags:
           each tag in post.tags

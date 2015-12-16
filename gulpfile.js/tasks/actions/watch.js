@@ -23,10 +23,13 @@ function reload(glob) {
 
 function watch() {
   // jekyll
-  g.watch([loc.src.markup, loc.cfg.jekyll], () => runseq(
-    'build',
-    () => reload()
-  ))
+  // g.watch([loc.src.markup, loc.cfg.jekyll], () => runseq(
+  //   'build',
+  //   () => reload()
+  // ))
+
+  // jamb
+  g.watch(loc.src.markup, () => runseq('jamb', () => reload()))
 
   // dupes
   g.watch(loc.src.dupes, () => runseq(

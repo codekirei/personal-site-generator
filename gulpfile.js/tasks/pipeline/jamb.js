@@ -4,16 +4,21 @@
 // modules
 //----------------------------------------------------------
 // npm
+const Jamb = require('jamb')
 const gulp = require('gulp')
-const runseq = require('run-sequence').use(gulp)
+
+// local
+const cfg = require('conf/jamb')
+
+//----------------------------------------------------------
+// logic
+//----------------------------------------------------------
+function jamb(cb) {
+  new Jamb(cfg).then(() => cb())
+}
 
 //----------------------------------------------------------
 // exports
 //----------------------------------------------------------
-gulp.task('build', cb => {
-  runseq(
-    'scriptImports',
-    ['images', 'dupes', 'scripts', 'styles', 'fonts', 'jamb'],
-    () => cb()
-  )
-})
+module.exports = jamb
+gulp.task('jamb', jamb)

@@ -1,8 +1,37 @@
-- [ ] jekyll -> jamb
-  - [ ] figure out all data fields required
-  - [ ] make sure markup is building correctly
+- [-] jekyll -> jamb
+  - [X] figure out all data fields required
+    - [X] title
+    - [X] description
+    - [X] url (canonical)
+    - [X] content
+    - [X] author
+    - [X] posts
+      - [X] rel (relative link)
+      - [X] time
+      - [X] date
+      - [X] preview
+      - [X] content
+      - [X] tags
+    - [X] navLinks
+      - [X] url
+      - [X] text
+  - [X] jamb cfg
+  - [X] frontmatter
+    - [X] pages
+      - [X] slug
+      - [X] title
+      - [X] description
+      - [X] template
+    - [X] posts
+      - [X] preview
+      - [X] date
+      - [X] tags
+  - [-] build
+    - [X] gulp task
+    - [X] gulp build
+    - [ ] gulp watch
 
-- [ ] banners
+- [-] banners
   - [ ] consolidate styles/markup/scripts
     - [ ] index: add logo
     - [ ] post: add time-ago and tags
@@ -14,9 +43,11 @@
 
 - [ ] CSS: fix bugged <pre><code> width =/
 - [ ] CSS: ::selection colors (code, p, etc)
+- [ ] CSS: add focus/active state for links
+
 - [ ] JS: add hover styles with js
   - [ ] on hover/click date of post, shows actual date instead of time ago
-- [ ] CSS: add focus/active state for links
+- [ ] JS: switch to jamb syntax highlighting
 
 - [ ] add/write missing static files
   - [ ] CNAME

@@ -11,14 +11,24 @@ const locations = module.exports = {
   // source locations
   , src: {
     root: 'source'
+    // scripts
     , get scripts() {return p.join(locations.abs, this.root, 'scripts')}
     , get scriptModules() {return p.join(this.root, 'scripts/*/**/*.js')}
     , get scriptEntries() {return p.join(this.root, 'scripts/*.js')}
+    // static
     , get dupes() {return p.join(this.root, 'static/**/*')}
+    // images
     , get img() {return p.join(this.root, 'images/**/*.{jpg,png}')}
+    // styles
     , get styles() {return p.join(this.root, 'styles/index.styl')}
     , get stylesAll() {return p.join(this.root, 'styles/**/*.styl')}
-    , get markup() {return p.join(this.root, 'markup/**/*')}
+    // markup
+    , get pages() {return p.join(this.root, 'markup/content/*.md')}
+    , get posts() {return p.join(this.root, 'markup/content/posts/*.md')}
+    , get templates() {return p.join(this.root, 'markup/templates/*.jade')}
+    , get markup() {return [this.pages, this.posts, this.templates]}
+    , get jadeBase() {return p.join(this.root, 'markup/templates')}
+    // fonts
     , get fonts() {return p.join(this.root, 'fonts/**/*')}
   }
 

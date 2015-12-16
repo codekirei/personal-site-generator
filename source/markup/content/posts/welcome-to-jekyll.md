@@ -1,16 +1,16 @@
 ---
-layout: post
-title: "Welcome to Jekyll"
-date: 2015-08-04 03:21:35
-image: '/assets/img/'
-description: 'Put your description here.'
+title: Welcome to Jekyll
+description: Put your description here.
+slug: /posts/welcome-to-jekyll
+posted: 2015-12-11T12:00-08:00
 tags:
 - jekyll
 - web
-categories:
-- Jekyll is awesome
-twitter_text: 'Put your twitter description here.'
 ---
+
+Welcome to Jekyll! This post talks about all the features of this blog.
+
+--MORE--
 
 ## Welcome to the show
 
@@ -28,7 +28,7 @@ function logger(text) {
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 
-<span class="key">CTRL</span>+<span class="key">s</span> is typically the keyboard shortcut to "save". Pretty handy, don't you think? Keyboard shortcuts are great.
+<span class=key>CTRL</span>+<span class="key">s</span> is typically the keyboard shortcut to "save". Pretty handy, don't you think? Keyboard shortcuts are great.
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
 [jekyll]:    http://jekyllrb.com
