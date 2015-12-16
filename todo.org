@@ -1,35 +1,6 @@
-- [-] jekyll -> jamb
-  - [X] figure out all data fields required
-    - [X] title
-    - [X] description
-    - [X] url (canonical)
-    - [X] content
-    - [X] author
-    - [X] posts
-      - [X] rel (relative link)
-      - [X] time
-      - [X] date
-      - [X] preview
-      - [X] content
-      - [X] tags
-    - [X] navLinks
-      - [X] url
-      - [X] text
-  - [X] jamb cfg
-  - [X] frontmatter
-    - [X] pages
-      - [X] slug
-      - [X] title
-      - [X] description
-      - [X] template
-    - [X] posts
-      - [X] preview
-      - [X] date
-      - [X] tags
-  - [-] build
-    - [X] gulp task
-    - [X] gulp build
-    - [ ] gulp watch
+- [ ] jekyll -> jamb
+  - [ ] fix broken markup/styles/scripts
+  - [ ] remove all traces of jekyll
 
 - [-] banners
   - [ ] consolidate styles/markup/scripts

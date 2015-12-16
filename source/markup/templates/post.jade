@@ -2,7 +2,7 @@ extends /base.jade
 
 block head
   title!= data.title
-  description!= data.description
+  meta(name='description', content!= data.description)
 
 block content
   include /partials/post-banner.jade

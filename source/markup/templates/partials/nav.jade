@@ -4,4 +4,4 @@ nav.menu(role='navigation')
   ul.menu__list
     each link in data.nav
       li.menu__item
-        a.menu__link(href= link.url)!= link.text
+        a.menu__link(href!= link.link)!= link.text

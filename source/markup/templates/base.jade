@@ -1,12 +1,10 @@
 doctype html
 html(lang='en-us')
   head
-    include /partials/head/head.jade
+    include /partials/head/head
     block head
-      title Hello world
-      description Hello world
   body
-    include /partials/nav.jade
+    include /partials/nav
     block content
-    include /partials/footer/footer.jade
+    include /partials/footer/footer
     script(src='/code/bundle.js', async)
