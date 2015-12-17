@@ -1,18 +1,14 @@
 # ##########################################################
 # Banners
 # ##########################################################
-- [-] banners
-  - [-] consolidate styles/markup/scripts
-    - [X] index: add logo
-    - [ ] post: add time-ago, tags, ert
-    - [ ] page: decorate somehow?
-  - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
-    - [X] banners
-    - [ ] nav
+- [ ] banners
+  - [ ] .banner__description -> .banner__subtitle
+  - [ ] add subtitle fm to pages and banner for page template
 
 # ##########################################################
 # CSS
 # ##########################################################
+- [ ] style content in post banner
 - [ ] better "read post" button
 - [ ] better post tags
 - [ ] fix bugged <pre><code> width =/
@@ -23,8 +19,11 @@
 # ##########################################################
 # JS
 # ##########################################################
+- [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
+  - [X] banners
+  - [ ] nav
 - [ ] add hover styles with js
-  - [ ] on hover/click date of post, shows actual date instead of time ago
+  - [ ] on hover date of post, shows actual date instead of time ago
 - [ ] switch to jamb syntax highlighting
 - [ ] make sure all scripts work on all pages
 - [ ] disable onmousedown on images
