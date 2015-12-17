@@ -31,7 +31,7 @@ function menuEvents() {
   const menu = getEl.withClass('menu')[0]
   const body = getEl.withTag('body')[0]
   const scrollDown = getEl.withClass('scroll-down')[0]
-  const banner = getEl.withClass('index-banner')[0]
+  const banner = getEl.withClass('banner')[0]
 
   // animation deltaFns and helpers
   //----------------------------------------------------------

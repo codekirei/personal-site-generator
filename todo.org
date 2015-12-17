@@ -1,7 +1,3 @@
-- [-] jekyll -> jamb
-  - [X] fix broken markup/styles/scripts
-  - [ ] remove all traces of jekyll
-
 # ##########################################################
 # Banners
 # ##########################################################
@@ -58,6 +54,7 @@
 
 * Later
 - [ ] tests with ava / jest
+- [ ] scroll to top button?
 - [ ] fade in above the fold content
   - [ ] add blocking js detection script
   - [ ] fade in elements one by one

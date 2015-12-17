@@ -6,7 +6,7 @@ function fixHeight() {
   if (typeof window.orientation !== 'undefined') {
     const html = el.withTag('html')[0]
     const body = el.withTag('body')[0]
-    const banner = el.withClass('index-banner')[0]
+    const banner = el.withClass('banner')[0]
     const height = window.innerHeight
     const els = [html, body, banner]
     els.map(el => {
