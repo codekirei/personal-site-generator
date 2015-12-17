@@ -7,9 +7,8 @@
     - [ ] post: add time-ago and tags
     - [ ] page: decorate somehow?
   - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
-    - [X] index banner
-    - [ ] for non-index banners
-    - [ ] for nav
+    - [X] banners
+    - [ ] nav
 
 # ##########################################################
 # CSS
