@@ -6,6 +6,7 @@ html(lang='en-us')
   body.body
     include /partials/nav
     include /partials/banner
-    block content
+    main#scroll-down-target(role='main')
+      block content
     include /partials/footer/footer
     script(src='/code/bundle.js', async)
