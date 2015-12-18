@@ -20,6 +20,5 @@ block content
         .index-post__preview!= post.preview
         a.index-post__read-button(href= post.slug) read post
         .index-post__tags
-          span tags:
-            each tag in post.tags
-              span.index-post__tag!= tag
+          each tag in post.tags
+            span.index-post__tag!= tag

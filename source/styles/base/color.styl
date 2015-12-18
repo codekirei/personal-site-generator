@@ -4,7 +4,7 @@
 body
   background: white
 
-p, li, span
+p, li, span, a
   color: $c.text
 
 pre
@@ -12,59 +12,6 @@ pre
   code
   code *
     color: $c.lg
-
-//------------------------------------------------------------------------------
-// header
-//------------------------------------------------------------------------------
-.scroll-down__svg
-  fill: white
-
-.banner
-  background: $c.prime
-  &__title
-  &__subtitle
-    color: white
-
-//------------------------------------------------------------------------------
-// index
-//------------------------------------------------------------------------------
-.index-post
-  border-color: $c.lg
-  &__title
-    color: black
-  &__read-button
-    color: $c.dg
-    border-color: $c.dg
-  &__tag
-    color: $c.prime
-    border-color: $c.prime
-
-//------------------------------------------------------------------------------
-// post
-//------------------------------------------------------------------------------
-.author
-  background: $c.lg
-  &__title
-    color: $c.dg
-.hello-button
-  color: $c.dg
-  border-color: $c.dg
-
-//------------------------------------------------------------------------------
-// footer
-//------------------------------------------------------------------------------
-.site-footer
-  background: $c.prime
-  color: white
-  &__divider
-    border-color: darken($c.prime, 40%)
-  &__info-svg
-    fill: white
-.footer-nav
-  &__link
-    color: white
-  &__item
-    border-color: white
 
 //------------------------------------------------------------------------------
 // syntax highlighting

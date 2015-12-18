@@ -5,6 +5,7 @@
   p: $gap2 5%
   &:not(:last-child)
     b-s: 3px
+    border-color: $c.lg
   +above($bp)
     p: $gap
 
@@ -16,10 +17,13 @@
   &__title
     display: inline-block
     text-decoration: none
+    color: black
 
   &__read-button
     display: inline-block
     text-decoration: none
+    color: $c.dg
+    border-color: $c.dg
     b: 2px 5px
     p-x: 8px
 
@@ -27,3 +31,5 @@
     b: 3px 5px
     p: 3px 8px
     m-w: 8px
+    color: $c.prime
+    border-color: $c.prime

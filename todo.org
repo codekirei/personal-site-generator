@@ -8,7 +8,7 @@
 - [ ] ::selection colors (code, p, etc)
 - [ ] add focus/active state for links
 - [ ] check responsive sizing of everything
-- [ ] break up color
+- [X] break up color
 - [X] add page class to body
 
 # ##########################################################

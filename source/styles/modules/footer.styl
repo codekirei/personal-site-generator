@@ -1,5 +1,7 @@
 .site-footer
   width: 100%
+  background: $c.prime
+  color: white
 
   &__content
     fxbx(y)
@@ -7,11 +9,13 @@
 
   &__divider
     b-n: 3px
+    border-color: darken($c.prime, 40%)
     m-y: $gap2
     width: 40%
     max-width: 400px
 
   &__info-svg
+    fill: white
     display: block
     size: 30px
     +above($bp)
@@ -28,7 +32,9 @@
       &:not(:last-child)
         p-e: ($gap / 4)
         b-e: 3px
+        border-color: white
         m-e: ($gap / 4)
 
   &__link
     text-decoration: none
+    color: white
