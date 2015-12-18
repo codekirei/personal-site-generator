@@ -1,8 +1,8 @@
 # ##########################################################
 # Banners
 # ##########################################################
-- [ ] banners
-  - [ ] .banner__description -> .banner__subtitle
+- [-] banners
+  - [X] .banner__description -> .banner__subtitle
   - [ ] add subtitle fm to pages and banner for page template
 
 # ##########################################################
