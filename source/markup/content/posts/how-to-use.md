@@ -101,9 +101,9 @@ twitter_text: 'How to install and use this template'
 
 In order to compile the assets and run Jekyll on local you need to follow those steps:
 
-- Install [NodeJS](https://nodejs.org/)
-- Run `npm install` 
-- Run `gulp`
+* Install [NodeJS](https://nodejs.org/)
+* Run `npm install` 
+* Run `gulp`
 
 ## Questions
 
@@ -114,9 +114,4 @@ Having a problem getting something to work or want to know why I setup something
 This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
 
 If you’d like to give me credit somewhere on your blog or tweet a shout out to [@willian_justen](https://twitter.com/willian_justen), that would be pretty sweet.
-
-
-
-
-
 

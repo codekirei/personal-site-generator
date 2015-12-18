@@ -10,9 +10,9 @@ block banner
     |  &#x2014 
     span.banner__ert!= data.ert
     |  minute read
-  .banner__tags
+  ul.banner__tags
     each tag in data.tags
-      span.banner__tag!= tag
+      li.banner__tag!= tag
 
 block content
   article.post(role='article')!= data.content

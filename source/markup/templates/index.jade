@@ -19,6 +19,6 @@ block content
           time.index-post__time.replace-time(datetime!= post.posted)!= post.date
         .index-post__preview!= post.preview
         a.index-post__read-button(href= post.slug) read post
-        .index-post__tags
+        ul.index-post__tags
           each tag in post.tags
-            span.index-post__tag!= tag
+            li.index-post__tag!= tag
