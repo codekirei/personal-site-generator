@@ -43,13 +43,19 @@ function menuEvents() {
   // scrollbar fns
   //----------------------------------------------------------
   function addMissingScrollbarStyles() {
-    elst.add([body, banner], {paddingRight: `${scrollW}px`})
-    elst.add(banner, {width: `${windowW}px`})
+    elst.add(body, {paddingRight: `${scrollW}px`})
+    if (banner) {
+      elst.add(banner,
+        { width: `${windowW}px`
+        , paddingRight: `${scrollW}px`
+        }
+      )
+    }
   }
 
   function delMissingScrollbarStyles() {
     elst.del(body, 'padding-right')
-    elst.del(banner, ['width', 'padding-right'])
+    if (banner) elst.del(banner, ['width', 'padding-right'])
   }
 
   // BEM modifier class fns
@@ -121,7 +127,7 @@ function menuEvents() {
   }
 
   function lockPositions() {
-    scrollDown.style.left = `${Math.round(bodyW / 2)}px`
+    if (scrollDown) scrollDown.style.left = `${Math.round(bodyW / 2)}px`
   }
 
   function reset() {

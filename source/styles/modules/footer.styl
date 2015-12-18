@@ -1,16 +1,15 @@
 .site-footer
-  fxbx(y)
-  p: ($gap / 2) 5%
+  width: 100%
+
+  &__content
+    fxbx(y)
+    p-y: $gap2
 
   &__divider
-    width: 60%
     b-n: 3px
-    m-y: ($gap / 2)
-    +above($bp)
-      width: 40%
-
-  &__info-link
-    display: block
+    m-y: $gap2
+    width: 40%
+    max-width: 400px
 
   &__info-svg
     display: block

@@ -1,41 +1,39 @@
-$menuToggleW = 48px
-$menuToggleH = round($menuToggleW / 6)
-$menuToggleWSm = 32px
-$menuToggleHSm = round($menuToggleWSm / 6)
-$menuToggleTransition = transform .2s ease-in-out
+$toggleH = round($toggleW / 6)
+$toggleHSm = round($toggleWSm / 6)
+$toggleTransition = transform .2s ease-in-out
 
 .menu-toggle
   position: absolute
-  fxbx: y
-  transition: $menuToggleTransition
-  width: $menuToggleWSm
-  left: 12px
-  top: 12px
+  transition: $toggleTransition
+  width: $toggleWSm
+  left: $togglePosSm
+  top: $togglePosSm
+  m-y: $togglHSm
   +above($bp)
-    width: $menuToggleW
-    left: 25px
-    top: 25px
+    width: $toggleW
+    left: $togglePos
+    top: $togglePos
 
   &__icon
   &:before
   &:after
     display: block
-    transition: $menuToggleTransition
+    transition: $toggleTransition
     width: 100%
-    height: $menuToggleHSm
+    height: $toggleHSm
     border-radius: 2px
     background: white
     +above($bp)
-      height: $menuToggleH
+      height: $toggleH
 
   &:before
   &:after
     content: ''
 
   &__icon
-    m-y: $menuToggleHSm
+    m-y: $toggleHSm
     +above($bp)
-      m-y: $menuToggleH
+      m-y: $toggleH
 
 // state
 //------------------------------------------------------------------------------
@@ -43,14 +41,14 @@ $menuToggleTransition = transform .2s ease-in-out
   transform: rotate(180deg)
 
   &:before
-    transform: translateY($menuToggleHSm * 2)
+    transform: translateY($toggleHSm * 2)
     +above($bp)
-      transform: translateY($menuToggleH * 2)
+      transform: translateY($toggleH * 2)
 
   &:after
-    transform: translateY($menuToggleHSm * -2)
+    transform: translateY($toggleHSm * -2)
     +above($bp)
-      transform: translateY($menuToggleH * -2)
+      transform: translateY($toggleH * -2)
 
   &__icon
     transform: scale(0)

@@ -3,10 +3,12 @@ html(lang='en-us')
   head
     include /partials/head/head
     block head
-  body.body(class='#{bodyClass}')
+  body.body.has-topbar
     include /partials/nav
-    block header
-    main#scroll-down-target(role='main')
+    header.topbar(role='heading')
+      .topbar__content
+        block topbar
+    main(role='main')
       block content
     include /partials/footer/footer
     script(src='/code/bundle.js', async)

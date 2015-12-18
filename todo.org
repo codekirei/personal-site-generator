@@ -15,6 +15,7 @@
 - [ ] ::selection colors (code, p, etc)
 - [ ] add focus/active state for links
 - [ ] check responsive sizing of everything
+- [ ] break up color
 
 # ##########################################################
 # JS
