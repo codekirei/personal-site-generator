@@ -1,11 +1,4 @@
 # ##########################################################
-# Banners
-# ##########################################################
-- [-] banners
-  - [X] .banner__description -> .banner__subtitle
-  - [ ] add subtitle fm to pages and banner for page template
-
-# ##########################################################
 # CSS
 # ##########################################################
 - [ ] style content in post banner
@@ -16,6 +9,7 @@
 - [ ] add focus/active state for links
 - [ ] check responsive sizing of everything
 - [ ] break up color
+- [X] add page class to body
 
 # ##########################################################
 # JS

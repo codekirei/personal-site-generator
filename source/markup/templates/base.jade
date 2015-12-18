@@ -1,10 +1,12 @@
+- var page = data.slug.split('/').pop() || 'index'
+
 doctype html
 html(lang='en-us')
   head
     include /partials/head/head
     block head
   block vars
-  body.body(class='#{body}')
+  body.body(class='#{body} #{page}')
     include /partials/nav
     if body === 'has-banner'
       include /partials/banner
