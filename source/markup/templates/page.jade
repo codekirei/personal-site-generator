@@ -1,4 +1,7 @@
-extends /topbarPage
+extends /base
+
+block vars
+  - body = 'has-topbar'
 
 block topbar
   h1.topbar__title!= data.title

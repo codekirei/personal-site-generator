@@ -23,6 +23,7 @@
 - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
   - [X] banners
   - [ ] nav
+- [ ] "scroll-down-target" => "scroll"
 - [ ] add hover styles with js
   - [ ] on hover date of post, shows actual date instead of time ago
 - [ ] switch to jamb syntax highlighting

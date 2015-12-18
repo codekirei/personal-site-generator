@@ -3,9 +3,13 @@ html(lang='en-us')
   head
     include /partials/head/head
     block head
-  body.body(class='#{bodyClass}')
+  block vars
+  body.body(class='#{body}')
     include /partials/nav
-    block header
+    if body === 'has-banner'
+      include /partials/banner
+    if body === 'has-topbar'
+      include /partials/topbar
     main#scroll-down-target(role='main')
       block content
     include /partials/footer/footer
