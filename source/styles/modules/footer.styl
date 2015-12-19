@@ -21,12 +21,18 @@
     +above($bp)
       size: 40px
 
+  *::selection
+    background: white
+    color: $c.dg
+
 .footer-nav
   &__list
     text-align: center
     list-style: none
 
   &__item
+    float: left
+    line-height: 1
     display: block
     +above($bp)
       display: inline

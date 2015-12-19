@@ -4,8 +4,13 @@
 body
   background: white
 
-p, li, span, a
+{$text}
   color: $c.text
+
+code, {$textandh}
+  &::selection
+    color: white
+    background: $c.dg
 
 pre
   background: $c.text

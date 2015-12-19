@@ -14,7 +14,7 @@ block content
       article.index-post(role='article')
         a.index-post__title(href= post.slug)
           h3!= post.title
-        .index-post__date
+        p.index-post__date
           span posted:
           time.index-post__time.replace-time(datetime!= post.posted)!= post.date
         .index-post__preview!= post.preview
