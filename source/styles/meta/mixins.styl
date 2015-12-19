@@ -97,6 +97,17 @@ fxbx(dir = x, align = center, justify = center)
     justify-content: justify
 
 //------------------------------------------------------------------------------
+// selection
+//------------------------------------------------------------------------------
+select(shade)
+  if shade == dark
+    background: $c.dg
+    color: white
+  if shade == light
+    background: white
+    color: $c.dg
+
+//------------------------------------------------------------------------------
 // other abbreviations
 //------------------------------------------------------------------------------
 fs($s)
