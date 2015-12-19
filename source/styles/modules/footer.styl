@@ -30,10 +30,10 @@
     list-style: none
 
   &__item
-    float: left
-    line-height: 1
     display: block
     +above($bp)
+      float: left
+      line-height: 1
       display: inline
       &:not(:last-child)
         p-e: ($gap / 4)
