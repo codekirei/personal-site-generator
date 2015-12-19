@@ -4,13 +4,8 @@
 - [ ] style content in post banner
 - [ ] better "read post" button
 - [ ] better post tags
-- [ ] fix bugged <pre><code> width =/
-- [X] ::selection colors (code, p, etc)
 - [ ] add focus/active state for links
-- [ ] check responsive sizing of everything
 - [ ] pretty scrollbars for code overflows
-- [X] break up color
-- [X] add page class to body
 
 # ##########################################################
 # JS
@@ -49,6 +44,7 @@
 - [ ] fix syntax highlighting
   - [ ] remove unnecessary JS script
   - [ ] update theme in css
+- [ ] check responsive sizing of everything
 - [ ] export smaller kunai-logo
 - [ ] include source svg
   - [ ] make sure it's not being targeted by gulp
@@ -61,6 +57,7 @@
 
 * Later
 - [ ] tests with ava / jest
+- [ ] archive page
 - [ ] scroll to top button?
 - [ ] fade in above the fold content
   - [ ] add blocking js detection script
@@ -77,6 +74,7 @@
 - [ ] fade in all the things!!! with scrollmonitor/scrollreveal?
 - [ ] add share links on posts: fb/twitter/reddit/ycomb/g+
 - [ ] advanced image handling
+  - [ ] code to support <picture>
   - [ ] generate post + page banner background images with trianglify (png)
   - [ ] or use stock image (e.g. gohugo.io)?
 - [ ] split out js modules
