@@ -2,12 +2,13 @@
   fxbx(y)
 
 .index-post
-  p: $gap2 5%
+  m-x: 5%
+  p-y: $gap2
   &:not(:last-child)
     b-s: 3px
-    border-color: $c.lg
+    border-color: $c.gray
   +above($bp)
-    p: $gap
+    p-y: $gap
 
   &__title
   &__date
@@ -32,8 +33,8 @@
 
   &__tag
     display: inline
-    b: 3px 5px
-    p: 3px 8px
-    m-w: 8px
-    color: $c.prime
-    border-color: $c.prime
+    p: 5px 10px
+    background: $c.gray
+    color: white
+    &:not(:last-child)
+      m-e: 5px

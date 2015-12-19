@@ -1,17 +1,19 @@
 # ##########################################################
 # CSS
 # ##########################################################
-- [ ] style content in post banner
-- [ ] better "read post" button
 - [ ] better post tags
+- [ ] style content in post banner
+- [ ] better buttons
+  - [ ] read post
+  - [ ] say hello
 - [ ] add focus/active state for links
-- [ ] pretty scrollbars for code overflows
+- [ ] index-posts -> blogroll, index-post -> post, post -> page?
 
 # ##########################################################
 # JS
 # ##########################################################
 - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
-  - [X] banners
+  - [X] banner
   - [ ] nav
 - [ ] "scroll-down-target" => "scroll"
 - [ ] add hover styles with js
@@ -19,6 +21,17 @@
 - [ ] make sure all scripts work on all pages
 - [ ] disable onmousedown on images
   http://stackoverflow.com/questions/704564/disable-drag-and-drop-on-html-elements
+
+# ##########################################################
+# Other
+# ##########################################################
+- [ ] fix syntax highlighting
+  - [ ] remove unnecessary JS script
+  - [ ] update theme in css
+- [ ] check responsive sizing of everything
+- [ ] export smaller kunai-logo
+- [ ] include source svg
+  - [ ] make sure it's not being targeted by gulp
 
 # ##########################################################
 # Content
@@ -37,17 +50,6 @@
   - [ ] projects page
   - [ ] about page
   - [ ] colophon
-
-# ##########################################################
-# Other
-# ##########################################################
-- [ ] fix syntax highlighting
-  - [ ] remove unnecessary JS script
-  - [ ] update theme in css
-- [ ] check responsive sizing of everything
-- [ ] export smaller kunai-logo
-- [ ] include source svg
-  - [ ] make sure it's not being targeted by gulp
 
 # ##########################################################
 # Gulp
