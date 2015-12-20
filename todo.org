@@ -1,13 +1,13 @@
 # ##########################################################
 # CSS
 # ##########################################################
-- [ ] better post tags
-- [ ] style content in post banner
+- [ ] index-posts -> blog, index-post -> post, post -> page?
 - [ ] better buttons
   - [ ] read post
   - [ ] say hello
+- [ ] fix sticky footer on mobile =/
+- [ ] style content in post banner
 - [ ] add focus/active state for links
-- [ ] index-posts -> blogroll, index-post -> post, post -> page?
 
 # ##########################################################
 # JS

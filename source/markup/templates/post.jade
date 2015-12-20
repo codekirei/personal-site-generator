@@ -15,6 +15,6 @@ block banner
       li.banner__tag!= tag
 
 block content
-  article.post(role='article')!= data.content
+  article.content(role='article')!= data.content
     img.fleuron(src='/img/kunai-fleuron.png', alt='fleuron')
   include /partials/author
