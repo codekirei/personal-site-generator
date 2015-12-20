@@ -1,5 +1,5 @@
 .author
-  background: $c.lg
+  theme($c.text, $c.lg)
   fxbx(y)
   p-y: $gap
   text-align: center
@@ -10,15 +10,22 @@
   &__img
     size: 200px
     +below($bp)
-      m-s: ($gap / 2 )
+      m-s: $gap2
 
   &__title
   &__name
     display: block
     line-height: 1
 
-  &__name
-    p-s: ($gap / 2)
-
   &__title
     color: $c.dg
+
+  &__name
+    m-s: $gap2
+
+  &__hello-button
+    color: $c.dg
+    border-color: $c.dg
+    text-decoration: none
+    b: 3px 5px
+    p: 3px 8px

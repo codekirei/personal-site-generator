@@ -1,0 +1,40 @@
+// body
+//------------------------------------------------------------------------------
+.body--no-scroll
+  height: 100vh
+  overflow: hidden
+
+// menu-toggle
+//------------------------------------------------------------------------------
+$toggleTransition = transform .2s ease-in-out
+
+.menu-toggle
+  transition: $toggleTransition
+  &__icon
+  &:before
+  &:after
+    transition: $toggleTransition
+
+.menu-toggle--toggled
+  transform: rotate(180deg)
+
+  &:before
+    transform: translateY($toggleHSm * 2)
+    +above($bp)
+      transform: translateY($toggleH * 2)
+
+  &:after
+    transform: translateY($toggleHSm * -2)
+    +above($bp)
+      transform: translateY($toggleH * -2)
+
+  &__icon
+    transform: scale(0)
+
+
+// menu
+//------------------------------------------------------------------------------
+.menu
+  visibility: hidden
+  &--visible
+    visibility: visible

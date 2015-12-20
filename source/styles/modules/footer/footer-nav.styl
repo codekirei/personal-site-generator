@@ -1,0 +1,20 @@
+.footer-nav
+  &__list
+    text-align: center
+    list-style: none
+
+  &__item
+    display: block
+    +above($bp)
+      float: left
+      line-height: 1
+      display: inline
+      &:not(:last-child)
+        p-e: ($gap / 4)
+        b-e: 3px
+        border-color: white
+        m-e: ($gap / 4)
+
+  &__link
+    text-decoration: none
+    color: white

@@ -1,6 +1,5 @@
 .banner
-  background: $c.prime
-  color: white
+  theme(white, $c.prime)
   height: 100vh
   fxbx(y)
   text-align: center
@@ -13,11 +12,8 @@
     +above($bp)
       p-y: $gap
 
-  &__img
+  &__logo
     width: 75%
     max-width: 600px
     max-height: 50vh
     object-fit: contain
-
-  *::selection
-    select(light)

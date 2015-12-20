@@ -1,0 +1,30 @@
+.menu-toggle
+  position: absolute
+  width: $toggleWSm
+  left: $togglePosSm
+  top: $togglePosSm
+  +above($bp)
+    width: $toggleW
+    left: $togglePos
+    top: $togglePos
+
+  &__icon
+  &:before
+  &:after
+    display: block
+    width: 100%
+    background: white
+    border-radius: 1px
+    height: $toggleHSm
+    +above($bp)
+      height: $toggleH
+      border-radius: 2px
+
+  &:before
+  &:after
+    content: ''
+
+  &__icon
+    m-y: $toggleHSm
+    +above($bp)
+      m-y: $toggleH

@@ -7,7 +7,10 @@
   - [ ] say hello
 - [ ] fix sticky footer on mobile =/
 - [ ] style content in post banner
+- [ ] clean up body/content.styl
 - [ ] add focus/active state for links
+- [ ] banner__subtitle split to 2 spans, block -> inline for line break on mobile
+- [ ] fix scroll down overlapping content on tablet resos
 
 # ##########################################################
 # JS

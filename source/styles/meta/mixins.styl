@@ -112,3 +112,17 @@ select(shade)
 //------------------------------------------------------------------------------
 fs($s)
   font-size: $s
+
+//------------------------------------------------------------------------------
+// color themes
+//------------------------------------------------------------------------------
+theme($fg, $bg, $brdr = false)
+  color: $fg
+  background: $bg
+  if $brdr
+    border-color: $brdr
+  *::selection
+    if $fg == white
+      select(light)
+    else
+      select(dark)

@@ -1,11 +1,11 @@
 .menu
+  theme(white, $c.dg)
   height: 100vh
   width: 100vw
   position: fixed
   fxbx(y)
   text-align: center
   opacity: 0
-  background: $c.dg
 
   &__list
     p-y: $gap
@@ -19,10 +19,3 @@
   &__link
     text-decoration: none
     color: white
-
-// state (interacts with JS)
-//------------------------------------------------------------------------------
-.menu
-  visibility: hidden
-  &--visible
-    visibility: visible

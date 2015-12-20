@@ -1,14 +1,10 @@
 .topbar
+  theme(white, $c.prime)
   fxbx(y)
   text-align: center
-  background: $c.prime
-  color: white
-  min-height: $topbarHSm
+  min-height: $topbarSm
   +above($bp)
-    min-height: $topbarH
+    min-height: $topbar
 
   &__content
     max-width: 80%
-
-  *::selection
-    select(light)
