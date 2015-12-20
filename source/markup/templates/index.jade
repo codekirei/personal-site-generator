@@ -11,14 +11,14 @@ block banner
 block content
   section.blog
     each post in data.posts
-      article.index-post(role='article')
-        a.index-post__title(href= post.slug)
+      article.post(role='article')
+        a.post__title(href= post.slug)
           h3!= post.title
-        p.index-post__date
+        p.post__date
           span posted:
-          time.index-post__time.replace-time(datetime!= post.posted)!= post.date
-        .index-post__preview!= post.preview
-        a.index-post__read-button(href= post.slug) read post
-        ul.index-post__tags
+          time.post__time.replace-time(datetime!= post.posted)!= post.date
+        .post__preview!= post.preview
+        a.post__read-button(href= post.slug) read post
+        ul.post__tags
           each tag in post.tags
-            li.index-post__tag!= tag
+            li.post__tag!= tag
