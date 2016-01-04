@@ -6,6 +6,9 @@
 // npm
 const m = require('mithril')
 
+// local
+const map = require('../utils/map')
+
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
@@ -14,16 +17,18 @@ const banner = content => data =>
     , { class: 'banner'
       , role: 'banner'
       }
-    , [ bannerContent(content)
-      , scrollDown()
-      ])
+    , map(
+        [ bannerContent(content)
+        , scrollDown
+        ]
+      )(data))
 
 // bannerContent
 //----------------------------------------------------------
-const bannerContent = content =>
+const bannerContent = content => data =>
   m('div'
     , { class: 'banner__content' }
-    , content()
+    , content(data)
   )
 
 // scrollDown
