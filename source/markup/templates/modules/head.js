@@ -21,7 +21,7 @@ const head = data =>
       , meta('description', data.description)
       , meta('msapplication-TileColor', '#FFFFFF')
       , meta('msapplication-TileImage', '/favicon-144.png')
-      , favicons(180, 152, 120, 76)
+      , favicons([180, 152, 120, 76])
       ).reduce((a, b) => a.concat(b), []))
 
 const charset = () => m('meta', { charset: 'utf-8' })
@@ -38,7 +38,7 @@ const link = (rel, href) => m('link', {rel, href})
 
 const meta = (name, content) => m('meta', {name, content})
 
-const favicons = () => Array.prototype.slice.call(arguments, 0).map(favicon)
+const favicons = sizes => sizes.map(favicon)
 
 const favicon = size =>
   m('link'
