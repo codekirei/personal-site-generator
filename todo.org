@@ -1,7 +1,9 @@
+- [ ] jamb -> smg
+
 # ##########################################################
 # CSS
 # ##########################################################
-- [ ] index-posts -> blog, index-post -> post, post -> page?
+- [X] index-posts -> blog, index-post -> post, post -> page?
 - [ ] better buttons
   - [ ] read post
   - [ ] say hello
@@ -22,7 +24,7 @@
 - [ ] add hover styles with js
   - [ ] on hover date of post, shows actual date instead of time ago
 - [ ] make sure all scripts work on all pages
-- [ ] disable onmousedown on images
+- [ ] disable onmousedown dragging on images / svgs
   http://stackoverflow.com/questions/704564/disable-drag-and-drop-on-html-elements
 
 # ##########################################################
@@ -53,6 +55,7 @@
   - [ ] projects page
   - [ ] about page
   - [ ] colophon
+  - [ ] picture of self
 
 # ##########################################################
 # Gulp

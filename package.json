@@ -37,11 +37,13 @@
     "kouto-swiss": "^0.11.6",
     "lodash.merge": "^3.3.2",
     "minimist": "^1.2.0",
+    "mithril": "^0.2.2-rc.1",
+    "mithril-node-render": "^0.4.2",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.4",
     "rupture": "^0.6.1",
+    "smg": "^0.1.1",
     "smooth-scroll": "github:cferdinandi/smooth-scroll",
-    "trianglify": "^0.4.0",
     "webpack": "^1.12.9"
   }
 }

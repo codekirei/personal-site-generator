@@ -22,12 +22,6 @@ module.exports =
       }
     ]
   , needPosts: ['index']
-  , opts:
-    { jade:
-      { basedir: loc.src.jadeBase
-      , pretty: true
-      }
-    }
   , paths:
     { dist: loc.dist.root
     , pages: loc.src.pages

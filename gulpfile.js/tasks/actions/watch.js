@@ -22,8 +22,8 @@ function reload(glob) {
 }
 
 function watch() {
-  // jamb
-  g.watch(loc.src.markup, () => runseq('jamb', () => reload()))
+  // markup
+  g.watch(loc.src.markup, () => runseq('smg', () => reload()))
 
   // dupes
   g.watch(loc.src.dupes, () => runseq(

@@ -45,8 +45,8 @@ const locations = module.exports = {
   // config locations (so meta)
   , cfg: {
     root: 'config'
-    , get jamb() {return p.join(this.root, 'jamb.js')}
     , get locations() {return p.join(this.root, 'locations.js')}
+    , get smg() {return p.join(this.root, 'smg.js')}
   }
 }
 

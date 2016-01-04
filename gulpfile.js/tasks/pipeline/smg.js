@@ -4,16 +4,19 @@
 // modules
 //----------------------------------------------------------
 // npm
+const Smg = require('smg')
 const gulp = require('gulp')
-const runseq = require('run-sequence').use(gulp)
+
+// local
+const cfg = require('conf/smg')
+
+//----------------------------------------------------------
+// logic
+//----------------------------------------------------------
+const smg = cb => new Smg(cfg).then(() => cb())
 
 //----------------------------------------------------------
 // exports
 //----------------------------------------------------------
-gulp.task('build', cb => {
-  runseq(
-    'scriptImports',
-    ['images', 'dupes', 'scripts', 'styles', 'fonts', 'smg'],
-    () => cb()
-  )
-})
+module.exports = smg
+gulp.task('smg', smg)

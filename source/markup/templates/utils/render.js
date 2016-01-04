@@ -4,21 +4,18 @@
 // modules
 //----------------------------------------------------------
 // npm
-const Jamb = require('jamb')
-const gulp = require('gulp')
-
-// local
-const cfg = require('conf/jamb')
+const m = require('mithril')
+const mnr = require('mithril-node-render')
 
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
-function jamb(cb) {
-  new Jamb(cfg).then(() => cb())
-}
+const render = (data, els) =>
+  [ '<!DOCTYPE html>'
+  , mnr(m('html', {lang: 'en-us'}, els.map(el => el(data))))
+  ].join('')
 
 //----------------------------------------------------------
 // exports
 //----------------------------------------------------------
-module.exports = jamb
-gulp.task('jamb', jamb)
+module.exports = render

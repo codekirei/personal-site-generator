@@ -4,16 +4,18 @@
 // modules
 //----------------------------------------------------------
 // npm
-const gulp = require('gulp')
-const runseq = require('run-sequence').use(gulp)
+const m = require('mithril')
+
+//----------------------------------------------------------
+// logic
+//----------------------------------------------------------
+const script =
+  m('script'
+    , { src: '/code/bundle.js'
+      , async: true
+      })
 
 //----------------------------------------------------------
 // exports
 //----------------------------------------------------------
-gulp.task('build', cb => {
-  runseq(
-    'scriptImports',
-    ['images', 'dupes', 'scripts', 'styles', 'fonts', 'smg'],
-    () => cb()
-  )
-})
+module.exports = script
