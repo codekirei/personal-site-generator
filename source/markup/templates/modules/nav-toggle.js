@@ -16,7 +16,7 @@ const navToggle =
       , href: '#footer-nav'
       , ariaLabel: 'Open navigation menu'
       }
-    , [ m('div', {class: 'menu-toggle__icon'}) ])
+    , [ m('div', { class: 'menu-toggle__icon' }) ])
 
 //----------------------------------------------------------
 // exports

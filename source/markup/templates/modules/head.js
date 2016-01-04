@@ -11,7 +11,8 @@ const m = require('mithril')
 //----------------------------------------------------------
 const head = data =>
   m('head'
-    , [ charset
+    , new Array().concat(
+      charset
       , viewport
       , title(data)
       , link('canonical', data.canonical)
@@ -21,7 +22,7 @@ const head = data =>
       , meta('msapplication-TileColor', '#FFFFFF')
       , meta('msapplication-TileImage', '/favicon-144.png')
       , favicons(180, 152, 120, 76)
-      ].reduce((a, b) => a.concat(b), []))
+      ).reduce((a, b) => a.concat(b), []))
 
 const charset = m('meta', { charset: 'utf-8' })
 

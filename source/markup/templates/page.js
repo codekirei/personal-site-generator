@@ -33,12 +33,12 @@ const body = data =>
       ])
 
 const pageContent = data =>
-  m('article'
-    , { class: content
+  [m('article'
+    , { class: 'content'
       , role: 'article'
       }
     , m.trust(data.content)
-  )
+  )]
 
 //----------------------------------------------------------
 // exports

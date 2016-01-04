@@ -19,8 +19,7 @@ const nav = data =>
 const navList = data =>
   m('ul'
     , { class: 'menu__list' }
-    , data.nav.map(navItem)
-    )
+    , data.nav.map(navItem))
 
 const navItem = link =>
   m('li'
@@ -33,7 +32,7 @@ const navLink = link =>
       , href: link.link
       }
     , link.text
-    )
+  )
 
 //----------------------------------------------------------
 // exports

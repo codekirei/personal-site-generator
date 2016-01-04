@@ -61,9 +61,9 @@ const bannerSubtitle =
 // content
 //----------------------------------------------------------
 const indexContent = data =>
-  m('section'
+  [m('section'
     , { class: 'blog' }
-    , data.posts.map(article))
+    , data.posts.map(article))]
 
 const article = post =>
   m('article'
