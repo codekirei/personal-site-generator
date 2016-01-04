@@ -16,8 +16,9 @@ const main = content => data =>
       }
     , new Array()
         .concat(content)
-        .reduce((a, b) => a.concat(b), []))
+        .reduce((a, b) => a.concat(b), [])
         .map(el => el(data))
+  )
 
 //----------------------------------------------------------
 // exports
