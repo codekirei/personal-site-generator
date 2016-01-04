@@ -9,7 +9,7 @@ const m = require('mithril')
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
-const script =
+const script = () =>
   m('script'
     , { src: '/code/bundle.js'
       , async: true

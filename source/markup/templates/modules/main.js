@@ -9,12 +9,15 @@ const m = require('mithril')
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
-const main = content =>
+const main = content => data =>
   m('main'
     , { id: 'scroll-down-target'
       , role: 'main'
       }
-    , content)
+    , new Array()
+        .concat(content)
+        .reduce((a, b) => a.concat(b), []))
+        .map(el => el(data))
 
 //----------------------------------------------------------
 // exports

@@ -9,7 +9,7 @@ const m = require('mithril')
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
-const navToggle =
+const navToggle = () =>
   m('a'
     , { class: 'menu-toggle'
       , role: 'button'

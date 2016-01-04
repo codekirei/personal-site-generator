@@ -6,8 +6,11 @@
 // npm
 const m = require('mithril')
 
-// local
+// utils
 const render = require('./utils/render')
+const map = require('./utils/map')
+
+// modules
 const head = require('./modules/head')
 const navToggle = require('./modules/nav-toggle')
 const nav = require('./modules/nav')
@@ -24,21 +27,23 @@ const page = data => render(data, [head, body])
 const body = data =>
   m('body'
     , { class: `${data.slug.split('/').pop()} has-topbar` }
-    , [ navToggle
-      , nav(data)
-      , topbar(data)
-      , main(pageContent(data))
-      , footer(data)
-      , script
-      ])
+    , map(
+        [ navToggle
+        , nav
+        , topbar
+        , main(pageContent)
+        , footer
+        , script
+        ]
+      )(data))
 
 const pageContent = data =>
-  [m('article'
+  m('article'
     , { class: 'content'
       , role: 'article'
       }
     , m.trust(data.content)
-  )]
+  )
 
 //----------------------------------------------------------
 // exports

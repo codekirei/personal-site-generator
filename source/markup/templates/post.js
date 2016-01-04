@@ -6,8 +6,11 @@
 // npm
 const m = require('mithril')
 
-// local
+// utils
 const render = require('./utils/render')
+const map = require('./utils/map')
+
+// modules
 const head = require('./modules/head')
 const navToggle = require('./modules/nav-toggle')
 const nav = require('./modules/nav')
@@ -24,22 +27,25 @@ const post = data => render(data, [head, body])
 const body = data =>
   m('body'
     , { class: `${data.slug.split('/').pop()} has-banner` }
-    , [ navToggle
-      , nav(data)
-      , banner(postBanner(data))
-      , main(postContent(data))
-      , footer(data)
-      , script
-      ])
+    , map(
+        [ navToggle
+        , nav
+        , banner(postBanner)
+        , main(postContent)
+        , footer
+        , script
+        ]
+      )(data))
 
 // banner
 //----------------------------------------------------------
 const postBanner = data =>
-  new Array().concat(
-    bannerTitle
+  map(
+    [ bannerTitle
     , bannerTime
     , bannerTags
-  ).map(fn => fn(data))
+    ]
+  )(data)
 
 const bannerTitle = data =>
   m('h1'
@@ -50,9 +56,11 @@ const bannerTitle = data =>
 const bannerTime = data =>
   m('span'
     , { class: 'banner__time' }
-    , [ bannerDate(data)
-      , bannerErt(data)
-      ])
+    , map(
+        [ bannerDate
+        , bannerErt
+        ]
+      )(data))
 
 const bannerDate = data =>
   m('time'
@@ -89,9 +97,9 @@ const article = data =>
       , role: 'article'
       }
     , m.trust(data.content)
-    , [ fleuron ])
+    , [ fleuron() ])
 
-const fleuron =
+const fleuron = () =>
   m('img'
     , { class: 'fleuron'
       , src: '/img/kunai-fleuron.png'
@@ -101,11 +109,11 @@ const fleuron =
 const author = data =>
   m('section'
     , {class: 'author'}
-    , [ authorImg
+    , [ authorImg()
       , authorInfo(data)
       ])
 
-const authorImg =
+const authorImg = () =>
    m('img'
     , { class: 'author__img'
       , src: '/img/author.png'
@@ -114,20 +122,22 @@ const authorImg =
 
 const authorInfo = data =>
   m('div'
-    , {class: 'author__info'}
-    , [ authorTitle
-      , authorName(data)
-      , authorHello(data)
-      ])
+    , { class: 'author__info' }
+    , map(
+        [ authorTitle
+        , authorName
+        , authorHello
+        ]
+      )(data))
 
-const authorTitle =
-   m('span'
-    , {class: 'author__title'}
+const authorTitle = () =>
+  m('span'
+    , { class: 'author__title' }
     , 'Author')
 
 const authorName = data =>
   m('a'
-    , {class: 'author__name'}
+    , { class: 'author__name' }
     , data.author.name)
 
 const authorHello = data =>

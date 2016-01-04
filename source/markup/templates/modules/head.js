@@ -12,8 +12,8 @@ const m = require('mithril')
 const head = data =>
   m('head'
     , new Array().concat(
-      charset
-      , viewport
+      charset()
+      , viewport()
       , title(data)
       , link('canonical', data.canonical)
       , link('author', data.author.link)
@@ -24,12 +24,13 @@ const head = data =>
       , favicons(180, 152, 120, 76)
       ).reduce((a, b) => a.concat(b), []))
 
-const charset = m('meta', { charset: 'utf-8' })
+const charset = () => m('meta', { charset: 'utf-8' })
 
-const viewport = m('meta'
-  , { name: 'viewport'
-    , content: 'width=device-width, initial-scale=1'
-    })
+const viewport = () =>
+  m('meta'
+    , { name: 'viewport'
+      , content: 'width=device-width, initial-scale=1'
+      })
 
 const title = data => m('title', data.title)
 
