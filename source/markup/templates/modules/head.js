@@ -25,7 +25,7 @@ const head = data =>
         , meta('msapplication-TileColor', '#FFFFFF')
         , meta('msapplication-TileImage', '/favicon-144.png')
         , favicons([180, 152, 120, 76])
-        ])
+        ]))
 
 const charset = () => m('meta', { charset: 'utf-8' })
 

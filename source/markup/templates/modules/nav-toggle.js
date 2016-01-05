@@ -14,7 +14,7 @@ const navToggle = () =>
     , { class: 'menu-toggle'
       , role: 'button'
       , href: '#footer-nav'
-      , ariaLabel: 'Open navigation menu'
+      , 'aria-label': 'Open navigation menu'
       }
     , [ m('div', { class: 'menu-toggle__icon' }) ])
 
