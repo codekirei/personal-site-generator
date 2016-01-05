@@ -18,7 +18,6 @@
 - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
   - [X] banner
   - [ ] nav
-- [ ] fix menu style not applying
 - [ ] "scroll-down-target" => "scroll"
 - [ ] add hover styles with js
 - [ ] make sure all scripts work on all pages

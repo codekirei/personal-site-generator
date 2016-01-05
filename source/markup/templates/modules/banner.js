@@ -38,7 +38,7 @@ const scrollDown = () =>
     , { class: 'scroll-down'
       , href: '#scroll-down-target'
       , role: 'button'
-      , dataScroll: true // or 'data-scroll' ?
+      , 'data-scroll': true
       }
     , [ svg() ])
 

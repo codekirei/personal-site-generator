@@ -6,23 +6,26 @@
 // npm
 const m = require('mithril')
 
+// local
+const flatAr = require('../utils/flat-ar')
+
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
 const head = data =>
   m('head'
-    , new Array().concat(
-      charset()
-      , viewport()
-      , title(data)
-      , link('canonical', data.canonical)
-      , link('author', data.author.link)
-      , link('stylesheet', '/code/style.css')
-      , meta('description', data.description)
-      , meta('msapplication-TileColor', '#FFFFFF')
-      , meta('msapplication-TileImage', '/favicon-144.png')
-      , favicons([180, 152, 120, 76])
-      ).reduce((a, b) => a.concat(b), []))
+    , flatAr(
+        [ charset()
+        , viewport()
+        , title(data)
+        , link('canonical', data.canonical)
+        , link('author', data.author.link)
+        , link('stylesheet', '/code/style.css')
+        , meta('description', data.description)
+        , meta('msapplication-TileColor', '#FFFFFF')
+        , meta('msapplication-TileImage', '/favicon-144.png')
+        , favicons([180, 152, 120, 76])
+        ])
 
 const charset = () => m('meta', { charset: 'utf-8' })
 
