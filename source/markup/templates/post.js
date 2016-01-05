@@ -26,7 +26,8 @@ const post = data => render(data, [head, body])
 
 const body = data =>
   m('body'
-    , { class: `body ${data.slug.split('/').pop()} has-banner` }
+    , { class: `body ${data.slug.split('/').pop()} has-banner`
+      }
     , map(
         [ navToggle
         , nav

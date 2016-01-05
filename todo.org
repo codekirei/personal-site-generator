@@ -1,7 +1,6 @@
 # ##########################################################
 # CSS
 # ##########################################################
-- [ ] fix missing escaped char by reading time
 - [ ] better buttons
   - [ ] read post
   - [ ] say hello
@@ -18,8 +17,7 @@
 - [ ] add hover styles with js
   - [ ] add focus/active state for links
 - [ ] make sure all scripts work on all pages
-- [ ] disable onmousedown dragging on images / svgs
-  http://stackoverflow.com/questions/704564/disable-drag-and-drop-on-html-elements
+- [ ] only toggle css style after animation has completed
 
 # ##########################################################
 # Other
