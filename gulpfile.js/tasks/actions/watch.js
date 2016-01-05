@@ -3,6 +3,9 @@
 //----------------------------------------------------------
 // modules
 //----------------------------------------------------------
+// node
+const spawn = require('child_process').spawn
+
 // npm
 const gulp = require('gulp')
 const bs = require('browser-sync')
@@ -23,10 +26,12 @@ function reload(glob) {
 
 function watch() {
   // markup
-  g.watch(loc.src.markup, () => runseq(
-    'smg',
-    () => reload()
-  ))
+  let smgProcess
+  g.watch(loc.src.markup, () => {
+    if (smgProcess && smgProcess.exitCode === null) smgProcess.kill()
+    smgProcess = spawn('gulp', ['smg'], {stdio: 'inherit'})
+    smgProcess.on('close', () => reload())
+  })
 
   // dupes
   g.watch(loc.src.dupes, () => runseq(
