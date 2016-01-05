@@ -20,9 +20,9 @@
 - [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
   - [X] banner
   - [ ] nav
+- [ ] fix menu style not applying
 - [ ] "scroll-down-target" => "scroll"
 - [ ] add hover styles with js
-  - [ ] on hover date of post, shows actual date instead of time ago
 - [ ] make sure all scripts work on all pages
 - [ ] disable onmousedown dragging on images / svgs
   http://stackoverflow.com/questions/704564/disable-drag-and-drop-on-html-elements
@@ -34,9 +34,7 @@
   - [ ] remove unnecessary JS script
   - [ ] update theme in css
 - [ ] check responsive sizing of everything
-- [ ] export smaller kunai-logo
-- [ ] include source svg
-  - [ ] make sure it's not being targeted by gulp
+- [ ] remove old templates
 
 # ##########################################################
 # Content
@@ -96,3 +94,8 @@
 - [ ] gulp -> nomu
   - [ ] fix bug with script bundles being overwritten during gulp-watch if editing markup
 - [ ] discourse for comments (requires server)
+- [ ] logo
+  - [ ] export smaller kunai-logo
+  - [ ] include source svg
+    - [ ] make sure it's not being targeted by gulp
+- [ ] on hover date of post, shows actual date instead of time ago

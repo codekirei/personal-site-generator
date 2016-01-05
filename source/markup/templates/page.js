@@ -26,7 +26,7 @@ const page = data => render(data, [head, body])
 
 const body = data =>
   m('body'
-    , { class: `${data.slug.split('/').pop()} has-topbar` }
+    , { class: `body ${data.slug.split('/').pop()} has-topbar` }
     , map(
         [ navToggle
         , nav

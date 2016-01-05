@@ -23,7 +23,10 @@ function reload(glob) {
 
 function watch() {
   // markup
-  g.watch(loc.src.markup, () => runseq('smg', () => reload()))
+  g.watch(loc.src.markup, () => runseq(
+    'smg',
+    () => reload()
+  ))
 
   // dupes
   g.watch(loc.src.dupes, () => runseq(

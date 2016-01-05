@@ -26,8 +26,7 @@ const locations = module.exports = {
     , get pages() {return p.join(this.root, 'markup/content/*.md')}
     , get posts() {return p.join(this.root, 'markup/content/posts/*.md')}
     , get templates() {return p.join(this.root, 'markup/templates/*.js')}
-    , get markup() {return p.join(this.root, 'markup/**/*.{md|jade}')}
-    , get jadeBase() {return p.join(this.root, 'markup/templates')}
+    , get markup() {return p.join(this.root, 'markup/**/*.{md|js}')}
     // fonts
     , get fonts() {return p.join(this.root, 'fonts/**/*')}
   }
