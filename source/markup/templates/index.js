@@ -26,7 +26,7 @@ const index = data => render(data, [head, body])
 
 const body = data =>
   m('body'
-    , { class: 'index has-banner' }
+    , { class: 'body index has-banner' }
     , map(
         [ navToggle
         , nav
