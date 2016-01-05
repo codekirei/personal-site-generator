@@ -11,7 +11,7 @@ const m = require('mithril')
 //----------------------------------------------------------
 const main = content => data =>
   m('main'
-    , { id: 'scroll-down-target'
+    , { id: 'scroll-to'
       , role: 'main'
       }
     , new Array()

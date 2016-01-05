@@ -36,7 +36,7 @@ const bannerContent = content => data =>
 const scrollDown = () =>
   m('a'
     , { class: 'scroll-down'
-      , href: '#scroll-down-target'
+      , href: '#scroll-to'
       , role: 'button'
       , 'data-scroll': true
       }

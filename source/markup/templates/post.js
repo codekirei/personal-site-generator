@@ -58,6 +58,7 @@ const bannerTime = data =>
     , { class: 'banner__time' }
     , map(
         [ bannerDate
+        , bannerDash
         , bannerErt
         ]
       )(data))
@@ -67,7 +68,13 @@ const bannerDate = data =>
     , { class: 'banner__date replace-time'
       , datetime: data.posted
       }
-    , `${data.date} &#x2014`
+    , data.date
+  )
+
+const bannerDash = data =>
+  m('span'
+    , { class: 'banner__dash' }
+    , m.trust(' &mdash; ')
   )
 
 const bannerErt = data =>

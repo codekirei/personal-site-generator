@@ -1,25 +1,22 @@
 # ##########################################################
 # CSS
 # ##########################################################
-- [X] index-posts -> blog, index-post -> post, post -> page?
+- [ ] fix missing escaped char by reading time
 - [ ] better buttons
   - [ ] read post
   - [ ] say hello
 - [ ] fix sticky footer on mobile =/
 - [ ] style content in post banner
 - [ ] clean up body/content.styl
-- [ ] add focus/active state for links
 - [ ] banner__subtitle split to 2 spans, block -> inline for line break on mobile
 - [ ] fix scroll down overlapping content on tablet resos
+- [ ] font sizes are a little whack =/
 
 # ##########################################################
 # JS
 # ##########################################################
-- [-] fix jumpiness on mobile from url bar hiding by setting height manually with JS
-  - [X] banner
-  - [ ] nav
-- [ ] "scroll-down-target" => "scroll"
 - [ ] add hover styles with js
+  - [ ] add focus/active state for links
 - [ ] make sure all scripts work on all pages
 - [ ] disable onmousedown dragging on images / svgs
   http://stackoverflow.com/questions/704564/disable-drag-and-drop-on-html-elements
@@ -30,6 +27,7 @@
 - [ ] fix syntax highlighting
   - [ ] remove unnecessary JS script
   - [ ] update theme in css
+- [ ] change post markup on blog to have ert like post header
 - [ ] check responsive sizing of everything
 - [ ] remove old templates
 
@@ -59,6 +57,11 @@
 - [ ] fix jamb crashing watch if it errs
 
 * Later
+- [ ] figure out how to deal with scrolling down on mobile when menu is open
+      Currently:
+        1. browser nav hides
+        2. js registers screen resize
+        3. menu closes
 - [ ] tests with ava / jest
 - [ ] archive page
 - [ ] scroll to top button?
