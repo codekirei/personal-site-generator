@@ -13,7 +13,7 @@ const map = require('../utils/map')
 // logic
 //----------------------------------------------------------
 const postMeta = scope => data =>
-  m('span'
+  m('div'
     , { class: `${scope}__meta` }
     , map(map([date, dash, ert])(scope))(data))
 

@@ -4,13 +4,11 @@
   fxbx(y)
   text-align: center
 
-  &__content
-    max-width: 80%
-
   &__title
-    p-y: $gap2
+  &__meta
+    m-s: $gap2
     +above($bp)
-      p-y: $gap
+      m-s: $gap
 
   &__subtitles
     +above($bp)
@@ -20,8 +18,18 @@
     +above($bp)
       p-e: 0.5em
 
-  &__logo
-    width: 75%
-    max-width: 600px
-    max-height: 50vh
-    object-fit: contain
+  &__date
+  &__dash
+  &__ert
+  &__tag
+    color: white
+
+  &__tags
+    list-style: none
+    display: block
+
+  &__tag
+    display: inline
+    &:not(:last-child)
+      &:after
+        content: ', '

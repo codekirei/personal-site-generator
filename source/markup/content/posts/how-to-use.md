@@ -80,7 +80,7 @@ The new file will be created at `_posts` with this format `date-title.md`.
 
 When you create a new post, you need to fill the post information in the front-matter, follow this example:
 
-```ruby
+```yaml
 ---
 layout: post
 title: "How to use"

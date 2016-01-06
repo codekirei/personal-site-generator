@@ -41,16 +41,9 @@ const body = data =>
 // banner
 //----------------------------------------------------------
 const indexBanner = () =>
-  [ bannerLogo()
-  , bannerTitle()
+  [ bannerTitle()
   , bannerSubtitle()
   ]
-
-const bannerLogo = () =>
-  m('img'
-    , { class: 'banner__logo'
-      , src: '/img/kunai-logo.png'
-      })
 
 const bannerTitle = () =>
   m('h1'

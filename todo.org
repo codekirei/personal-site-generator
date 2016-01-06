@@ -1,10 +1,6 @@
 # ##########################################################
 # CSS
 # ##########################################################
-- [ ] update highlight.js in smg
-- [ ] style content in post banner
-- [ ] fix layout in index banner
-  - [ ] fix scroll down overlapping content on tablet resos
 - [ ] font sizes are a little whack =/
   - [ ] maybe roll typography into a var and disperse?
   - [ ] distinguish post__meta
@@ -22,12 +18,12 @@
   - [ ] footer info
   - [ ] links in content
 - [ ] add focus/active state for links
-- [ ] make sure all scripts work on all pages
 
 # ##########################################################
 # Other
 # ##########################################################
 - [ ] check responsive sizing of everything
+- [ ] make sure all scripts work on all pages
 
 # ##########################################################
 # Content
@@ -53,6 +49,8 @@
 - [ ] write gulp deploy task
 
 * Later
+- [ ] visually handle one post having lots of tags well
+- [ ] update highlight.js in smg (see mdi docs)
 - [ ] custom 404 page
 - [ ] figure out a way to integrate tags into blogroll on front page
 - [ ] clean up / optimize css further (postcss?)
