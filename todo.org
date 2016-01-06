@@ -1,15 +1,9 @@
 # ##########################################################
-# CSS
-# ##########################################################
-- [ ] font sizes are a little whack =/
-  - [ ] maybe roll typography into a var and disperse?
-  - [ ] distinguish post__meta
-
-# ##########################################################
 # Other
 # ##########################################################
 - [ ] check responsive sizing of everything
 - [ ] make sure all scripts work on all pages
+- [ ] check multiple browsers
 
 # ##########################################################
 # Content
@@ -17,10 +11,6 @@
 - [ ] add/write missing static files
   - [ ] CNAME
   - [ ] readme.md
-  - [ ] robots.txt
-  - [ ] humans.txt
-  - [ ] crossdomain.xml
-  - [ ] browserconfig.xml
 
 - [ ] write site content
   - [ ] first two blog posts
@@ -35,6 +25,8 @@
 - [ ] write gulp deploy task
 
 * Later
+- [ ] add humans.txt
+- [ ] css-wide better solution to typography =/
 - [ ] figure out cooler hover effects
       - nav menu items
       - buttons

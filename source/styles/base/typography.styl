@@ -35,7 +35,7 @@ code *
 //------------------------------------------------------------------------------
 pre > code
 {$text}
-  fs: 16
+  fs: 18px
   +above($bp)
     fs: 20px
 
@@ -58,7 +58,6 @@ pre > code
   +above($bp)
     fs: 50px
 
-
 // index
 //------------------------------------------------------------------------------
 .banner
@@ -68,14 +67,18 @@ pre > code
       fs: 100px
   &__subtitle
     fs: 30px
+  &__date
+  &__dash
+  &__ert
+    fs: 20px
     +above($bp)
       fs: 30px
-.index-post
+
+.post
   &__title
     fs: 30px
-  &__read-button
-  &__tag
-    fs: 16px
+    +above($bp)
+      fs: 36px
 
 // post
 //------------------------------------------------------------------------------
@@ -83,10 +86,7 @@ pre > code
   &__title
     fs: 26px
   &__name
-    opensans(bold)
     fs: 40px
-.hello-button
-  fs: 16px
 
 // footer
 //------------------------------------------------------------------------------
@@ -103,9 +103,6 @@ pre > code
 p
 main li
   line-height: 1.8
-
-.index-post__tag
-  line-height: 2.5
 
 //------------------------------------------------------------------------------
 // other
