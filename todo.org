@@ -2,7 +2,7 @@
 # CSS
 # ##########################################################
 - [ ] style content in post banner
-- [ ] fix scroll down overlapping content on tablet resos
+- [ ] fix layout in index banner
 - [ ] font sizes are a little whack =/
   - [ ] maybe roll typography into a var and disperse?
   - [ ] distinguish post__meta
@@ -29,6 +29,7 @@
   - [ ] remove unnecessary JS script
   - [ ] update theme in css
 - [ ] check responsive sizing of everything
+  - [ ] fix scroll down overlapping content on tablet resos
 
 # ##########################################################
 # Content
@@ -42,7 +43,6 @@
   - [ ] browserconfig.xml
 
 - [ ] write site content
-  - [ ] custom 404 page
   - [ ] first two blog posts
   - [ ] projects page
   - [ ] about page
@@ -53,9 +53,9 @@
 # Gulp
 # ##########################################################
 - [ ] write gulp deploy task
-- [ ] fix jamb crashing watch if it errs
 
 * Later
+- [ ] custom 404 page
 - [ ] figure out a way to integrate tags into blogroll on front page
 - [ ] clean up / optimize css further (postcss?)
 - [ ] figure out how to deal with scrolling down on mobile when menu is open
