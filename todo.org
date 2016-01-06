@@ -28,9 +28,7 @@
 - [ ] fix syntax highlighting
   - [ ] remove unnecessary JS script
   - [ ] update theme in css
-- [ ] change post markup on blog to have ert like post header
 - [ ] check responsive sizing of everything
-- [ ] remove old templates
 
 # ##########################################################
 # Content
