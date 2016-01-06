@@ -11,11 +11,19 @@
     p-y: $gap
     list-style: none
 
-  &__item:not(:last-child)
-    m-s: $gap
-    +above($bp)
-      m-s: $gap
+  &__item
+    display: block
+    &:not(:last-child)
+      m-s: $gap2
+      +above($bp)
+        m-s: $gap
 
   &__link
+    display: inline-block
+    p: $gap2 $gap
     text-decoration: none
     color: white
+    transition: background 0.5s ease
+    &:hover
+    &:focus
+      background: $c.text

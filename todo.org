@@ -9,8 +9,7 @@
 # JS
 # ##########################################################
 - [-] add focus/hover styles with js
-  - [ ] menu button
-  - [ ] menu links
+  - [X] menu links
   - [X] down arrow
   - [ ] blog titles
   - [ ] read more button
@@ -49,6 +48,8 @@
 - [ ] write gulp deploy task
 
 * Later
+- [ ] figure out a good hover effect for nav toggle
+- [ ] figure out cooler hover effect for menu items
 - [ ] highlight active page in footer nav
 - [ ] :active state for links?
 - [ ] globally disable hover styles on touch screens with JS trickery
