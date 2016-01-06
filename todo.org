@@ -25,9 +25,7 @@
 # ##########################################################
 # Other
 # ##########################################################
-- [ ] fix syntax highlighting
-  - [ ] remove unnecessary JS script
-  - [ ] update theme in css
+- [ ] update hljs syntax theme
 - [ ] check responsive sizing of everything
   - [ ] fix scroll down overlapping content on tablet resos
 
