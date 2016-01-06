@@ -32,3 +32,10 @@
       +above($linewrap + 200) // magic
         p-x: 0
       max-width: $linewrap
+
+  a
+    transition: color 0.5s ease, background 0.5s ease
+    &:hover
+    &:focus
+      color: white
+      background: $c.text
