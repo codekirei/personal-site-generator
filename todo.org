@@ -55,6 +55,13 @@
 - [ ] fix jamb crashing watch if it errs
 
 * Later
+- [ ] catch 22 with menu animation and sticky footer. either:
+      A: sometimes footer will get dragged into vision at start of animation
+        because of body height being manually set to prevent scrolling
+      B: footer is manually hidden at start of animation to prevent A happening,
+        which looks kind of weird when it is currently in vision (only very
+        short pages) and also takes extra compute
+      - currently doing B, is there a better solution?
 - [ ] figure out how to deal with scrolling down on mobile when menu is open
       Currently:
         1. browser nav hides

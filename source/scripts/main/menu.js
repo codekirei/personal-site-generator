@@ -29,6 +29,7 @@ function menuEvents() {
   const body = getEl.withTag('body')[0]
   const scrollDown = getEl.withClass('scroll-down')[0]
   const banner = getEl.withClass('banner')[0]
+  const footer = getEl.withClass('site-footer')[0]
 
   // animation deltaFns and helpers
   //----------------------------------------------------------
@@ -59,11 +60,13 @@ function menuEvents() {
   function addModClasses() {
     elcl.add(menu, 'visible')
     elcl.add(body, 'no-scroll')
+    elcl.add(footer, 'hidden')
   }
 
   function delModClasses() {
     elcl.del(menu, 'visible')
     elcl.del(body, 'no-scroll')
+    elcl.del(footer, 'hidden')
   }
 
   // hacky test for mobile (feelsbadman)
