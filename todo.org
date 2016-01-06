@@ -6,18 +6,6 @@
   - [ ] distinguish post__meta
 
 # ##########################################################
-# JS
-# ##########################################################
-- [-] add focus/hover styles with js
-  - [X] menu links
-  - [X] down arrow
-  - [X] footer info
-  - [X] read more button
-  - [X] say hello button
-  - [X] links in content
-  - [ ] footer nav links
-
-# ##########################################################
 # Other
 # ##########################################################
 - [ ] check responsive sizing of everything

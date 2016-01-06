@@ -10,11 +10,18 @@
       line-height: 1
       display: inline
       &:not(:last-child)
-        p-e: ($gap / 4)
+        p-e: 3px
         b-e: 3px
         border-color: white
-        m-e: ($gap / 4)
+      &:not(:first-child)
+        p-w: 3px
 
   &__link
     text-decoration: none
     color: white
+    p-x: 10px
+    transition: color 0.7s ease, background 0.7s ease
+    &:hover
+    &:focus
+      color: $c.prime
+      background: white
