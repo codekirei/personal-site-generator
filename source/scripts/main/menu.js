@@ -19,11 +19,8 @@ function menuEvents() {
   //----------------------------------------------------------
   let directionToggle = true
   let shouldPreOpen = true
-  let anims = {}
   let opacity = 0
-  let windowW
-  let bodyW
-  let scrollW
+  let anim, windowW, bodyW, scrollW
 
   // relevant elements
   //----------------------------------------------------------
@@ -38,7 +35,6 @@ function menuEvents() {
   const fadeIn = (el, p) => el.style.opacity = opacity + p * (1 - opacity)
   const fadeOut = (el, p) => el.style.opacity = (1 - p) * opacity
   const animateMenu = (fn, cb) => animate(menu, fn, 322, ease.easeIn, cb)
-  const stopAnims = () => Object.keys(anims).map(anim => anims[anim].stop())
 
   // scrollbar fns
   //----------------------------------------------------------
@@ -90,10 +86,12 @@ function menuEvents() {
 
   function open() {
     if (shouldPreOpen) preOpen()
-    anims.in = animateMenu(fadeIn)
+    anim = animateMenu(fadeIn)
   }
 
-  const close = () => anims.out = animateMenu(fadeOut, postClose)
+  function close() {
+    anim = animateMenu(fadeOut, postClose)
+  }
 
   function toggleMenu(e) {
     // don't follow href
@@ -102,8 +100,8 @@ function menuEvents() {
     // if not at top scroll to top
     if (window.pageYOffset !== 0) window.scroll(0,0)
 
-    // stop all running animations
-    stopAnims()
+    // stop running animation
+    if (anim) anim.stop()
 
     // store current menu opacity
     opacity = parseFloat(menu.style.opacity)
@@ -131,7 +129,7 @@ function menuEvents() {
   }
 
   function reset() {
-    stopAnims()
+    if (anim) anim.stop()
     delModClasses()
     delMissingScrollbarStyles()
 
