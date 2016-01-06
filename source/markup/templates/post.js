@@ -15,6 +15,7 @@ const head = require('./modules/head')
 const navToggle = require('./modules/nav-toggle')
 const nav = require('./modules/nav')
 const banner = require('./modules/banner')
+const postMeta = require('./modules/post-meta')
 const main = require('./modules/main')
 const footer = require('./modules/footer')
 const script = require('./modules/script')
@@ -43,7 +44,7 @@ const body = data =>
 const postBanner = data =>
   map(
     [ bannerTitle
-    , bannerTime
+    , postMeta('banner')
     , bannerTags
     ]
   )(data)
@@ -52,36 +53,6 @@ const bannerTitle = data =>
   m('h1'
     , { class: 'banner__title' }
     , data.title
-  )
-
-const bannerTime = data =>
-  m('span'
-    , { class: 'banner__time' }
-    , map(
-        [ bannerDate
-        , bannerDash
-        , bannerErt
-        ]
-      )(data))
-
-const bannerDate = data =>
-  m('time'
-    , { class: 'banner__date replace-time'
-      , datetime: data.posted
-      }
-    , data.date
-  )
-
-const bannerDash = data =>
-  m('span'
-    , { class: 'banner__dash' }
-    , m.trust(' &mdash; ')
-  )
-
-const bannerErt = data =>
-  m('span'
-    , { class: 'banner__ert' }
-    , `${data.ert} minute read`
   )
 
 const bannerTags = data =>

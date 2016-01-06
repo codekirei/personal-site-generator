@@ -16,6 +16,7 @@ const navToggle = require('./modules/nav-toggle')
 const nav = require('./modules/nav')
 const banner = require('./modules/banner')
 const main = require('./modules/main')
+const postMeta = require('./modules/post-meta')
 const footer = require('./modules/footer')
 const script = require('./modules/script')
 
@@ -79,7 +80,7 @@ const article = post =>
       }
     , map(
         [ postTitle
-        , postDate
+        , postMeta('post')
         , postPreview
         , readButton
         ]
@@ -93,21 +94,6 @@ const postTitle = post =>
       , href: post.slug
       }
     , [ m('h3', post.title) ])
-
-const postDate = post =>
-  m('p'
-    , { class: 'post__date' }
-    , [ m('span', 'posted:')
-      , postTime(post)
-      ])
-
-const postTime = post =>
-  m('time'
-    , { class: 'post__time replace-time'
-      , datetime: post.posted
-      }
-    , post.date
-  )
 
 const postPreview = post =>
   m('div'

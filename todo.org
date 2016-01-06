@@ -5,6 +5,7 @@
 - [ ] fix scroll down overlapping content on tablet resos
 - [ ] font sizes are a little whack =/
   - [ ] maybe roll typography into a var and disperse?
+  - [ ] distinguish post__meta
 
 # ##########################################################
 # JS
