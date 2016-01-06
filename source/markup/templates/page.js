@@ -30,10 +30,18 @@ const body = data =>
     , map(
         [ navToggle
         , nav
-        , topbar
+        , wrapper
+        , script
+        ]
+      )(data))
+
+const wrapper = data =>
+  m('div'
+    , { class: 'content-wrapper' }
+    , map(
+        [ topbar
         , main(pageContent)
         , footer
-        , script
         ]
       )(data))
 
