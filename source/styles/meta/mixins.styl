@@ -97,6 +97,21 @@ fxbx(dir = x, align = center, justify = center)
     justify-content: justify
 
 //------------------------------------------------------------------------------
+// button
+//------------------------------------------------------------------------------
+button()
+  fxbx()
+  text-decoration: none
+  background: $c.dg
+  height: $smButtonH
+  p-w: 20px
+  p-e: 10px
+  +above($bp)
+    height: $buttonH
+  &__text
+    color: white
+
+//------------------------------------------------------------------------------
 // selection
 //------------------------------------------------------------------------------
 select(shade)

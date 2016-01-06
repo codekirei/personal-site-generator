@@ -2,15 +2,18 @@
   theme($c.text, $c.lg)
   fxbx(y)
   p-y: $gap
-  text-align: center
   +above($bp)
     flex-direction: row
-    text-align: left
 
   &__img
     size: 200px
     +below($bp)
       m-s: $gap2
+
+  &__info
+    fxbx(y)
+    +above($bp)
+      align-items: flex-start
 
   &__title
   &__name
@@ -24,8 +27,13 @@
     m-s: $gap2
 
   &__hello-button
-    color: $c.dg
-    border-color: $c.dg
-    text-decoration: none
-    b: 3px 5px
-    p: 3px 8px
+    button()
+
+    &__svg
+      fill: white
+      height: 20px
+      width: 40px
+      m-y: auto
+      +above($bp)
+        height: 25px
+        width: 45px

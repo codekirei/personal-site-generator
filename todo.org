@@ -1,9 +1,9 @@
 # ##########################################################
 # CSS
 # ##########################################################
-- [-] better buttons
+- [X] better buttons
   - [X] read post
-  - [ ] say hello
+  - [X] say hello
 - [ ] style content in post banner
 - [ ] banner__subtitle split to 2 spans, block -> inline for line break on mobile
 - [ ] fix scroll down overlapping content on tablet resos

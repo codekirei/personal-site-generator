@@ -114,6 +114,8 @@ const fleuron = () =>
       , alt: 'fleuron'
       })
 
+// author
+//----------------------------------------------------------
 const author = data =>
   m('section'
     , {class: 'author'}
@@ -134,7 +136,7 @@ const authorInfo = data =>
     , map(
         [ authorTitle
         , authorName
-        , authorHello
+        , helloButton
         ]
       )(data))
 
@@ -148,12 +150,34 @@ const authorName = data =>
     , { class: 'author__name' }
     , data.author.name)
 
-const authorHello = data =>
+// hello button
+//----------------------------------------------------------
+const helloButton = data =>
   m('a'
     , { class: 'author__hello-button'
       , href: `mailto:${data.author.email}`
       }
-    , 'say hello')
+    , [ buttonText()
+      , buttonSvg()
+      ])
+
+const buttonText = () =>
+  m('span'
+    , { class: 'author__hello-button__text' }
+    , 'say hello'
+  )
+
+const buttonSvg = () =>
+  m('svg'
+    , { class: 'author__hello-button__svg'
+      , viewBox: '0 0 1024 1024'
+      }
+    , [ buttonPath() ])
+
+const buttonPath = () =>
+  m('path'
+    , { d: 'M1024 405.714v453.714q0 37.714-26.857 64.571t-64.571 26.857h-841.143q-37.714 0-64.571-26.857t-26.857-64.571v-453.714q25.143 28 57.714 49.714 206.857 140.571 284 197.143 32.571 24 52.857 37.429t54 27.429 62.857 14h1.143q29.143 0 62.857-14t54-27.429 52.857-37.429q97.143-70.286 284.571-197.143 32.571-22.286 57.143-49.714zM1024 237.714q0 45.143-28 86.286t-69.714 70.286q-214.857 149.143-267.429 185.714-5.714 4-24.286 17.429t-30.857 21.714-29.714 18.571-32.857 15.429-28.571 5.143h-1.143q-13.143 0-28.571-5.143t-32.857-15.429-29.714-18.571-30.857-21.714-24.286-17.429q-52-36.571-149.714-104.286t-117.143-81.429q-35.429-24-66.857-66t-31.429-78q0-44.571 23.714-74.286t67.714-29.714h841.143q37.143 0 64.286 26.857t27.143 64.571z'
+      })
 
 //----------------------------------------------------------
 // exports
