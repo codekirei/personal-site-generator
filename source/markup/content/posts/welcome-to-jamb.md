@@ -18,11 +18,13 @@ You'll find this post in your `_posts` directory - edit this post and re-build (
 
 Jekyll also offers powerful support for code snippets:
 
-```
+```js
 const a = 'this is a constant'
 let b = 'this is a variable'
-function logger(text) {
-  console.log(text)
+const logger = text => console.log(text)
+function foo(bar, baz) {
+  let val = bar
+  return val * baz + 3
 }
 ```
 
