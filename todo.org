@@ -1,6 +1,7 @@
 # ##########################################################
 # CSS
 # ##########################################################
+- [ ] update highlight.js in smg
 - [ ] style content in post banner
 - [ ] fix layout in index banner
   - [ ] fix scroll down overlapping content on tablet resos
@@ -52,7 +53,6 @@
 - [ ] write gulp deploy task
 
 * Later
-- [ ] switch syntax highlighting to prism.js
 - [ ] custom 404 page
 - [ ] figure out a way to integrate tags into blogroll on front page
 - [ ] clean up / optimize css further (postcss?)
