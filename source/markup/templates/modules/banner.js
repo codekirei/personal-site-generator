@@ -34,8 +34,13 @@ const bannerContent = content => data =>
 // scrollDown
 //----------------------------------------------------------
 const scrollDown = () =>
+  m('div'
+    , { class: 'scroll-down' }
+    , [ scrollLink() ])
+
+const scrollLink = () =>
   m('a'
-    , { class: 'scroll-down'
+    , { class: 'scroll-down__link'
       , href: '#scroll-to'
       , role: 'button'
       , 'data-scroll': true

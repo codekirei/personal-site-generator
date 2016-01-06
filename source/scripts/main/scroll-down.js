@@ -7,6 +7,6 @@ export default smoothScroll.init(
   , easing: 'easeInOutCubic'
   , updateURL: false
   , offset: 0
-  // , callback:
+  , callback: el => el.blur() // remove :focus from element
   }
 )
