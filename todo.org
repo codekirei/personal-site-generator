@@ -15,7 +15,7 @@
   - [ ] read more button
   - [ ] say hello button
   - [ ] footer nav links
-  - [ ] footer info
+  - [X] footer info
   - [ ] links in content
 
 # ##########################################################

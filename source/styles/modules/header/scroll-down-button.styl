@@ -7,14 +7,11 @@
 
   &__link
     display: block
+
+  &__svg
+    icon-hover()
+    display: block
     size: 60px
     +above($bp)
       size: 100px
-    transition: transform 0.2s ease
-    &:hover
-    &:focus
-      transform: scale(1.5)
-
-  &__svg
     fill: white
-    size: inherit

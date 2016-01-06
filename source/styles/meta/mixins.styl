@@ -141,3 +141,12 @@ theme($fg, $bg, $brdr = false)
       select(light)
     else
       select(dark)
+
+//------------------------------------------------------------------------------
+// hover effect
+//------------------------------------------------------------------------------
+icon-hover()
+  transition: transform 0.2s ease
+  &:hover
+  &:focus
+    transform: scale(1.4)
