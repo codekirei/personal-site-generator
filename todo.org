@@ -10,7 +10,15 @@
 # JS
 # ##########################################################
 - [ ] add hover styles with js
-  - [ ] add focus/active state for links
+  - [ ] menu links
+  - [ ] down arrow
+  - [ ] blog titles
+  - [ ] read more button
+  - [ ] say hello button
+  - [ ] footer nav links
+  - [ ] footer info
+  - [ ] links in content
+- [ ] add focus/active state for links
 - [ ] make sure all scripts work on all pages
 
 # ##########################################################
