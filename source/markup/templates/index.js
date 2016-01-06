@@ -58,9 +58,11 @@ const bannerTitle = () =>
   )
 
 const bannerSubtitle = () =>
-  m('h2'
-    , { class: 'banner__subtitle' }
-    , 'Clean design. Beautiful code.'
+  m('div'
+    , { class: 'banner__subtitles' }
+    , [ m('h2', {class: 'banner__subtitle'}, 'Clean design.')
+      , m('h2', {class: 'banner__subtitle'}, 'Beautiful code.')
+      ]
   )
 
 // content
