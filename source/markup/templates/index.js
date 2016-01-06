@@ -79,8 +79,7 @@ const article = post =>
         [ postTitle
         , postDate
         , postPreview
-        , postButton
-        , postTags
+        , readButton
         ]
       )(post))
 
@@ -108,30 +107,41 @@ const postTime = post =>
     , post.date
   )
 
-const postPreview  = post =>
+const postPreview = post =>
   m('div'
     , { class: 'post__preview' }
     , m.trust(post.preview)
   )
 
-const postButton = post =>
+// read button
+//----------------------------------------------------------
+const readButton = post =>
   m('a'
     , { class: 'post__read-button'
       , href: post.slug
       }
-    , 'read post'
+    , [ readButtonText()
+      , readButtonSvg()
+      ]
   )
 
-const postTags = post =>
-  m('ul'
-    , { class: 'post__tags' }
-    , post.tags.map(postTag))
-
-const postTag = tag =>
-  m('li'
-    , { class: 'post__tag' }
-    , tag
+const readButtonText = () =>
+  m('span'
+    , { class: 'post__read-button__text' }
+    , 'read more'
   )
+
+const readButtonSvg = () =>
+  m('svg'
+    , { class: 'post__read-button__svg'
+      , viewBox: '0 0 366 1024'
+      }
+    , [ readButtonPath() ])
+
+const readButtonPath = () =>
+  m('path'
+    , { d: 'M340 548.571q0 7.429-5.714 13.143l-266.286 266.286q-5.714 5.714-13.143 5.714t-13.143-5.714l-28.571-28.571q-5.714-5.714-5.714-13.143t5.714-13.143l224.571-224.571-224.571-224.571q-5.714-5.714-5.714-13.143t5.714-13.143l28.571-28.571q5.714-5.714 13.143-5.714t13.143 5.714l266.286 266.286q5.714 5.714 5.714 13.143z'
+      })
 
 //----------------------------------------------------------
 // exports

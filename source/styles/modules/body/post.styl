@@ -1,38 +1,57 @@
 .post
   theme($c.text, #fff, $c.gray)
-  m-x: 5%
-  p-y: $gap2
+  m-x: 8%
+  fxbx(y)
+  p-y: $gap
   &:not(:last-child)
     b-s: 3px
   +above($bp)
-    p-y: $gap
+    align-items: flex-start
 
   &__title
   &__date
   &__preview
-  &__read-button
     m-s: $gap2
 
   &__title
-    display: inline-block
     text-decoration: none
     color: black
 
-  &__read-button
-    display: inline-block
-    text-decoration: none
-    color: $c.dg
-    border-color: $c.dg
-    b: 2px 5px
-    p-x: 8px
-
+  // tags
+  //----------------------------------------------------------------------------
   &__tags
     list-style: none
+    +below($bp)
+      margin-bottom: $gap2
 
   &__tag
-    display: inline
-    p: 5px 10px
+    display: inline-block
+    padding-left: 10px
+    padding-right: 10px
     background: $c.gray
     color: white
-    &:not(:last-child)
-      m-e: 5px
+    m-e: 5px
+    line-height: $smButtonH
+    +above($bp)
+      line-height: $buttonH
+
+  // read button
+  //----------------------------------------------------------------------------
+  &__read-button
+    fxbx()
+    text-decoration: none
+    background: $c.dg
+    height: $smButtonH
+    p-w: 20px
+    p-e: 10px
+    +above($bp)
+      height: $buttonH
+
+    &__text
+      color: white
+
+    &__svg
+      fill: white
+      size: 25px
+      +above($bp)
+        size: 30px

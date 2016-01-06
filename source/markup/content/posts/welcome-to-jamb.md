@@ -1,5 +1,5 @@
 ---
-title: Welcome to Jamb
+title: Welcome to the New Blog!
 description: Put your description here.
 slug: /posts/welcome-to-jamb
 posted: 2015-12-08T12:00-08:00

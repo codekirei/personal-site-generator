@@ -1,13 +1,14 @@
 # ##########################################################
 # CSS
 # ##########################################################
-- [ ] better buttons
-  - [ ] read post
+- [-] better buttons
+  - [X] read post
   - [ ] say hello
 - [ ] style content in post banner
 - [ ] banner__subtitle split to 2 spans, block -> inline for line break on mobile
 - [ ] fix scroll down overlapping content on tablet resos
 - [ ] font sizes are a little whack =/
+  - [ ] maybe roll typography into a var and disperse?
 
 # ##########################################################
 # JS
@@ -52,6 +53,7 @@
 - [ ] fix jamb crashing watch if it errs
 
 * Later
+- [ ] figure out a way to integrate tags into blogroll on front page
 - [ ] clean up / optimize css further (postcss?)
 - [ ] figure out how to deal with scrolling down on mobile when menu is open
       Currently:
