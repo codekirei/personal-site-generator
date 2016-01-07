@@ -4,27 +4,37 @@ title: About me
 description: Some description
 slug: /about
 ---
-## About Me
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+# Bio
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Jacob is a software developer based in the Pacific Northwest. He delights in simple, elegant solutions to problems and enjoys writing modular, documented, well-tested code. After graduating from college with a business degree, Jacob's lifelong love for tech drove him to pursue a career in programming.
 
-## Skills
+Outside of software, Jacob enjoys
+spending time with his lovely wife,
+camping,
+comfy socks,
+chiptunes and vintage rpgs,
+high fantasy,
+cooking tasty food,
+board games,
+logic puzzles like Sudoku and Picross,
+throwing LAN parties,
+terminal GUIs,
+learning new things,
+playing soccer and ultimate,
+studying Japanese culture, gaming culture, and their intersections,
+and generally creating order out of chaos.
+And making lists.
 
-- HTML - Jade - Haml - Erb
+# Expertise
+
+- Git
+- Markup (Html, Jade, Handlebars, Slim)
+- CSS (Stylus, Sass, PostCSS)
+- Javascript (Node, Coffeescript, ES6/ES7)
+
+
 - Design Responsivo (Mobile First)
-- CSS (Stylus, Sass, Less)
 - Css Frameworks (Bootstrap, Foundation)
 - Javascript (Design Patterns, Testes)
 - NodeJS
