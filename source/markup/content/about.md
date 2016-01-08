@@ -42,7 +42,8 @@ Jacob can be reached via [email](mailto:jacob@codekirei.com). He is also active 
 - Tooling (Gulp, Webpack, Babel)
 - RESTful APIs
 - Documentation
-- Unix
+- Vim
+- Linux (Arch)
 - Bash
 - Emacs Lisp
 - Project Management
