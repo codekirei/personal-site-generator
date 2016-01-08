@@ -6,9 +6,11 @@
     flex-direction: row
 
   &__img
-    size: 200px
+    width: 200px
     +below($bp)
       m-s: $gap2
+    +above($bp)
+      m-e: $gap
 
   &__info
     fxbx(y)

@@ -13,12 +13,12 @@
   - [ ] readme.md
 
 - [-] write site content
-  - [ ] first two blog posts
+  - [ ] first blog post
   - [ ] projects page
   - [X] about page
   - [ ] resume (add to about page under expertise)
   - [X] colophon
-  - [ ] picture of self (add to about page as well)
+  - [X] picture of self
 
 # ##########################################################
 # Gulp
@@ -26,6 +26,7 @@
 - [ ] write gulp deploy task
 
 * Later
+- [ ] take an awesome picture to put on about page
 - [ ] add humans.txt
 - [ ] css-wide better solution to typography =/
 - [ ] figure out cooler hover effects

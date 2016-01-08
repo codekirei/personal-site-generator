@@ -1,7 +1,23 @@
 ---
 template: page
 title: My Projects
-description: A list of projects I've worked on
+description: Some projects I've worked on
 slug: /projects
 ---
-This is a list of my projects. Check it out!
+
+# Stable
+
+- hanging-indent
+- type-iterator
+- node-multispinner
+- auto-import
+- yaml-fm
+- get-element
+- gulp-regex-rename
+
+# Work In Progress
+
+- smg
+- hari
+- dotfiles
+- parse-terminfo
