@@ -12,12 +12,13 @@
   - [ ] CNAME
   - [ ] readme.md
 
-- [ ] write site content
+- [-] write site content
   - [ ] first two blog posts
   - [ ] projects page
-  - [ ] about page
-  - [ ] colophon
-  - [ ] picture of self
+  - [X] about page
+  - [ ] resume (add to about page under expertise)
+  - [X] colophon
+  - [ ] picture of self (add to about page as well)
 
 # ##########################################################
 # Gulp

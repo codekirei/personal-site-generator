@@ -9,7 +9,7 @@ import getEl from 'get-element'
 // logic
 //----------------------------------------------------------
 const msToText = [
-  [94608000001, 'more than three years ago'],
+  [94608000001, 'over three years ago'],
   [94608000000, 'three years ago'],
   [63072000000, 'two years ago'],
   [31536000000, 'a year ago'],

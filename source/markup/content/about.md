@@ -1,24 +1,24 @@
 ---
 template: page
-title: About me
-description: Some description
+title: About
+description: I make things.
 slug: /about
 ---
 
 # Bio
 
-Jacob is a software developer based in the Pacific Northwest. He delights in simple, elegant solutions to problems and enjoys writing modular, documented, well-tested code. After graduating from college with a business degree, Jacob's lifelong love for tech drove him to pursue a career in programming.
+Jacob is a software developer based in the Pacific Northwest. He delights in simple, elegant solutions to problems and enjoys writing modular, documented, well-tested code. After graduating from college with a business degree, Jacob's lifelong love for tech drove him to pursue a career in programming. He is a firm believer in the value of open-source software and can't imagine life without Vim.
 
 Outside of software, Jacob enjoys
 spending time with his lovely wife,
 camping,
 comfy socks,
-chiptunes and vintage rpgs,
-high fantasy,
+chiptunes and vintage jrpgs,
+high fantasy novels,
 cooking tasty food,
 board games,
 logic puzzles like Sudoku and Picross,
-throwing LAN parties,
+LAN parties,
 terminal GUIs,
 learning new things,
 playing soccer and ultimate,
@@ -26,23 +26,44 @@ studying Japanese culture, gaming culture, and their intersections,
 and generally creating order out of chaos.
 And making lists.
 
+# Contact
+
+Jacob can be reached via [email](mailto:jacob@codekirei.com). He is also active on [GitHub](http://github.com/codekirei).
+
 # Expertise
 
 - Git
 - Markup (Html, Jade, Handlebars, Slim)
 - CSS (Stylus, Sass, PostCSS)
+- Responsive Design
 - Javascript (Node, Coffeescript, ES6/ES7)
+- Testing (Mocha, Ava, Sinon, Jest)
+- Continuous Integration (Travis)
+- Tooling (Gulp, Webpack, Babel)
+- RESTful APIs
+- Documentation
+- Unix
+- Bash
+- Emacs Lisp
+- Project Management
 
+# Moderate Expertise
 
-- Design Responsivo (Mobile First)
-- Css Frameworks (Bootstrap, Foundation)
-- Javascript (Design Patterns, Testes)
-- NodeJS
-- AngularJS - ReactJS
-- Grunt - Gulp - Yeoman
-- Git
-- PHP
+- Databases (Postgresql, SQLite, CouchDB)
+- JS Virtual DOM Libraries (React, Mithril)
+- Flux (Alt)
+- Devops (Ansible, Chef)
+- Docker
+- Graphics (Photoshop, Gimp, Inkscape)
 - Python
-- MySQL - MongoDB
-- Scrum and Kanban
-- TDD e Continuous Integration
+- Ruby
+- Go
+
+# Strong Interest
+
+- Clojurescript
+- Elixir
+- Haskell
+- Haxe
+- Lua
+- Rust
