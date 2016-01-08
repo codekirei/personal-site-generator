@@ -49,7 +49,7 @@ Jacob can be reached via [email](mailto:jacob@codekirei.com). He is also active 
 
 # Moderate Expertise
 
-- Databases (Postgresql, SQLite, CouchDB)
+- Databases (PostgreSQL, SQLite, CouchDB)
 - JS Virtual DOM Libraries (React, Mithril)
 - Flux (Alt)
 - Devops (Ansible, Chef)
