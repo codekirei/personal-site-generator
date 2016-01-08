@@ -41,7 +41,10 @@ The menu animation is powered by a custom script that uses [bezier-easing](https
 
 The scrolling animation that fires when the arrow at the bottom of a full-page banner is clicked is powered by [smooth-scroll](https://github.com/cferdinandi/smooth-scroll).
 
-Scripts are also used to fix the height of full page banners on load on mobile to prevent janky resizing when browser chrome autohides, prevent dragging elements, and calculate how long ago posts were posted.
+Scripts are also used to
+prevent dragging elements,
+calculate how long ago posts were posted,
+and lock the height of full page banners on mobile to prevent janky resizing if browser chrome autohides.
 
 Do note, though, that the site is completely usable with all scripts disabled, if that's your cup of tea. Progressive enhancement FTW!
 

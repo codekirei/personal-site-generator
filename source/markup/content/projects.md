@@ -60,5 +60,12 @@ A Node.js static-markup-generator. The idea behind this module is that I love st
 
 ## Ongoing
 
-- `dotfiles` [source]()
-- `codekirei.com` [source]()
+These are "living" projects that I expect to continually evolve over time.
+
+- `dotfiles` [source](https://github.com/codekirei/dotfiles)
+
+My dotfiles repo! It's currently Ansible powered and thus idempotent. Targets a unix-based dev box with `XDG_CONFIG` support. Creates lots of symlinks. Needs some serious love. I'll get around to it... eventually!
+
+- `codekirei.com` [source](https://github.com/codekirei/codekirei.github.io)
+
+The custom static-site-generator powering this site. Uses a lot of open-source tech like [Gulp](http://gulpjs.com/), [Stylus](http://stylus-lang.com/), [Babel](https://babeljs.io/), [Mithril](http://mithril.js.org/), [webpack](http://webpack.github.io/), and my very own [smg](https://github.com/codekirei/smg). Check out the [colophon](/colophon) for a more detailed breakdown.

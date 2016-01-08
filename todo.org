@@ -16,13 +16,7 @@
 
 - [-] write site content
   - [ ] first blog post
-  - [ ] projects page
-    - [ ] dotfiles
-    - [ ] blog
-  - [X] about page
   - [ ] resume (add to about page under expertise)
-  - [X] colophon
-  - [X] picture of self
 
 # ##########################################################
 # Gulp
