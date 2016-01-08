@@ -18,7 +18,7 @@ const locations = module.exports = {
     // static
     , get dupes() {return p.join(this.root, 'static/**/*')}
     // images
-    , get img() {return p.join(this.root, 'images/**/*.{jpg,png}')}
+    , get img() {return p.join(this.root, 'images/**/*.{jpg,png,gif}')}
     // styles
     , get styles() {return p.join(this.root, 'styles/index.styl')}
     , get stylesAll() {return p.join(this.root, 'styles/**/*.styl')}
