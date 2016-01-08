@@ -80,7 +80,6 @@
 - [ ] schema.org props: Blog, BlogPosting, WebPage...
   - [ ] test: https://developers.google.com/structured-data/testing-tool/
 - [ ] gulp -> nomu
-  - [ ] fix bug with script bundles being overwritten during gulp-watch if editing markup
 - [ ] discourse for comments (requires server)
 - [ ] logo
   - [ ] export smaller kunai-logo
