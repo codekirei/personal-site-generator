@@ -8,9 +8,10 @@ tags:
 - new things
 - smg
 - static site generators
+- Gulp
 ---
 
-What a better way to start a new year than to launch a new blog? This first post walks through some of the open-source tech I used to build the site and shows off some cool, though standard, features.
+What better way to start a new year than to launch a new blog? This first post talks about Gulp, static-site-generators, some of the tooling I wrote to create the site (and why), and the site's name.
 
 --MORE--
 

@@ -1,21 +1,12 @@
 # ##########################################################
-# Other
-# ##########################################################
-- [ ] check responsive sizing of everything
-- [ ] make sure all scripts work on all pages
-- [ ] check multiple browsers
-
-# ##########################################################
 # Content
 # ##########################################################
-- [ ] change h1 / h2 / h3 sizing in content area
 
 - [ ] add/write missing static files
   - [ ] CNAME
   - [ ] readme.md
 
 - [-] write site content
-  - [ ] first blog post
   - [ ] resume (add to about page under expertise)
 
 # ##########################################################
@@ -24,6 +15,8 @@
 - [ ] write gulp deploy task
 
 * Later
+- [ ] automate XBT
+- [ ] change h1 / h2 / h3 sizing in content area?
 - [ ] take an awesome picture to put on about page
 - [ ] add humans.txt
 - [ ] css-wide better solution to typography =/
