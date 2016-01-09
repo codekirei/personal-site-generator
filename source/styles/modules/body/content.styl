@@ -11,7 +11,7 @@
     +above($linewrap + 200) // magic
       p-x: 0
 
-  p,ul,ol,iframe
+  p,ul,ol,iframe,blockquote
     m-s: $gap2
     width: 100%
     max-width: $linewrap
@@ -39,3 +39,8 @@
     &:focus
       color: white
       background: $c.text
+
+  blockquote p
+    p-w: $gap2
+    b-w: $gap2
+    border-color: $c.gray
