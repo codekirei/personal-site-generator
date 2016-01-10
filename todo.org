@@ -4,7 +4,7 @@
 
 - [ ] add/write missing static files
   - [ ] CNAME
-  - [ ] readme.md
+  - [ ] readme (for dist)
 
 - [-] write site content
   - [ ] resume (add to about page under expertise)
@@ -13,6 +13,12 @@
 # Gulp
 # ##########################################################
 - [ ] write gulp deploy task
+
+# ##########################################################
+# Other
+# ##########################################################
+- [ ] clean up unnecessary generator branch
+- [ ] update links to github
 
 * Later
 - [ ] automate XBT
