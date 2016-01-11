@@ -40,7 +40,7 @@ Markup, especially in the context of an ssg, is a bit different. There are Gulp 
 
 That combinatorial logic is the ssg "secret sauce", and Gulp isn't really designed for it. It's definitely doable, but it gets messy pretty fast &mdash; particularly for things like content collections (i.e. blog posts). It's a lot easier to let a dedicated ssg handle that part. For example, some very valid solutions here would be to plug in metalsmith with gulpsmith or run something like [jekyll](http://jekyllrb.com/) in a [child process](https://nodejs.org/api/child_process.html).
 
-The "Gulp + ssg" solution can be messy too, though. I'm not using a significant amount of the functionality (and complexity) of the ssg, and I'm likely using the ssg in a way it wasn't intended to be used. Fundamentally, there is conflict: Gulp wants to process everything but markup and write output, and the ssg wants to process everything and write output. I really just want an ssg that only processes markup and plays nice with Gulp. Aha!
+The "Gulp + ssg" solution can be messy too, though. It doesn't use a significant amount of the functionality (and complexity) of the ssg, and it's likely using the ssg in a way it wasn't intended to be used. Fundamentally, there is conflict: Gulp wants to process everything but markup and write output, and the ssg wants to process everything and write output. I really just want an ssg that only processes markup and plays nice with Gulp. Aha!
 
 # Introducing the Static-Markup-Generator
 
