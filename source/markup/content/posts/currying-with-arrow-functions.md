@@ -299,7 +299,7 @@ const incrementEach = (ar, by) =>
 
 `addNums` is now a function that takes a parameter that returns a function that takes *another* parameter. So first we call `addNums(by)`, which returns the anonymous function `b => by + b`. `.map()` then calls this anonymous function as its callback and returns `by` + `currentValue` &mdash; the current value in the array incremented by the value of `by`.
 
-With currying and (double) arrow functions, we still get our nice named calledbacks that are exportable, reusable, and testable in isolation. We get the handy callback shorthand syntax so we don't have to write extra anonymous callback functions just to pass variables, yet our named callback functions are still flexible enough to receive params passed down from a higher-order function when they are called.
+With currying and (double) arrow functions, we get to keep our named calledbacks that are exportable, reusable, and testable in isolation. We get the handy callback shorthand syntax so we don't have to write extra anonymous callback functions just to pass variables, yet our named callback functions are still flexible enough to receive params passed down from a higher-order function when they are called.
 
 Do you recall how earlier it seemed that writing functions that take a single parameter and return a single expression in order to optimize readability with arrow functions would be limiting? With currying, it doesn't have to be! I've been experimenting with this technique a lot in my own projects and I really like it so far. For some more examples, check out the code in my [hari](https://github.com/codekirei/hari/tree/master/lib) and [smg](https://github.com/codekirei/smg/blob/master/index.js) projects on GitHub.
 
