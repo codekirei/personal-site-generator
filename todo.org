@@ -3,11 +3,13 @@
 # ##########################################################
 
 - [ ] add/write missing static files
-  - [ ] CNAME
   - [ ] readme (for dist)
 
 - [-] write site content
   - [ ] resume (add to about page under expertise)
+
+- [ ] styles
+  - add line break on small screens for banner between posted time and reading time
 
 # ##########################################################
 # Gulp
