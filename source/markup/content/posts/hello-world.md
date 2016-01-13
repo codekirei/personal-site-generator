@@ -55,6 +55,6 @@ If you're curious about the rest of my current Gulp setup or the other open-sour
 I'll leave you with a brief explanation of the site's name. Kirei is a Japanese term:
 > kirei &mdash; adj., 1. lovely, beautiful, 2. clear, clean, tidy
 
-I studied Japan in college, and "kirei" is a word that always stuck out to me. Like many Japanese words, it conveys a lot of meaning with only a few characters. More importantly, it represents exactly the kind of code I strive to write &mdash; code that is clean, clear, tidy, and beautiful. Thus, code kirei (きれいなコード, for the curious).
+I studied Japan in college, and "kirei" is one of the Japanese words that always stuck out to me. Like many Japanese words, it conveys a lot of meaning with only a few characters. More importantly, it represents exactly the kind of code I strive to write &mdash; code that is clean, clear, tidy, and beautiful. Thus, code kirei (きれいなコード, for the curious).
 
 Happy New Year everyone! Go forth and make cool things!
