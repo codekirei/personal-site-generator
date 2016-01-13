@@ -32,39 +32,30 @@ Jacob can be reached via [email](mailto:jacob@codekirei.com). He is active on [G
 
 # Expertise
 
-- Git
-- Markup (Html, Jade, Handlebars, Slim)
-- CSS (Stylus, Sass, PostCSS)
-- Responsive Design
-- Javascript (Node, Coffeescript, ES6/ES7)
-- Testing (Mocha, Ava, Sinon, Jest)
-- Continuous Integration (Travis)
-- Tooling (Gulp, Webpack, Babel)
-- RESTful APIs
-- Documentation
-- Vim
-- Linux (Arch)
-- Bash
-- Emacs Lisp
-- Project Management
+- **Version Control** | Git
+- **Markup** | Html, Jade, Handlebars, Slim
+- **CSS** | Stylus, Sass, PostCSS, Responsive Design
+- **JavaScript** | Node, Coffeescript, ES6/ES7
+- **Testing** | Mocha, Ava, Sinon, Jest
+- **Continuous Integration** | Travis
+- **Tooling** | Gulp, Webpack, Babel, ESLint, Lodash
+- **RESTful APIs** | Client, Server
+- **Documentation** | APIs, CLIs, Copywriting, Proofing
+- **Linux and Unix** | Shell, CLI, Arch, Vim
+- **Project Management** | GTD, SWOT, Agile
 
 # Moderate Expertise
 
-- Databases (PostgreSQL, SQLite, CouchDB)
-- JS Virtual DOM Libraries (React, Mithril)
-- Flux (Alt)
-- Devops (Ansible, Chef)
-- Docker
-- Graphics (Photoshop, Gimp, Inkscape)
-- Python
-- Ruby
-- Go
+- **Databases** | PostgreSQL, SQLite, CouchDB, ORMs
+- **Virtual DOM** | React, Mithril
+- **Flux** | Alt
+- **Devops** | Ansible, Chef, Docker
+- **Graphics** | Photoshop, Gimp, Inkscape
+- **Other Dynamic Languages** | Go, Python, Ruby
+- **Lisps** | Emacs Lisp
 
 # Strong Interest
 
-- Clojurescript
-- Elixir
-- Haskell
-- Haxe
-- Lua
-- Rust
+- **Compiled Languages** | Haxe, Rust
+- **Functional Languages** | Clojurescript, Elixir, Elm, Haskell
+- **Scripting Languages** | Lua
