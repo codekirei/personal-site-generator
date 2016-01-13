@@ -28,7 +28,7 @@ And making lists.
 
 # Contact
 
-Jacob can be reached via [email](mailto:jacob@codekirei.com). He is active on [GitHub](http://github.com/codekirei).
+Jacob can be reached via [email](mailto:jacob@codekirei.com). He is active on [GitHub](http://github.com/codekirei). His resume is available for [download](https://github.com/codekirei/codekirei.github.io/raw/master/Jacob-Blakely_resume.pdf).
 
 # Expertise
 
